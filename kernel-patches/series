@@ -1,0 +1,91 @@
+# Apply on top of v6.6.98
+
+# Backports from upstream
+#
+# ad162488bbd359abda99c9819f5cbe9172f40935 (6.10-rc6)
+0001-x86-xen-time-Reduce-Xen-timer-tick.patch
+
+#
+# Build system integration
+#
+kbuild-AFTER_LINK.patch
+expose-xsversion.patch
+
+#
+# blkback
+#
+blkback-kthread-pid.patch
+#
+# Local patches.
+#
+tg3-alloc-repeat.patch
+net-Do-not-scrub-ignore_df-within-the-same-name-spac.patch
+enable-fragmention-gre-packets.patch
+call-kexec-before-offlining-noncrashing-cpus.patch
+lpfc-fallback-to-sli-2.patch
+fix-hypercall-preemption.patch
+skip-cpuidle-driver-init-if-cpuidle-function-disable.patch
+CA-392853-fix-kdump-kernel-cannot-find-ACPI-RSDP.patch
+CA-415346-export-module-symbol-offsets.patch
+
+# x86
+0002-x86-xen-correct-dma_get_required_mask-for-Xen-PV-gue.patch
+
+# PCI / pciback
+0001-pci-export-pci_reset_supported.patch
+0002-xen-pciback-provide-a-reset-sysfs-file-to-try-harder.patch
+pciback-disable-root-port-aer.patch
+pciback-mask-root-port-comp-timeout.patch
+no-flr-quirk.patch
+
+# NFS
+CA-135938-nfs-disconnect-on-rpc-retry.patch
+sunrpc-force-disconnect-on-connection-timeout.patch
+
+# In-kernel device emulator support
+xen-ioemu-inject-msi.patch
+
+# PV-IOMMU support
+pv-iommu-support.patch
+kexec-reserve-crashkernel-region.patch
+
+# SWIOTLB
+0001-xen-swiotlb-size-128MiB.patch
+0002-xen-swiotlb-rework-early-repeat-code.patch
+
+#
+# Performance optimizations
+#
+
+# GFS2
+gfs2-debug-rgrp-sweep
+0001-fix-gfs2-umount-timeout-bug.patch
+# https://lore.kernel.org/all/20250716213131.524126-1-agruenba@redhat.com/
+gfs2-No-more-self-recovery
+CA-411820-add-STATX_DIOALIGN-support-to-GFS2
+
+# XSI-1728
+scsi-avoid-lun-change-loop.patch
+
+#
+# Secure Boot
+#
+add-sbat.patch
+enable-lockdown.patch
+module-allow-disabling-sig_enforce.patch
+use-mok-variable-fallback.patch
+allow_reading_xen_netback_ring.patch
+import-xen-public-headers.patch
+filter-hypercalls.patch
+module-hash-revocation.patch
+
+#
+# Debugging
+#
+
+#
+# ABI version
+#
+0001-CP-46343-common-data-structure-padding.patch
+0002-CP-46343-reserve-cpuid-leaves-for-future-use.patch
+abi-version.patch

@@ -1,0 +1,7 @@
+$ git clone -n git+ssh://git@code.citrite.net/xss/shim.spec.git /var/lib/mock/xs-foundations-xs9-build-95501-282678/root/chroot_tmpdir/scmroot/shim.spec
+Cloning into '/var/lib/mock/xs-foundations-xs9-build-95501-282678/root/chroot_tmpdir/scmroot/shim.spec'...
+$ git fetch origin 4c135ce7d899d71d4727a0fdb845d75bc00c25f5:KOJI_FETCH_HEAD
+From git+ssh://code.citrite.net/xss/shim.spec
+ * [new ref]         4c135ce7d899d71d4727a0fdb845d75bc00c25f5 -> KOJI_FETCH_HEAD
+$ git reset --hard KOJI_FETCH_HEAD
+HEAD is now at 4c135ce Fix key usage in %check

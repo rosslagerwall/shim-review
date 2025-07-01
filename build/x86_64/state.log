@@ -1,0 +1,24 @@
+2025-10-09 10:29:04,332 - Mock Version: 6.3
+2025-10-09 10:29:04,335 - Start: chroot init
+2025-10-09 10:29:04,524 - Start: installing minimal buildroot with dnf
+2025-10-09 10:29:14,684 - Finish: installing minimal buildroot with dnf
+2025-10-09 10:29:15,361 - Finish: chroot init
+2025-10-09 10:29:15,400 - Finish: run
+2025-10-09 10:29:16,971 - Mock Version: 6.3
+2025-10-09 10:29:16,975 - Start: chroot init
+2025-10-09 10:29:17,288 - Finish: chroot init
+2025-10-09 10:29:17,290 - Start: chroot ['uname -r']
+2025-10-09 10:29:17,369 - Finish: chroot ['uname -r']
+2025-10-09 10:29:17,370 - Finish: run
+2025-10-09 10:29:18,218 - Mock Version: 6.3
+2025-10-09 10:29:18,222 - Start: chroot init
+2025-10-09 10:29:18,662 - Finish: chroot init
+2025-10-09 10:29:18,664 - Start: build phase for shim-16.1-4.xs9.src.rpm
+2025-10-09 10:29:18,665 - Start: build setup for shim-16.1-4.xs9.src.rpm
+2025-10-09 10:29:20,239 - Finish: build setup for shim-16.1-4.xs9.src.rpm
+2025-10-09 10:29:20,240 - Start: rpmbuild shim-16.1-4.xs9.src.rpm
+2025-10-09 10:29:20,241 - Start: Outputting list of installed packages
+2025-10-09 10:29:20,280 - Finish: Outputting list of installed packages
+2025-10-09 10:30:36,760 - Finish: rpmbuild shim-16.1-4.xs9.src.rpm
+2025-10-09 10:30:36,764 - Finish: build phase for shim-16.1-4.xs9.src.rpm
+2025-10-09 10:30:36,767 - Finish: run
