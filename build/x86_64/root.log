@@ -1,0 +1,1507 @@
+INFO buildroot.py:667:  Mock Version: 6.3
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/result
+INFO buildroot.py:318:  calling preinit hooks
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/usr/bin/lscpu'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  Architecture:                            x86_64
+DEBUG util.py:461:  CPU op-mode(s):                          32-bit, 64-bit
+DEBUG util.py:461:  Address sizes:                           46 bits physical, 48 bits virtual
+DEBUG util.py:461:  Byte Order:                              Little Endian
+DEBUG util.py:461:  CPU(s):                                  32
+DEBUG util.py:461:  On-line CPU(s) list:                     0-31
+DEBUG util.py:461:  Vendor ID:                               GenuineIntel
+DEBUG util.py:461:  Model name:                              Intel(R) Xeon(R) Silver 4215R CPU @ 3.20GHz
+DEBUG util.py:461:  CPU family:                              6
+DEBUG util.py:461:  Model:                                   85
+DEBUG util.py:461:  Thread(s) per core:                      2
+DEBUG util.py:461:  Core(s) per socket:                      8
+DEBUG util.py:461:  Socket(s):                               2
+DEBUG util.py:461:  Stepping:                                7
+DEBUG util.py:461:  CPU(s) scaling MHz:                      36%
+DEBUG util.py:461:  CPU max MHz:                             4000.0000
+DEBUG util.py:461:  CPU min MHz:                             1000.0000
+DEBUG util.py:461:  BogoMIPS:                                6400.00
+DEBUG util.py:461:  Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+DEBUG util.py:461:  Virtualization:                          VT-x
+DEBUG util.py:461:  L1d cache:                               512 KiB (16 instances)
+DEBUG util.py:461:  L1i cache:                               512 KiB (16 instances)
+DEBUG util.py:461:  L2 cache:                                16 MiB (16 instances)
+DEBUG util.py:461:  L3 cache:                                22 MiB (2 instances)
+DEBUG util.py:461:  NUMA node(s):                            2
+DEBUG util.py:461:  NUMA node0 CPU(s):                       0-7,16-23
+DEBUG util.py:461:  NUMA node1 CPU(s):                       8-15,24-31
+DEBUG util.py:461:  Vulnerability Gather data sampling:      Mitigation; Microcode
+DEBUG util.py:461:  Vulnerability Indirect target selection: Mitigation; Aligned branch/return thunks
+DEBUG util.py:461:  Vulnerability Itlb multihit:             KVM: Mitigation: Split huge pages
+DEBUG util.py:461:  Vulnerability L1tf:                      Not affected
+DEBUG util.py:461:  Vulnerability Mds:                       Not affected
+DEBUG util.py:461:  Vulnerability Meltdown:                  Not affected
+DEBUG util.py:461:  Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
+DEBUG util.py:461:  Vulnerability Reg file data sampling:    Not affected
+DEBUG util.py:461:  Vulnerability Retbleed:                  Mitigation; Enhanced IBRS
+DEBUG util.py:461:  Vulnerability Spec rstack overflow:      Not affected
+DEBUG util.py:461:  Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+DEBUG util.py:461:  Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+DEBUG util.py:461:  Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+DEBUG util.py:461:  Vulnerability Srbds:                     Not affected
+DEBUG util.py:461:  Vulnerability Tsa:                       Not affected
+DEBUG util.py:461:  Vulnerability Tsx async abort:           Mitigation; TSX disabled
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/free', '--human'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:                 total        used        free      shared  buff/cache   available
+DEBUG util.py:461:  Mem:           124Gi       3.0Gi       114Gi       108Mi       8.7Gi       121Gi
+DEBUG util.py:461:  Swap:          8.0Gi          0B       8.0Gi
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/df', '-H', '-T', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root', '/var/cache/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  Filesystem                      Type  Size  Used Avail Use% Mounted on
+DEBUG util.py:461:  /dev/mapper/VolGroup-lv_var_lib xfs   602G   11G  591G   2% /var/lib
+DEBUG util.py:461:  /dev/mapper/VolGroup-lv_var     xfs   108G   15G   94G  14% /var
+DEBUG util.py:608:  Child return code was: 0
+DEBUG buildroot.py:723:  create skeleton dirs
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/rpm
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/yum
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/dbus
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/dbus
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/log
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/log
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/dnf
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/yum
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/rpm
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp/ccache
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp/ccache
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/tmp
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf/vars
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf/vars
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum.repos.d
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum.repos.d
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/mapper
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/mapper
+DEBUG buildroot.py:867:  kernel version == 5.14.0-620.el9.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/log/yum.log
+DEBUG buildroot.py:332:  rootdir = /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG buildroot.py:333:  resultdir = /var/lib/mock/xs-foundations-xs9-build-95502-282678/result
+DEBUG package_manager.py:63:  searching for 'dnf4' package manager or alternatives
+INFO buildroot.py:181:  Package manager dnf4 detected and used (fallback)
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/mock
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/mock
+DEBUG package_manager.py:404:  copying CA trust dir into chroot: /etc/pki/ca-trust => /etc/pki/ca-trust
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust with files from /etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./extracted
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./extracted
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./source
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/edk2
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/edk2
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/java
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/java
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/openssl
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/openssl
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem/directory-hash
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem/directory-hash
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/anchors
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/blocklist
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/blocklist
+DEBUG package_manager.py:404:  copying CA trust dir into chroot: /usr/share/pki/ca-trust-source => /usr/share/pki/ca-trust-source
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source with files from /usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./anchors
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./blocklist
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./blocklist
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf
+DEBUG package_manager.py:691:  configure DNF vars
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.k37asbl7', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys/fs/selinux
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/installation-homedir
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/installation-homedir
+DEBUG package_manager.py:295:  ['/usr/bin/dnf-3', '--installroot', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/', '--setopt=deltarpm=False', '--setopt=allow_vendor_change=yes', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'install', '@build']
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/usr/bin/dnf-3', '--installroot', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/', '--setopt=deltarpm=False', '--setopt=allow_vendor_change=yes', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'install', '@build', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'NETRC': '/credentials/.netrc', 'XS_BUILDER': 'kojibuilder1', 'XSSIGN_SOCK': '/bind/mount/xssign/xssign.sock', 'XSSIGN_SERVERSIDE_SHARED_DIR': '/run/xssign/share/', 'XSSIGN_CLIENTSIDE_SHARED_DIR': '/bind/mount/xssign/share/', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:459:  Unable to detect release version (use '--releasever' to specify release version)
+DEBUG util.py:459:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:461:  Last metadata expiration check: 0:00:01 ago on Thu 09 Oct 2025 10:29:04 AM UTC.
+DEBUG util.py:459:  No match for group package "system-rpm-config"
+DEBUG util.py:461:  Dependencies resolved.
+DEBUG util.py:461:  ================================================================================
+DEBUG util.py:461:   Package                         Arch       Version             Repo       Size
+DEBUG util.py:461:  ================================================================================
+DEBUG util.py:461:  Installing group/module packages:
+DEBUG util.py:461:   bash                            x86_64     5.2.37-1.xs9        build     2.2 M
+DEBUG util.py:461:   bzip2                           x86_64     1.0.8-3.xs9         build      56 k
+DEBUG util.py:461:   coreutils                       x86_64     9.5-1.xs9           build     1.3 M
+DEBUG util.py:461:   cpio                            x86_64     2.13-2.xs9          build     310 k
+DEBUG util.py:461:   diffutils                       x86_64     3.10-2.xs9          build     443 k
+DEBUG util.py:461:   findutils                       x86_64     4.9.0-4.xs9         build     536 k
+DEBUG util.py:461:   gawk                            x86_64     5.1.1-5.xs9         build     1.1 M
+DEBUG util.py:461:   gcc                             x86_64     12.4.0-2.xs9        build      39 M
+DEBUG util.py:461:   gcc-c++                         x86_64     12.4.0-2.xs9        build      15 M
+DEBUG util.py:461:   go-srpm-macros                  noarch     3.7.0-3.xs9         build      28 k
+DEBUG util.py:461:   grep                            x86_64     3.11-1.xs9          build     327 k
+DEBUG util.py:461:   gzip                            x86_64     1.14-1.xs9          build     190 k
+DEBUG util.py:461:   make                            x86_64     4.4-2.xs9           build     645 k
+DEBUG util.py:461:   patch                           x86_64     2.7.6-3.xs9         build     139 k
+DEBUG util.py:461:   pyproject-rpm-macros            noarch     1.8.0-2.xs9         build      38 k
+DEBUG util.py:461:   python-srpm-macros              noarch     3.10-3.xs9          build      22 k
+DEBUG util.py:461:   python3-rpm-generators          noarch     14-3.xs9            build      31 k
+DEBUG util.py:461:   python3-rpm-macros              noarch     3.10-3.xs9          build      10 k
+DEBUG util.py:461:   rpm-build                       x86_64     4.18.0-6.xs9        build      66 k
+DEBUG util.py:461:   sed                             x86_64     4.9-1.xs9           build     338 k
+DEBUG util.py:461:   shadow-utils                    x86_64     4.17.0-1.xs9        build     831 k
+DEBUG util.py:461:   systemd                         x86_64     257.2-8.xs9         build     5.8 M
+DEBUG util.py:461:   tar                             x86_64     1.35-1.xs9          build     980 k
+DEBUG util.py:461:   unzip                           x86_64     6.0-2.xs9           build     205 k
+DEBUG util.py:461:   util-linux                      x86_64     2.38.1-4.xs9        build     3.1 M
+DEBUG util.py:461:   which                           x86_64     2.21-2.xs9          build      44 k
+DEBUG util.py:461:   xenserver-config-macros         noarch     9.0.9-1.xs9         build      10 k
+DEBUG util.py:461:   xz                              x86_64     5.4.1-2.xs9         build     438 k
+DEBUG util.py:461:  Installing dependencies:
+DEBUG util.py:461:   annobin-docs                    noarch     12.71-1.xs9         build      81 k
+DEBUG util.py:461:   annobin-plugin-gcc              x86_64     12.71-1.xs9         build     962 k
+DEBUG util.py:461:   audit-libs                      x86_64     3.1.2-2.xs9         build     135 k
+DEBUG util.py:461:   basesystem                      noarch     11-2.xs9            build     6.5 k
+DEBUG util.py:461:   binutils                        x86_64     2.45-1.xs9          build     7.6 M
+DEBUG util.py:461:   bzip2-libs                      x86_64     1.0.8-3.xs9         build      44 k
+DEBUG util.py:461:   ca-certificates                 noarch     2024.2.72-3.xs9     build     510 k
+DEBUG util.py:461:   coreutils-common                x86_64     9.5-1.xs9           build     2.7 M
+DEBUG util.py:461:   cpp                             x86_64     12.4.0-2.xs9        build      13 M
+DEBUG util.py:461:   cracklib                        x86_64     2.9.11-3.xs9        build      89 k
+DEBUG util.py:461:   crypto-policies                 noarch     20241128-1.xs9      build      53 k
+DEBUG util.py:461:   curl                            x86_64     8.11.1-2.xs9        build     240 k
+DEBUG util.py:461:   dbus-common                     noarch     1.14.10-3.xs9       build      14 k
+DEBUG util.py:461:   dbus-daemon                     x86_64     1.14.10-3.xs9       build     213 k
+DEBUG util.py:461:   dbus-libs                       x86_64     1.14.10-3.xs9       build     180 k
+DEBUG util.py:461:   dbus-tools                      x86_64     1.14.10-3.xs9       build      48 k
+DEBUG util.py:461:   debugedit                       x86_64     5.2-1.xs9           build      86 k
+DEBUG util.py:461:   dwz                             x86_64     0.16-1.xs9          build     159 k
+DEBUG util.py:461:   ed                              x86_64     1.19-2.xs9          build      85 k
+DEBUG util.py:461:   elfutils                        x86_64     0.193-1.xs9         build     622 k
+DEBUG util.py:461:   elfutils-default-yama-scope     noarch     0.193-1.xs9         build     8.8 k
+DEBUG util.py:461:   elfutils-libelf                 x86_64     0.193-1.xs9         build     262 k
+DEBUG util.py:461:   elfutils-libs                   x86_64     0.193-1.xs9         build     308 k
+DEBUG util.py:461:   expat                           x86_64     2.5.0-2.xs9         build     120 k
+DEBUG util.py:461:   file                            x86_64     5.45-1.xs9          build      52 k
+DEBUG util.py:461:   file-libs                       x86_64     5.45-1.xs9          build     949 k
+DEBUG util.py:461:   filesystem                      x86_64     3.18-3.xs9          build     1.1 M
+DEBUG util.py:461:   gdb                             x86_64     15.2-2.xs9          build     5.5 M
+DEBUG util.py:461:   gdbm                            x86_64     1.23-2.xs9          build     168 k
+DEBUG util.py:461:   gdbm-libs                       x86_64     1.23-2.xs9          build      63 k
+DEBUG util.py:461:   glibc                           x86_64     2.41-1.xs9          build     2.7 M
+DEBUG util.py:461:   glibc-common                    x86_64     2.41-1.xs9          build     355 k
+DEBUG util.py:461:   glibc-devel                     x86_64     2.41-1.xs9          build     554 k
+DEBUG util.py:461:   glibc-minimal-langpack          x86_64     2.41-1.xs9          build     7.4 k
+DEBUG util.py:461:   gmp                             x86_64     6.2.1-3.xs9         build     356 k
+DEBUG util.py:461:   jansson                         x86_64     2.14.1-1.xs9        build      70 k
+DEBUG util.py:461:   kernel-headers                  x86_64     6.6.98-5.xs9        build     1.7 M
+DEBUG util.py:461:   keyutils-libs                   x86_64     1.6.3-2.xs9         build      33 k
+DEBUG util.py:461:   krb5-libs                       x86_64     1.21.3-3.xs9        build     912 k
+DEBUG util.py:461:   libacl                          x86_64     2.3.2-1.xs9         build      25 k
+DEBUG util.py:461:   libarchive                      x86_64     3.6.1-2.xs9         build     463 k
+DEBUG util.py:461:   libattr                         x86_64     2.5.1-2.xs9         build      18 k
+DEBUG util.py:461:   libb2                           x86_64     0.98.1-2.xs9        build      28 k
+DEBUG util.py:461:   libblkid                        x86_64     2.38.1-4.xs9        build     114 k
+DEBUG util.py:461:   libcap                          x86_64     2.48-2.xs9          build      73 k
+DEBUG util.py:461:   libcap-ng                       x86_64     0.8.3-2.xs9         build      34 k
+DEBUG util.py:461:   libcom_err                      x86_64     1.47.0-3.xs9        build      28 k
+DEBUG util.py:461:   libcurl                         x86_64     8.11.1-2.xs9        build     386 k
+DEBUG util.py:461:   libevent                        x86_64     2.1.12-2.xs9        build     302 k
+DEBUG util.py:461:   libfdisk                        x86_64     2.38.1-4.xs9        build     184 k
+DEBUG util.py:461:   libffi                          x86_64     3.4.4-2.xs9         build      40 k
+DEBUG util.py:461:   libgcc                          x86_64     12.4.0-2.xs9        build      97 k
+DEBUG util.py:461:   libgomp                         x86_64     12.4.0-2.xs9        build     296 k
+DEBUG util.py:461:   libidn2                         x86_64     2.3.4-4.xs9         build     186 k
+DEBUG util.py:461:   libmount                        x86_64     2.38.1-4.xs9        build     153 k
+DEBUG util.py:461:   libmpc                          x86_64     1.3.1-2.xs9         build      79 k
+DEBUG util.py:461:   libnghttp2                      x86_64     1.64.0-2.xs9        build      93 k
+DEBUG util.py:461:   libpkgconf                      x86_64     1.8.0-2.xs9         build      37 k
+DEBUG util.py:461:   libpwquality                    x86_64     1.4.5-2.xs9         build     120 k
+DEBUG util.py:461:   libseccomp                      x86_64     2.5.3-2.xs9         build      80 k
+DEBUG util.py:461:   libsigsegv                      x86_64     2.14-2.xs9          build      28 k
+DEBUG util.py:461:   libsmartcols                    x86_64     2.38.1-4.xs9        build      70 k
+DEBUG util.py:461:   libstdc++                       x86_64     12.4.0-2.xs9        build     928 k
+DEBUG util.py:461:   libstdc++-devel                 x86_64     12.4.0-2.xs9        build     3.0 M
+DEBUG util.py:461:   libtasn1                        x86_64     4.19.0-2.xs9        build      82 k
+DEBUG util.py:461:   libunistring                    x86_64     1.0-2.xs9           build     722 k
+DEBUG util.py:461:   libutempter                     x86_64     1.2.1-2.xs9         build      27 k
+DEBUG util.py:461:   libuuid                         x86_64     2.38.1-4.xs9        build      26 k
+DEBUG util.py:461:   libverto                        x86_64     0.3.2-2.xs9         build      21 k
+DEBUG util.py:461:   libxcrypt                       x86_64     4.4.36-3.xs9        build     133 k
+DEBUG util.py:461:   libxcrypt-devel                 x86_64     4.4.36-3.xs9        build      27 k
+DEBUG util.py:461:   libxml2                         x86_64     2.10.4-2.xs9        build     821 k
+DEBUG util.py:461:   libzstd                         x86_64     1.5.5-2.xs9         build     332 k
+DEBUG util.py:461:   lua-libs                        x86_64     5.4.4-3.xs9         build     147 k
+DEBUG util.py:461:   lz4-libs                        x86_64     1.10.0-1.xs9        build      79 k
+DEBUG util.py:461:   mpdecimal                       x86_64     2.5.1-2.xs9         build     100 k
+DEBUG util.py:461:   mpfr                            x86_64     4.1.1-3.xs9         build     713 k
+DEBUG util.py:461:   ncurses-base                    noarch     6.4-7.xs9           build      68 k
+DEBUG util.py:461:   ncurses-libs                    x86_64     6.4-7.xs9           build     385 k
+DEBUG util.py:461:   openldap                        x86_64     2.6.4-5.xs9         build     295 k
+DEBUG util.py:461:   openssl-libs                    x86_64     3.0.9-6.xs9         build     2.9 M
+DEBUG util.py:461:   p11-kit                         x86_64     0.24.1-3.xs9        build     393 k
+DEBUG util.py:461:   p11-kit-trust                   x86_64     0.24.1-3.xs9        build     144 k
+DEBUG util.py:461:   pam                             x86_64     1.7.0-2.xs9         build     413 k
+DEBUG util.py:461:   pam-libs                        x86_64     1.7.0-2.xs9         build      60 k
+DEBUG util.py:461:   pcre2                           x86_64     10.40-2.xs9         build     269 k
+DEBUG util.py:461:   pcre2-syntax                    noarch     10.40-2.xs9         build     146 k
+DEBUG util.py:461:   perl-srpm-macros                noarch     1-2.xs9             build     7.5 k
+DEBUG util.py:461:   pkgconf                         x86_64     1.8.0-2.xs9         build      43 k
+DEBUG util.py:461:   pkgconf-m4                      noarch     1.8.0-2.xs9         build      13 k
+DEBUG util.py:461:   pkgconf-pkg-config              x86_64     1.8.0-2.xs9         build     8.6 k
+DEBUG util.py:461:   popt                            x86_64     1.19-2.xs9          build      65 k
+DEBUG util.py:461:   python-rpm-macros               noarch     3.10-3.xs9          build      16 k
+DEBUG util.py:461:   python3                         x86_64     3.11.3-5.xs9        build      25 k
+DEBUG util.py:461:   python3-libs                    x86_64     3.11.3-5.xs9        build      12 M
+DEBUG util.py:461:   python3-packaging               noarch     21.3-2.xs9          build     100 k
+DEBUG util.py:461:   python3-pip-wheel               noarch     22.2.2-3.xs9        build     1.4 M
+DEBUG util.py:461:   python3-pyparsing               noarch     3.0.7-2.xs9         build     296 k
+DEBUG util.py:461:   python3-setuptools-wheel        noarch     65.5.1-3.xs9        build     721 k
+DEBUG util.py:461:   readline                        x86_64     8.2-2.xs9           build     238 k
+DEBUG util.py:461:   rpm                             x86_64     4.18.0-6.xs9        build     638 k
+DEBUG util.py:461:   rpm-build-libs                  x86_64     4.18.0-6.xs9        build      96 k
+DEBUG util.py:461:   rpm-libs                        x86_64     4.18.0-6.xs9        build     364 k
+DEBUG util.py:461:   setup                           noarch     2.8.77-1.xs9        build     155 k
+DEBUG util.py:461:   sqlite-libs                     x86_64     3.47.2-1.xs9        build     860 k
+DEBUG util.py:461:   systemd-libs                    x86_64     257.2-8.xs9         build     963 k
+DEBUG util.py:461:   systemd-pam                     x86_64     257.2-8.xs9         build     451 k
+DEBUG util.py:461:   systemd-rpm-macros              noarch     257.2-8.xs9         build      14 k
+DEBUG util.py:461:   tzdata                          noarch     2024a-2.xs9         build     421 k
+DEBUG util.py:461:   util-linux-core                 x86_64     2.38.1-4.xs9        build     503 k
+DEBUG util.py:461:   xenserver-config                noarch     9.0.9-1.xs9         build     7.7 k
+DEBUG util.py:461:   xenserver-config-rpm            noarch     9.0.9-1.xs9         build      75 k
+DEBUG util.py:461:   xenserver-release               x86_64     8.99.50-11.xs9      build     126 k
+DEBUG util.py:461:   xenserver-release-presets       x86_64     8.99.50-11.xs9      build      13 k
+DEBUG util.py:461:   xxhash-libs                     x86_64     0.8.2-2.xs9         build      41 k
+DEBUG util.py:461:   xz-libs                         x86_64     5.4.1-2.xs9         build     119 k
+DEBUG util.py:461:   zlib                            x86_64     1.2.12-3.xs9        build     104 k
+DEBUG util.py:461:   zstd                            x86_64     1.5.5-2.xs9         build     531 k
+DEBUG util.py:461:  Installing Groups:
+DEBUG util.py:461:   build                                                                         
+DEBUG util.py:461:  Transaction Summary
+DEBUG util.py:461:  ================================================================================
+DEBUG util.py:461:  Install  146 Packages
+DEBUG util.py:461:  Total download size: 150 M
+DEBUG util.py:461:  Installed size: 404 M
+DEBUG util.py:461:  Downloading Packages:
+DEBUG util.py:461:  --------------------------------------------------------------------------------
+DEBUG util.py:461:  Total                                           125 MB/s | 150 MB     00:01     
+DEBUG util.py:461:  Running transaction check
+DEBUG util.py:461:  Transaction check succeeded.
+DEBUG util.py:461:  Running transaction test
+DEBUG util.py:461:  Transaction test succeeded.
+DEBUG util.py:461:  Running transaction
+DEBUG util.py:461:  warning: /etc/hosts created as /etc/hosts.rpmnew
+DEBUG util.py:461:  Creating group 'input' with GID 104.
+DEBUG util.py:461:  Creating group 'kvm' with GID 36.
+DEBUG util.py:461:  Creating group 'render' with GID 105.
+DEBUG util.py:461:  Creating group 'sgx' with GID 106.
+DEBUG util.py:461:  Creating group 'systemd-journal' with GID 190.
+DEBUG util.py:461:  Creating group 'systemd-oom' with GID 999.
+DEBUG util.py:461:  Creating user 'systemd-oom' (systemd Userspace OOM Killer) with UID 999 and GID 999.
+DEBUG util.py:461:  Installed:
+DEBUG util.py:461:    annobin-docs-12.71-1.xs9.noarch                                               
+DEBUG util.py:461:    annobin-plugin-gcc-12.71-1.xs9.x86_64                                         
+DEBUG util.py:461:    audit-libs-3.1.2-2.xs9.x86_64                                                 
+DEBUG util.py:461:    basesystem-11-2.xs9.noarch                                                    
+DEBUG util.py:461:    bash-5.2.37-1.xs9.x86_64                                                      
+DEBUG util.py:461:    binutils-2.45-1.xs9.x86_64                                                    
+DEBUG util.py:461:    bzip2-1.0.8-3.xs9.x86_64                                                      
+DEBUG util.py:461:    bzip2-libs-1.0.8-3.xs9.x86_64                                                 
+DEBUG util.py:461:    ca-certificates-2024.2.72-3.xs9.noarch                                        
+DEBUG util.py:461:    coreutils-9.5-1.xs9.x86_64                                                    
+DEBUG util.py:461:    coreutils-common-9.5-1.xs9.x86_64                                             
+DEBUG util.py:461:    cpio-2.13-2.xs9.x86_64                                                        
+DEBUG util.py:461:    cpp-12.4.0-2.xs9.x86_64                                                       
+DEBUG util.py:461:    cracklib-2.9.11-3.xs9.x86_64                                                  
+DEBUG util.py:461:    crypto-policies-20241128-1.xs9.noarch                                         
+DEBUG util.py:461:    curl-8.11.1-2.xs9.x86_64                                                      
+DEBUG util.py:461:    dbus-common-1.14.10-3.xs9.noarch                                              
+DEBUG util.py:461:    dbus-daemon-1.14.10-3.xs9.x86_64                                              
+DEBUG util.py:461:    dbus-libs-1.14.10-3.xs9.x86_64                                                
+DEBUG util.py:461:    dbus-tools-1.14.10-3.xs9.x86_64                                               
+DEBUG util.py:461:    debugedit-5.2-1.xs9.x86_64                                                    
+DEBUG util.py:461:    diffutils-3.10-2.xs9.x86_64                                                   
+DEBUG util.py:461:    dwz-0.16-1.xs9.x86_64                                                         
+DEBUG util.py:461:    ed-1.19-2.xs9.x86_64                                                          
+DEBUG util.py:461:    elfutils-0.193-1.xs9.x86_64                                                   
+DEBUG util.py:461:    elfutils-default-yama-scope-0.193-1.xs9.noarch                                
+DEBUG util.py:461:    elfutils-libelf-0.193-1.xs9.x86_64                                            
+DEBUG util.py:461:    elfutils-libs-0.193-1.xs9.x86_64                                              
+DEBUG util.py:461:    expat-2.5.0-2.xs9.x86_64                                                      
+DEBUG util.py:461:    file-5.45-1.xs9.x86_64                                                        
+DEBUG util.py:461:    file-libs-5.45-1.xs9.x86_64                                                   
+DEBUG util.py:461:    filesystem-3.18-3.xs9.x86_64                                                  
+DEBUG util.py:461:    findutils-4.9.0-4.xs9.x86_64                                                  
+DEBUG util.py:461:    gawk-5.1.1-5.xs9.x86_64                                                       
+DEBUG util.py:461:    gcc-12.4.0-2.xs9.x86_64                                                       
+DEBUG util.py:461:    gcc-c++-12.4.0-2.xs9.x86_64                                                   
+DEBUG util.py:461:    gdb-15.2-2.xs9.x86_64                                                         
+DEBUG util.py:461:    gdbm-1.23-2.xs9.x86_64                                                        
+DEBUG util.py:461:    gdbm-libs-1.23-2.xs9.x86_64                                                   
+DEBUG util.py:461:    glibc-2.41-1.xs9.x86_64                                                       
+DEBUG util.py:461:    glibc-common-2.41-1.xs9.x86_64                                                
+DEBUG util.py:461:    glibc-devel-2.41-1.xs9.x86_64                                                 
+DEBUG util.py:461:    glibc-minimal-langpack-2.41-1.xs9.x86_64                                      
+DEBUG util.py:461:    gmp-6.2.1-3.xs9.x86_64                                                        
+DEBUG util.py:461:    go-srpm-macros-3.7.0-3.xs9.noarch                                             
+DEBUG util.py:461:    grep-3.11-1.xs9.x86_64                                                        
+DEBUG util.py:461:    gzip-1.14-1.xs9.x86_64                                                        
+DEBUG util.py:461:    jansson-2.14.1-1.xs9.x86_64                                                   
+DEBUG util.py:461:    kernel-headers-6.6.98-5.xs9.x86_64                                            
+DEBUG util.py:461:    keyutils-libs-1.6.3-2.xs9.x86_64                                              
+DEBUG util.py:461:    krb5-libs-1.21.3-3.xs9.x86_64                                                 
+DEBUG util.py:461:    libacl-2.3.2-1.xs9.x86_64                                                     
+DEBUG util.py:461:    libarchive-3.6.1-2.xs9.x86_64                                                 
+DEBUG util.py:461:    libattr-2.5.1-2.xs9.x86_64                                                    
+DEBUG util.py:461:    libb2-0.98.1-2.xs9.x86_64                                                     
+DEBUG util.py:461:    libblkid-2.38.1-4.xs9.x86_64                                                  
+DEBUG util.py:461:    libcap-2.48-2.xs9.x86_64                                                      
+DEBUG util.py:461:    libcap-ng-0.8.3-2.xs9.x86_64                                                  
+DEBUG util.py:461:    libcom_err-1.47.0-3.xs9.x86_64                                                
+DEBUG util.py:461:    libcurl-8.11.1-2.xs9.x86_64                                                   
+DEBUG util.py:461:    libevent-2.1.12-2.xs9.x86_64                                                  
+DEBUG util.py:461:    libfdisk-2.38.1-4.xs9.x86_64                                                  
+DEBUG util.py:461:    libffi-3.4.4-2.xs9.x86_64                                                     
+DEBUG util.py:461:    libgcc-12.4.0-2.xs9.x86_64                                                    
+DEBUG util.py:461:    libgomp-12.4.0-2.xs9.x86_64                                                   
+DEBUG util.py:461:    libidn2-2.3.4-4.xs9.x86_64                                                    
+DEBUG util.py:461:    libmount-2.38.1-4.xs9.x86_64                                                  
+DEBUG util.py:461:    libmpc-1.3.1-2.xs9.x86_64                                                     
+DEBUG util.py:461:    libnghttp2-1.64.0-2.xs9.x86_64                                                
+DEBUG util.py:461:    libpkgconf-1.8.0-2.xs9.x86_64                                                 
+DEBUG util.py:461:    libpwquality-1.4.5-2.xs9.x86_64                                               
+DEBUG util.py:461:    libseccomp-2.5.3-2.xs9.x86_64                                                 
+DEBUG util.py:461:    libsigsegv-2.14-2.xs9.x86_64                                                  
+DEBUG util.py:461:    libsmartcols-2.38.1-4.xs9.x86_64                                              
+DEBUG util.py:461:    libstdc++-12.4.0-2.xs9.x86_64                                                 
+DEBUG util.py:461:    libstdc++-devel-12.4.0-2.xs9.x86_64                                           
+DEBUG util.py:461:    libtasn1-4.19.0-2.xs9.x86_64                                                  
+DEBUG util.py:461:    libunistring-1.0-2.xs9.x86_64                                                 
+DEBUG util.py:461:    libutempter-1.2.1-2.xs9.x86_64                                                
+DEBUG util.py:461:    libuuid-2.38.1-4.xs9.x86_64                                                   
+DEBUG util.py:461:    libverto-0.3.2-2.xs9.x86_64                                                   
+DEBUG util.py:461:    libxcrypt-4.4.36-3.xs9.x86_64                                                 
+DEBUG util.py:461:    libxcrypt-devel-4.4.36-3.xs9.x86_64                                           
+DEBUG util.py:461:    libxml2-2.10.4-2.xs9.x86_64                                                   
+DEBUG util.py:461:    libzstd-1.5.5-2.xs9.x86_64                                                    
+DEBUG util.py:461:    lua-libs-5.4.4-3.xs9.x86_64                                                   
+DEBUG util.py:461:    lz4-libs-1.10.0-1.xs9.x86_64                                                  
+DEBUG util.py:461:    make-4.4-2.xs9.x86_64                                                         
+DEBUG util.py:461:    mpdecimal-2.5.1-2.xs9.x86_64                                                  
+DEBUG util.py:461:    mpfr-4.1.1-3.xs9.x86_64                                                       
+DEBUG util.py:461:    ncurses-base-6.4-7.xs9.noarch                                                 
+DEBUG util.py:461:    ncurses-libs-6.4-7.xs9.x86_64                                                 
+DEBUG util.py:461:    openldap-2.6.4-5.xs9.x86_64                                                   
+DEBUG util.py:461:    openssl-libs-3.0.9-6.xs9.x86_64                                               
+DEBUG util.py:461:    p11-kit-0.24.1-3.xs9.x86_64                                                   
+DEBUG util.py:461:    p11-kit-trust-0.24.1-3.xs9.x86_64                                             
+DEBUG util.py:461:    pam-1.7.0-2.xs9.x86_64                                                        
+DEBUG util.py:461:    pam-libs-1.7.0-2.xs9.x86_64                                                   
+DEBUG util.py:461:    patch-2.7.6-3.xs9.x86_64                                                      
+DEBUG util.py:461:    pcre2-10.40-2.xs9.x86_64                                                      
+DEBUG util.py:461:    pcre2-syntax-10.40-2.xs9.noarch                                               
+DEBUG util.py:461:    perl-srpm-macros-1-2.xs9.noarch                                               
+DEBUG util.py:461:    pkgconf-1.8.0-2.xs9.x86_64                                                    
+DEBUG util.py:461:    pkgconf-m4-1.8.0-2.xs9.noarch                                                 
+DEBUG util.py:461:    pkgconf-pkg-config-1.8.0-2.xs9.x86_64                                         
+DEBUG util.py:461:    popt-1.19-2.xs9.x86_64                                                        
+DEBUG util.py:461:    pyproject-rpm-macros-1.8.0-2.xs9.noarch                                       
+DEBUG util.py:461:    python-rpm-macros-3.10-3.xs9.noarch                                           
+DEBUG util.py:461:    python-srpm-macros-3.10-3.xs9.noarch                                          
+DEBUG util.py:461:    python3-3.11.3-5.xs9.x86_64                                                   
+DEBUG util.py:461:    python3-libs-3.11.3-5.xs9.x86_64                                              
+DEBUG util.py:461:    python3-packaging-21.3-2.xs9.noarch                                           
+DEBUG util.py:461:    python3-pip-wheel-22.2.2-3.xs9.noarch                                         
+DEBUG util.py:461:    python3-pyparsing-3.0.7-2.xs9.noarch                                          
+DEBUG util.py:461:    python3-rpm-generators-14-3.xs9.noarch                                        
+DEBUG util.py:461:    python3-rpm-macros-3.10-3.xs9.noarch                                          
+DEBUG util.py:461:    python3-setuptools-wheel-65.5.1-3.xs9.noarch                                  
+DEBUG util.py:461:    readline-8.2-2.xs9.x86_64                                                     
+DEBUG util.py:461:    rpm-4.18.0-6.xs9.x86_64                                                       
+DEBUG util.py:461:    rpm-build-4.18.0-6.xs9.x86_64                                                 
+DEBUG util.py:461:    rpm-build-libs-4.18.0-6.xs9.x86_64                                            
+DEBUG util.py:461:    rpm-libs-4.18.0-6.xs9.x86_64                                                  
+DEBUG util.py:461:    sed-4.9-1.xs9.x86_64                                                          
+DEBUG util.py:461:    setup-2.8.77-1.xs9.noarch                                                     
+DEBUG util.py:461:    shadow-utils-4.17.0-1.xs9.x86_64                                              
+DEBUG util.py:461:    sqlite-libs-3.47.2-1.xs9.x86_64                                               
+DEBUG util.py:461:    systemd-257.2-8.xs9.x86_64                                                    
+DEBUG util.py:461:    systemd-libs-257.2-8.xs9.x86_64                                               
+DEBUG util.py:461:    systemd-pam-257.2-8.xs9.x86_64                                                
+DEBUG util.py:461:    systemd-rpm-macros-257.2-8.xs9.noarch                                         
+DEBUG util.py:461:    tar-1.35-1.xs9.x86_64                                                         
+DEBUG util.py:461:    tzdata-2024a-2.xs9.noarch                                                     
+DEBUG util.py:461:    unzip-6.0-2.xs9.x86_64                                                        
+DEBUG util.py:461:    util-linux-2.38.1-4.xs9.x86_64                                                
+DEBUG util.py:461:    util-linux-core-2.38.1-4.xs9.x86_64                                           
+DEBUG util.py:461:    which-2.21-2.xs9.x86_64                                                       
+DEBUG util.py:461:    xenserver-config-9.0.9-1.xs9.noarch                                           
+DEBUG util.py:461:    xenserver-config-macros-9.0.9-1.xs9.noarch                                    
+DEBUG util.py:461:    xenserver-config-rpm-9.0.9-1.xs9.noarch                                       
+DEBUG util.py:461:    xenserver-release-8.99.50-11.xs9.x86_64                                       
+DEBUG util.py:461:    xenserver-release-presets-8.99.50-11.xs9.x86_64                               
+DEBUG util.py:461:    xxhash-libs-0.8.2-2.xs9.x86_64                                                
+DEBUG util.py:461:    xz-5.4.1-2.xs9.x86_64                                                         
+DEBUG util.py:461:    xz-libs-5.4.1-2.xs9.x86_64                                                    
+DEBUG util.py:461:    zlib-1.2.12-3.xs9.x86_64                                                      
+DEBUG util.py:461:    zstd-1.5.5-2.xs9.x86_64                                                       
+DEBUG util.py:461:  Complete!
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:183:  kill orphans in chroot /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/os-release
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/RPMS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/RPMS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SPECS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SPECS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SRPMS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SRPMS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SOURCES
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SOURCES
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILD
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILD
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILDROOT
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILDROOT
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/originals
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/originals
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['userdel', '-f', 'mockbuild', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:459:  userdel: user 'mockbuild' does not exist
+DEBUG util.py:608:  Child return code was: 6
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['groupdel', 'mock', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:459:  groupdel: group 'mock' does not exist
+DEBUG util.py:608:  Child return code was: 6
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['groupadd', 'mock', '-g', '135', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['useradd', 'mockbuild', '-o', '-u', '995', '-g', '135', '-N', '-d', '/builddir', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:459:  useradd warning: mockbuild's uid 995 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+DEBUG util.py:459:  useradd: warning: the home directory /builddir already exists.
+DEBUG util.py:459:  useradd: Not copying any file from skel directory into it.
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/.initialized
+DEBUG file_util.py:18:  ensuring that dir exists: /run/xssign
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/run/xssign', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/rpm', '-qa', '--root', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  libgcc-12.4.0-2.xs9.x86_64
+DEBUG util.py:461:  tzdata-2024a-2.xs9.noarch
+DEBUG util.py:461:  xenserver-release-presets-8.99.50-11.xs9.x86_64
+DEBUG util.py:461:  xenserver-config-9.0.9-1.xs9.noarch
+DEBUG util.py:461:  python3-setuptools-wheel-65.5.1-3.xs9.noarch
+DEBUG util.py:461:  pkgconf-m4-1.8.0-2.xs9.noarch
+DEBUG util.py:461:  perl-srpm-macros-1-2.xs9.noarch
+DEBUG util.py:461:  pcre2-syntax-10.40-2.xs9.noarch
+DEBUG util.py:461:  ncurses-base-6.4-7.xs9.noarch
+DEBUG util.py:461:  kernel-headers-6.6.98-5.xs9.x86_64
+DEBUG util.py:461:  coreutils-common-9.5-1.xs9.x86_64
+DEBUG util.py:461:  libuuid-2.38.1-4.xs9.x86_64
+DEBUG util.py:461:  python3-pip-wheel-22.2.2-3.xs9.noarch
+DEBUG util.py:461:  libtasn1-4.19.0-2.xs9.x86_64
+DEBUG util.py:461:  pcre2-10.40-2.xs9.x86_64
+DEBUG util.py:461:  python3-libs-3.11.3-5.xs9.x86_64
+DEBUG util.py:461:  findutils-4.9.0-4.xs9.x86_64
+DEBUG util.py:461:  p11-kit-0.24.1-3.xs9.x86_64
+DEBUG util.py:461:  sed-4.9-1.xs9.x86_64
+DEBUG util.py:461:  crypto-policies-20241128-1.xs9.noarch
+DEBUG util.py:461:  glibc-minimal-langpack-2.41-1.xs9.x86_64
+DEBUG util.py:461:  glibc-common-2.41-1.xs9.x86_64
+DEBUG util.py:461:  grep-3.11-1.xs9.x86_64
+DEBUG util.py:461:  coreutils-9.5-1.xs9.x86_64
+DEBUG util.py:461:  p11-kit-trust-0.24.1-3.xs9.x86_64
+DEBUG util.py:461:  bash-5.2.37-1.xs9.x86_64
+DEBUG util.py:461:  setup-2.8.77-1.xs9.noarch
+DEBUG util.py:461:  filesystem-3.18-3.xs9.x86_64
+DEBUG util.py:461:  basesystem-11-2.xs9.noarch
+DEBUG util.py:461:  glibc-2.41-1.xs9.x86_64
+DEBUG util.py:461:  zlib-1.2.12-3.xs9.x86_64
+DEBUG util.py:461:  xz-libs-5.4.1-2.xs9.x86_64
+DEBUG util.py:461:  bzip2-libs-1.0.8-3.xs9.x86_64
+DEBUG util.py:461:  gmp-6.2.1-3.xs9.x86_64
+DEBUG util.py:461:  libcap-2.48-2.xs9.x86_64
+DEBUG util.py:461:  libxcrypt-4.4.36-3.xs9.x86_64
+DEBUG util.py:461:  ncurses-libs-6.4-7.xs9.x86_64
+DEBUG util.py:461:  readline-8.2-2.xs9.x86_64
+DEBUG util.py:461:  libattr-2.5.1-2.xs9.x86_64
+DEBUG util.py:461:  libacl-2.3.2-1.xs9.x86_64
+DEBUG util.py:461:  python3-3.11.3-5.xs9.x86_64
+DEBUG util.py:461:  sqlite-libs-3.47.2-1.xs9.x86_64
+DEBUG util.py:461:  expat-2.5.0-2.xs9.x86_64
+DEBUG util.py:461:  gdbm-libs-1.23-2.xs9.x86_64
+DEBUG util.py:461:  libffi-3.4.4-2.xs9.x86_64
+DEBUG util.py:461:  libgomp-12.4.0-2.xs9.x86_64
+DEBUG util.py:461:  ca-certificates-2024.2.72-3.xs9.noarch
+DEBUG util.py:461:  openssl-libs-3.0.9-6.xs9.x86_64
+DEBUG util.py:461:  xenserver-release-8.99.50-11.xs9.x86_64
+DEBUG util.py:461:  libb2-0.98.1-2.xs9.x86_64
+DEBUG util.py:461:  mpdecimal-2.5.1-2.xs9.x86_64
+DEBUG util.py:461:  libzstd-1.5.5-2.xs9.x86_64
+DEBUG util.py:461:  elfutils-libelf-0.193-1.xs9.x86_64
+DEBUG util.py:461:  libstdc++-12.4.0-2.xs9.x86_64
+DEBUG util.py:461:  mpfr-4.1.1-3.xs9.x86_64
+DEBUG util.py:461:  systemd-libs-257.2-8.xs9.x86_64
+DEBUG util.py:461:  libblkid-2.38.1-4.xs9.x86_64
+DEBUG util.py:461:  popt-1.19-2.xs9.x86_64
+DEBUG util.py:461:  libmount-2.38.1-4.xs9.x86_64
+DEBUG util.py:461:  libmpc-1.3.1-2.xs9.x86_64
+DEBUG util.py:461:  libcap-ng-0.8.3-2.xs9.x86_64
+DEBUG util.py:461:  audit-libs-3.1.2-2.xs9.x86_64
+DEBUG util.py:461:  pam-libs-1.7.0-2.xs9.x86_64
+DEBUG util.py:461:  shadow-utils-4.17.0-1.xs9.x86_64
+DEBUG util.py:461:  libfdisk-2.38.1-4.xs9.x86_64
+DEBUG util.py:461:  dbus-libs-1.14.10-3.xs9.x86_64
+DEBUG util.py:461:  xz-5.4.1-2.xs9.x86_64
+DEBUG util.py:461:  file-libs-5.45-1.xs9.x86_64
+DEBUG util.py:461:  diffutils-3.10-2.xs9.x86_64
+DEBUG util.py:461:  gzip-1.14-1.xs9.x86_64
+DEBUG util.py:461:  libsmartcols-2.38.1-4.xs9.x86_64
+DEBUG util.py:461:  util-linux-core-2.38.1-4.xs9.x86_64
+DEBUG util.py:461:  lua-libs-5.4.4-3.xs9.x86_64
+DEBUG util.py:461:  lz4-libs-1.10.0-1.xs9.x86_64
+DEBUG util.py:461:  zstd-1.5.5-2.xs9.x86_64
+DEBUG util.py:461:  cracklib-2.9.11-3.xs9.x86_64
+DEBUG util.py:461:  libpwquality-1.4.5-2.xs9.x86_64
+DEBUG util.py:461:  file-5.45-1.xs9.x86_64
+DEBUG util.py:461:  dbus-tools-1.14.10-3.xs9.x86_64
+DEBUG util.py:461:  libutempter-1.2.1-2.xs9.x86_64
+DEBUG util.py:461:  cpp-12.4.0-2.xs9.x86_64
+DEBUG util.py:461:  libstdc++-devel-12.4.0-2.xs9.x86_64
+DEBUG util.py:461:  dwz-0.16-1.xs9.x86_64
+DEBUG util.py:461:  libevent-2.1.12-2.xs9.x86_64
+DEBUG util.py:461:  openldap-2.6.4-5.xs9.x86_64
+DEBUG util.py:461:  gdbm-1.23-2.xs9.x86_64
+DEBUG util.py:461:  pam-1.7.0-2.xs9.x86_64
+DEBUG util.py:461:  util-linux-2.38.1-4.xs9.x86_64
+DEBUG util.py:461:  python3-pyparsing-3.0.7-2.xs9.noarch
+DEBUG util.py:461:  python3-packaging-21.3-2.xs9.noarch
+DEBUG util.py:461:  tar-1.35-1.xs9.x86_64
+DEBUG util.py:461:  bzip2-1.0.8-3.xs9.x86_64
+DEBUG util.py:461:  unzip-6.0-2.xs9.x86_64
+DEBUG util.py:461:  libxml2-2.10.4-2.xs9.x86_64
+DEBUG util.py:461:  libarchive-3.6.1-2.xs9.x86_64
+DEBUG util.py:461:  cpio-2.13-2.xs9.x86_64
+DEBUG util.py:461:  ed-1.19-2.xs9.x86_64
+DEBUG util.py:461:  patch-2.7.6-3.xs9.x86_64
+DEBUG util.py:461:  jansson-2.14.1-1.xs9.x86_64
+DEBUG util.py:461:  binutils-2.45-1.xs9.x86_64
+DEBUG util.py:461:  keyutils-libs-1.6.3-2.xs9.x86_64
+DEBUG util.py:461:  libcom_err-1.47.0-3.xs9.x86_64
+DEBUG util.py:461:  libnghttp2-1.64.0-2.xs9.x86_64
+DEBUG util.py:461:  libpkgconf-1.8.0-2.xs9.x86_64
+DEBUG util.py:461:  pkgconf-1.8.0-2.xs9.x86_64
+DEBUG util.py:461:  pkgconf-pkg-config-1.8.0-2.xs9.x86_64
+DEBUG util.py:461:  glibc-devel-2.41-1.xs9.x86_64
+DEBUG util.py:461:  libxcrypt-devel-4.4.36-3.xs9.x86_64
+DEBUG util.py:461:  libseccomp-2.5.3-2.xs9.x86_64
+DEBUG util.py:461:  libsigsegv-2.14-2.xs9.x86_64
+DEBUG util.py:461:  gawk-5.1.1-5.xs9.x86_64
+DEBUG util.py:461:  libunistring-1.0-2.xs9.x86_64
+DEBUG util.py:461:  libidn2-2.3.4-4.xs9.x86_64
+DEBUG util.py:461:  libverto-0.3.2-2.xs9.x86_64
+DEBUG util.py:461:  krb5-libs-1.21.3-3.xs9.x86_64
+DEBUG util.py:461:  libcurl-8.11.1-2.xs9.x86_64
+DEBUG util.py:461:  curl-8.11.1-2.xs9.x86_64
+DEBUG util.py:461:  rpm-4.18.0-6.xs9.x86_64
+DEBUG util.py:461:  rpm-libs-4.18.0-6.xs9.x86_64
+DEBUG util.py:461:  make-4.4-2.xs9.x86_64
+DEBUG util.py:461:  gcc-12.4.0-2.xs9.x86_64
+DEBUG util.py:461:  xxhash-libs-0.8.2-2.xs9.x86_64
+DEBUG util.py:461:  gdb-15.2-2.xs9.x86_64
+DEBUG util.py:461:  dbus-common-1.14.10-3.xs9.noarch
+DEBUG util.py:461:  dbus-daemon-1.14.10-3.xs9.x86_64
+DEBUG util.py:461:  systemd-rpm-macros-257.2-8.xs9.noarch
+DEBUG util.py:461:  elfutils-libs-0.193-1.xs9.x86_64
+DEBUG util.py:461:  systemd-pam-257.2-8.xs9.x86_64
+DEBUG util.py:461:  systemd-257.2-8.xs9.x86_64
+DEBUG util.py:461:  elfutils-default-yama-scope-0.193-1.xs9.noarch
+DEBUG util.py:461:  elfutils-0.193-1.xs9.x86_64
+DEBUG util.py:461:  debugedit-5.2-1.xs9.x86_64
+DEBUG util.py:461:  rpm-build-libs-4.18.0-6.xs9.x86_64
+DEBUG util.py:461:  annobin-docs-12.71-1.xs9.noarch
+DEBUG util.py:461:  annobin-plugin-gcc-12.71-1.xs9.x86_64
+DEBUG util.py:461:  xenserver-config-rpm-9.0.9-1.xs9.noarch
+DEBUG util.py:461:  python-srpm-macros-3.10-3.xs9.noarch
+DEBUG util.py:461:  python-rpm-macros-3.10-3.xs9.noarch
+DEBUG util.py:461:  python3-rpm-macros-3.10-3.xs9.noarch
+DEBUG util.py:461:  pyproject-rpm-macros-1.8.0-2.xs9.noarch
+DEBUG util.py:461:  python3-rpm-generators-14-3.xs9.noarch
+DEBUG util.py:461:  go-srpm-macros-3.7.0-3.xs9.noarch
+DEBUG util.py:461:  rpm-build-4.18.0-6.xs9.x86_64
+DEBUG util.py:461:  xenserver-config-macros-9.0.9-1.xs9.noarch
+DEBUG util.py:461:  gcc-c++-12.4.0-2.xs9.x86_64
+DEBUG util.py:461:  which-2.21-2.xs9.x86_64
+DEBUG util.py:608:  Child return code was: 0
+INFO backend.py:228:  Installed packages:
+INFO backend.py:229:  annobin-docs-12.71-1.xs9.noarch
+annobin-plugin-gcc-12.71-1.xs9.x86_64
+audit-libs-3.1.2-2.xs9.x86_64
+basesystem-11-2.xs9.noarch
+bash-5.2.37-1.xs9.x86_64
+binutils-2.45-1.xs9.x86_64
+bzip2-1.0.8-3.xs9.x86_64
+bzip2-libs-1.0.8-3.xs9.x86_64
+ca-certificates-2024.2.72-3.xs9.noarch
+coreutils-9.5-1.xs9.x86_64
+coreutils-common-9.5-1.xs9.x86_64
+cpio-2.13-2.xs9.x86_64
+cpp-12.4.0-2.xs9.x86_64
+cracklib-2.9.11-3.xs9.x86_64
+crypto-policies-20241128-1.xs9.noarch
+curl-8.11.1-2.xs9.x86_64
+dbus-common-1.14.10-3.xs9.noarch
+dbus-daemon-1.14.10-3.xs9.x86_64
+dbus-libs-1.14.10-3.xs9.x86_64
+dbus-tools-1.14.10-3.xs9.x86_64
+debugedit-5.2-1.xs9.x86_64
+diffutils-3.10-2.xs9.x86_64
+dwz-0.16-1.xs9.x86_64
+ed-1.19-2.xs9.x86_64
+elfutils-0.193-1.xs9.x86_64
+elfutils-default-yama-scope-0.193-1.xs9.noarch
+elfutils-libelf-0.193-1.xs9.x86_64
+elfutils-libs-0.193-1.xs9.x86_64
+expat-2.5.0-2.xs9.x86_64
+file-5.45-1.xs9.x86_64
+file-libs-5.45-1.xs9.x86_64
+filesystem-3.18-3.xs9.x86_64
+findutils-4.9.0-4.xs9.x86_64
+gawk-5.1.1-5.xs9.x86_64
+gcc-12.4.0-2.xs9.x86_64
+gcc-c++-12.4.0-2.xs9.x86_64
+gdb-15.2-2.xs9.x86_64
+gdbm-1.23-2.xs9.x86_64
+gdbm-libs-1.23-2.xs9.x86_64
+glibc-2.41-1.xs9.x86_64
+glibc-common-2.41-1.xs9.x86_64
+glibc-devel-2.41-1.xs9.x86_64
+glibc-minimal-langpack-2.41-1.xs9.x86_64
+gmp-6.2.1-3.xs9.x86_64
+go-srpm-macros-3.7.0-3.xs9.noarch
+grep-3.11-1.xs9.x86_64
+gzip-1.14-1.xs9.x86_64
+jansson-2.14.1-1.xs9.x86_64
+kernel-headers-6.6.98-5.xs9.x86_64
+keyutils-libs-1.6.3-2.xs9.x86_64
+krb5-libs-1.21.3-3.xs9.x86_64
+libacl-2.3.2-1.xs9.x86_64
+libarchive-3.6.1-2.xs9.x86_64
+libattr-2.5.1-2.xs9.x86_64
+libb2-0.98.1-2.xs9.x86_64
+libblkid-2.38.1-4.xs9.x86_64
+libcap-2.48-2.xs9.x86_64
+libcap-ng-0.8.3-2.xs9.x86_64
+libcom_err-1.47.0-3.xs9.x86_64
+libcurl-8.11.1-2.xs9.x86_64
+libevent-2.1.12-2.xs9.x86_64
+libfdisk-2.38.1-4.xs9.x86_64
+libffi-3.4.4-2.xs9.x86_64
+libgcc-12.4.0-2.xs9.x86_64
+libgomp-12.4.0-2.xs9.x86_64
+libidn2-2.3.4-4.xs9.x86_64
+libmount-2.38.1-4.xs9.x86_64
+libmpc-1.3.1-2.xs9.x86_64
+libnghttp2-1.64.0-2.xs9.x86_64
+libpkgconf-1.8.0-2.xs9.x86_64
+libpwquality-1.4.5-2.xs9.x86_64
+libseccomp-2.5.3-2.xs9.x86_64
+libsigsegv-2.14-2.xs9.x86_64
+libsmartcols-2.38.1-4.xs9.x86_64
+libstdc++-12.4.0-2.xs9.x86_64
+libstdc++-devel-12.4.0-2.xs9.x86_64
+libtasn1-4.19.0-2.xs9.x86_64
+libunistring-1.0-2.xs9.x86_64
+libutempter-1.2.1-2.xs9.x86_64
+libuuid-2.38.1-4.xs9.x86_64
+libverto-0.3.2-2.xs9.x86_64
+libxcrypt-4.4.36-3.xs9.x86_64
+libxcrypt-devel-4.4.36-3.xs9.x86_64
+libxml2-2.10.4-2.xs9.x86_64
+libzstd-1.5.5-2.xs9.x86_64
+lua-libs-5.4.4-3.xs9.x86_64
+lz4-libs-1.10.0-1.xs9.x86_64
+make-4.4-2.xs9.x86_64
+mpdecimal-2.5.1-2.xs9.x86_64
+mpfr-4.1.1-3.xs9.x86_64
+ncurses-base-6.4-7.xs9.noarch
+ncurses-libs-6.4-7.xs9.x86_64
+openldap-2.6.4-5.xs9.x86_64
+openssl-libs-3.0.9-6.xs9.x86_64
+p11-kit-0.24.1-3.xs9.x86_64
+p11-kit-trust-0.24.1-3.xs9.x86_64
+pam-1.7.0-2.xs9.x86_64
+pam-libs-1.7.0-2.xs9.x86_64
+patch-2.7.6-3.xs9.x86_64
+pcre2-10.40-2.xs9.x86_64
+pcre2-syntax-10.40-2.xs9.noarch
+perl-srpm-macros-1-2.xs9.noarch
+pkgconf-1.8.0-2.xs9.x86_64
+pkgconf-m4-1.8.0-2.xs9.noarch
+pkgconf-pkg-config-1.8.0-2.xs9.x86_64
+popt-1.19-2.xs9.x86_64
+pyproject-rpm-macros-1.8.0-2.xs9.noarch
+python-rpm-macros-3.10-3.xs9.noarch
+python-srpm-macros-3.10-3.xs9.noarch
+python3-3.11.3-5.xs9.x86_64
+python3-libs-3.11.3-5.xs9.x86_64
+python3-packaging-21.3-2.xs9.noarch
+python3-pip-wheel-22.2.2-3.xs9.noarch
+python3-pyparsing-3.0.7-2.xs9.noarch
+python3-rpm-generators-14-3.xs9.noarch
+python3-rpm-macros-3.10-3.xs9.noarch
+python3-setuptools-wheel-65.5.1-3.xs9.noarch
+readline-8.2-2.xs9.x86_64
+rpm-4.18.0-6.xs9.x86_64
+rpm-build-4.18.0-6.xs9.x86_64
+rpm-build-libs-4.18.0-6.xs9.x86_64
+rpm-libs-4.18.0-6.xs9.x86_64
+sed-4.9-1.xs9.x86_64
+setup-2.8.77-1.xs9.noarch
+shadow-utils-4.17.0-1.xs9.x86_64
+sqlite-libs-3.47.2-1.xs9.x86_64
+systemd-257.2-8.xs9.x86_64
+systemd-libs-257.2-8.xs9.x86_64
+systemd-pam-257.2-8.xs9.x86_64
+systemd-rpm-macros-257.2-8.xs9.noarch
+tar-1.35-1.xs9.x86_64
+tzdata-2024a-2.xs9.noarch
+unzip-6.0-2.xs9.x86_64
+util-linux-2.38.1-4.xs9.x86_64
+util-linux-core-2.38.1-4.xs9.x86_64
+which-2.21-2.xs9.x86_64
+xenserver-config-9.0.9-1.xs9.noarch
+xenserver-config-macros-9.0.9-1.xs9.noarch
+xenserver-config-rpm-9.0.9-1.xs9.noarch
+xenserver-release-8.99.50-11.xs9.x86_64
+xenserver-release-presets-8.99.50-11.xs9.x86_64
+xxhash-libs-0.8.2-2.xs9.x86_64
+xz-5.4.1-2.xs9.x86_64
+xz-libs-5.4.1-2.xs9.x86_64
+zlib-1.2.12-3.xs9.x86_64
+zstd-1.5.5-2.xs9.x86_64
+DEBUG util.py:183:  kill orphans in chroot /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+INFO buildroot.py:667:  Mock Version: 6.3
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/result
+INFO buildroot.py:318:  calling preinit hooks
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/usr/bin/lscpu'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  Architecture:                            x86_64
+DEBUG util.py:461:  CPU op-mode(s):                          32-bit, 64-bit
+DEBUG util.py:461:  Address sizes:                           46 bits physical, 48 bits virtual
+DEBUG util.py:461:  Byte Order:                              Little Endian
+DEBUG util.py:461:  CPU(s):                                  32
+DEBUG util.py:461:  On-line CPU(s) list:                     0-31
+DEBUG util.py:461:  Vendor ID:                               GenuineIntel
+DEBUG util.py:461:  Model name:                              Intel(R) Xeon(R) Silver 4215R CPU @ 3.20GHz
+DEBUG util.py:461:  CPU family:                              6
+DEBUG util.py:461:  Model:                                   85
+DEBUG util.py:461:  Thread(s) per core:                      2
+DEBUG util.py:461:  Core(s) per socket:                      8
+DEBUG util.py:461:  Socket(s):                               2
+DEBUG util.py:461:  Stepping:                                7
+DEBUG util.py:461:  CPU(s) scaling MHz:                      44%
+DEBUG util.py:461:  CPU max MHz:                             4000.0000
+DEBUG util.py:461:  CPU min MHz:                             1000.0000
+DEBUG util.py:461:  BogoMIPS:                                6400.00
+DEBUG util.py:461:  Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+DEBUG util.py:461:  Virtualization:                          VT-x
+DEBUG util.py:461:  L1d cache:                               512 KiB (16 instances)
+DEBUG util.py:461:  L1i cache:                               512 KiB (16 instances)
+DEBUG util.py:461:  L2 cache:                                16 MiB (16 instances)
+DEBUG util.py:461:  L3 cache:                                22 MiB (2 instances)
+DEBUG util.py:461:  NUMA node(s):                            2
+DEBUG util.py:461:  NUMA node0 CPU(s):                       0-7,16-23
+DEBUG util.py:461:  NUMA node1 CPU(s):                       8-15,24-31
+DEBUG util.py:461:  Vulnerability Gather data sampling:      Mitigation; Microcode
+DEBUG util.py:461:  Vulnerability Indirect target selection: Mitigation; Aligned branch/return thunks
+DEBUG util.py:461:  Vulnerability Itlb multihit:             KVM: Mitigation: Split huge pages
+DEBUG util.py:461:  Vulnerability L1tf:                      Not affected
+DEBUG util.py:461:  Vulnerability Mds:                       Not affected
+DEBUG util.py:461:  Vulnerability Meltdown:                  Not affected
+DEBUG util.py:461:  Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
+DEBUG util.py:461:  Vulnerability Reg file data sampling:    Not affected
+DEBUG util.py:461:  Vulnerability Retbleed:                  Mitigation; Enhanced IBRS
+DEBUG util.py:461:  Vulnerability Spec rstack overflow:      Not affected
+DEBUG util.py:461:  Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+DEBUG util.py:461:  Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+DEBUG util.py:461:  Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+DEBUG util.py:461:  Vulnerability Srbds:                     Not affected
+DEBUG util.py:461:  Vulnerability Tsa:                       Not affected
+DEBUG util.py:461:  Vulnerability Tsx async abort:           Mitigation; TSX disabled
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/free', '--human'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:                 total        used        free      shared  buff/cache   available
+DEBUG util.py:461:  Mem:           124Gi       3.0Gi       113Gi       108Mi       9.3Gi       121Gi
+DEBUG util.py:461:  Swap:          8.0Gi          0B       8.0Gi
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/df', '-H', '-T', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root', '/var/cache/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  Filesystem                      Type  Size  Used Avail Use% Mounted on
+DEBUG util.py:461:  /dev/mapper/VolGroup-lv_var_lib xfs   602G   12G  590G   2% /var/lib
+DEBUG util.py:461:  /dev/mapper/VolGroup-lv_var     xfs   108G   15G   94G  14% /var
+DEBUG util.py:608:  Child return code was: 0
+DEBUG buildroot.py:723:  create skeleton dirs
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/dbus
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/log
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp/ccache
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf/vars
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum.repos.d
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum.repos.d
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/mapper
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/mapper
+DEBUG buildroot.py:867:  kernel version == 5.14.0-620.el9.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/log/yum.log
+DEBUG buildroot.py:332:  rootdir = /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG buildroot.py:333:  resultdir = /var/lib/mock/xs-foundations-xs9-build-95502-282678/result
+DEBUG package_manager.py:63:  searching for 'dnf4' package manager or alternatives
+INFO buildroot.py:181:  Package manager dnf4 detected and used (fallback)
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/mock
+DEBUG package_manager.py:404:  copying CA trust dir into chroot: /etc/pki/ca-trust => /etc/pki/ca-trust
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust with files from /etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./extracted
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/edk2
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/java
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/openssl
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem/directory-hash
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/blocklist
+DEBUG package_manager.py:404:  copying CA trust dir into chroot: /usr/share/pki/ca-trust-source => /usr/share/pki/ca-trust-source
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source with files from /usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./blocklist
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf
+DEBUG package_manager.py:691:  configure DNF vars
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['userdel', '-f', 'mockbuild', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['groupdel', 'mock', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['groupadd', 'mock', '-g', '135', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['useradd', 'mockbuild', '-o', '-u', '995', '-g', '135', '-N', '-d', '/builddir', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:459:  useradd warning: mockbuild's uid 995 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+DEBUG util.py:459:  useradd: warning: the home directory /builddir already exists.
+DEBUG util.py:459:  useradd: Not copying any file from skel directory into it.
+DEBUG util.py:459:  Creating mailbox file: File exists
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/.initialized
+DEBUG file_util.py:18:  ensuring that dir exists: /run/xssign
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/run/xssign', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+INFO backend.py:386:  Running in chroot: ['uname -r']
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:551:  Using nspawn with args ['--system-call-filter=clone3', '--bind=/tmp/mock-resolv.yby17e63:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:556:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '1ba626d6cd874bcab0faef21f57522d3', '-D', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root', '-a', '--system-call-filter=clone3', '--bind=/tmp/mock-resolv.yby17e63:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '--setenv=NETRC=/credentials/.netrc', '--setenv=XS_BUILDER=kojibuilder1', '--setenv=XSSIGN_SOCK=/bind/mount/xssign/xssign.sock', '--setenv=XSSIGN_SERVERSIDE_SHARED_DIR=/run/xssign/share/', '--setenv=XSSIGN_CLIENTSIDE_SHARED_DIR=/bind/mount/xssign/share/', '--resolv-conf=off', '/bin/sh', '-c', 'uname -r'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'NETRC': '/credentials/.netrc', 'XS_BUILDER': 'kojibuilder1', 'XSSIGN_SOCK': '/bind/mount/xssign/xssign.sock', 'XSSIGN_SERVERSIDE_SHARED_DIR': '/run/xssign/share/', 'XSSIGN_CLIENTSIDE_SHARED_DIR': '/bind/mount/xssign/share/', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:461:  5.14.0-620.el9.x86_64
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:183:  kill orphans in chroot /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+INFO buildroot.py:667:  Mock Version: 6.3
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/result
+INFO buildroot.py:318:  calling preinit hooks
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/usr/bin/lscpu'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  Architecture:                            x86_64
+DEBUG util.py:461:  CPU op-mode(s):                          32-bit, 64-bit
+DEBUG util.py:461:  Address sizes:                           46 bits physical, 48 bits virtual
+DEBUG util.py:461:  Byte Order:                              Little Endian
+DEBUG util.py:461:  CPU(s):                                  32
+DEBUG util.py:461:  On-line CPU(s) list:                     0-31
+DEBUG util.py:461:  Vendor ID:                               GenuineIntel
+DEBUG util.py:461:  Model name:                              Intel(R) Xeon(R) Silver 4215R CPU @ 3.20GHz
+DEBUG util.py:461:  CPU family:                              6
+DEBUG util.py:461:  Model:                                   85
+DEBUG util.py:461:  Thread(s) per core:                      2
+DEBUG util.py:461:  Core(s) per socket:                      8
+DEBUG util.py:461:  Socket(s):                               2
+DEBUG util.py:461:  Stepping:                                7
+DEBUG util.py:461:  CPU(s) scaling MHz:                      39%
+DEBUG util.py:461:  CPU max MHz:                             4000.0000
+DEBUG util.py:461:  CPU min MHz:                             1000.0000
+DEBUG util.py:461:  BogoMIPS:                                6400.00
+DEBUG util.py:461:  Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+DEBUG util.py:461:  Virtualization:                          VT-x
+DEBUG util.py:461:  L1d cache:                               512 KiB (16 instances)
+DEBUG util.py:461:  L1i cache:                               512 KiB (16 instances)
+DEBUG util.py:461:  L2 cache:                                16 MiB (16 instances)
+DEBUG util.py:461:  L3 cache:                                22 MiB (2 instances)
+DEBUG util.py:461:  NUMA node(s):                            2
+DEBUG util.py:461:  NUMA node0 CPU(s):                       0-7,16-23
+DEBUG util.py:461:  NUMA node1 CPU(s):                       8-15,24-31
+DEBUG util.py:461:  Vulnerability Gather data sampling:      Mitigation; Microcode
+DEBUG util.py:461:  Vulnerability Indirect target selection: Mitigation; Aligned branch/return thunks
+DEBUG util.py:461:  Vulnerability Itlb multihit:             KVM: Mitigation: Split huge pages
+DEBUG util.py:461:  Vulnerability L1tf:                      Not affected
+DEBUG util.py:461:  Vulnerability Mds:                       Not affected
+DEBUG util.py:461:  Vulnerability Meltdown:                  Not affected
+DEBUG util.py:461:  Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
+DEBUG util.py:461:  Vulnerability Reg file data sampling:    Not affected
+DEBUG util.py:461:  Vulnerability Retbleed:                  Mitigation; Enhanced IBRS
+DEBUG util.py:461:  Vulnerability Spec rstack overflow:      Not affected
+DEBUG util.py:461:  Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+DEBUG util.py:461:  Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+DEBUG util.py:461:  Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+DEBUG util.py:461:  Vulnerability Srbds:                     Not affected
+DEBUG util.py:461:  Vulnerability Tsa:                       Not affected
+DEBUG util.py:461:  Vulnerability Tsx async abort:           Mitigation; TSX disabled
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/free', '--human'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:                 total        used        free      shared  buff/cache   available
+DEBUG util.py:461:  Mem:           124Gi       3.0Gi       113Gi       108Mi       9.3Gi       121Gi
+DEBUG util.py:461:  Swap:          8.0Gi          0B       8.0Gi
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/df', '-H', '-T', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root', '/var/cache/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  Filesystem                      Type  Size  Used Avail Use% Mounted on
+DEBUG util.py:461:  /dev/mapper/VolGroup-lv_var_lib xfs   602G   12G  590G   2% /var/lib
+DEBUG util.py:461:  /dev/mapper/VolGroup-lv_var     xfs   108G   15G   94G  14% /var
+DEBUG util.py:608:  Child return code was: 0
+DEBUG buildroot.py:723:  create skeleton dirs
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/lib/dbus
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/log
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/rpm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/tmp/ccache
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/tmp
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf/vars
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum.repos.d
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum.repos.d
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/mapper
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/mapper
+DEBUG buildroot.py:867:  kernel version == 5.14.0-620.el9.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/log/yum.log
+DEBUG buildroot.py:332:  rootdir = /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG buildroot.py:333:  resultdir = /var/lib/mock/xs-foundations-xs9-build-95502-282678/result
+DEBUG package_manager.py:63:  searching for 'dnf4' package manager or alternatives
+INFO buildroot.py:181:  Package manager dnf4 detected and used (fallback)
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/mock
+DEBUG package_manager.py:404:  copying CA trust dir into chroot: /etc/pki/ca-trust => /etc/pki/ca-trust
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust with files from /etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./extracted
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/./source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/edk2
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/java
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/openssl
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/extracted/pem/directory-hash
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/pki/ca-trust/source/blocklist
+DEBUG package_manager.py:404:  copying CA trust dir into chroot: /usr/share/pki/ca-trust-source => /usr/share/pki/ca-trust-source
+DEBUG file_util.py:158:  Updating files in /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source with files from /usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./anchors
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/usr/share/pki/ca-trust-source/./blocklist
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/etc/dnf
+DEBUG package_manager.py:691:  configure DNF vars
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['rpm', '-q', 'rpm', 'rpm-sequoia', 'python3-dnf', 'python3-dnf-plugins-core', 'yum', 'yum-utils', 'dnf5', 'dnf5-plugins'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:461:  rpm-4.16.1.3-39.el9.x86_64
+DEBUG util.py:461:  package rpm-sequoia is not installed
+DEBUG util.py:461:  python3-dnf-4.14.0-31.el9.noarch
+DEBUG util.py:461:  python3-dnf-plugins-core-4.3.0-23.el9.noarch
+DEBUG util.py:461:  yum-4.14.0-31.el9.noarch
+DEBUG util.py:461:  yum-utils-4.3.0-23.el9.noarch
+DEBUG util.py:461:  package dnf5 is not installed
+DEBUG util.py:461:  package dnf5-plugins is not installed
+DEBUG util.py:608:  Child return code was: 3
+INFO package_manager.py:201:  Buildroot is handled by package management from host and used with --installroot:
+  rpm-4.16.1.3-39.el9.x86_64
+  python3-dnf-4.14.0-31.el9.noarch
+  python3-dnf-plugins-core-4.3.0-23.el9.noarch
+  yum-4.14.0-31.el9.noarch
+  yum-utils-4.3.0-23.el9.noarch
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/RPMS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/RPMS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SPECS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SPECS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SRPMS
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SRPMS
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/SOURCES
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILD
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILD
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILDROOT
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/BUILDROOT
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/originals
+DEBUG file_util.py:21:  created dir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir/build/originals
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/builddir
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['userdel', '-f', 'mockbuild', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['groupdel', 'mock', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['groupadd', 'mock', '-g', '135', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['useradd', 'mockbuild', '-o', '-u', '995', '-g', '135', '-N', '-d', '/builddir', '--prefix', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:459:  useradd warning: mockbuild's uid 995 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+DEBUG util.py:459:  useradd: warning: the home directory /builddir already exists.
+DEBUG util.py:459:  useradd: Not copying any file from skel directory into it.
+DEBUG util.py:459:  Creating mailbox file: File exists
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/.initialized
+DEBUG file_util.py:18:  ensuring that dir exists: /run/xssign
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/run/xssign', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:551:  Using nspawn with args ['--system-call-filter=clone3', '--bind=/tmp/mock-resolv.kg2vduu1:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:556:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd21af4603d414d75868dc47331bbc581', '-D', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root', '-a', '-u', 'mockbuild', '--system-call-filter=clone3', '--bind=/tmp/mock-resolv.kg2vduu1:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '--setenv=NETRC=/credentials/.netrc', '--setenv=XS_BUILDER=kojibuilder1', '--setenv=XSSIGN_SOCK=/bind/mount/xssign/xssign.sock', '--setenv=XSSIGN_SERVERSIDE_SHARED_DIR=/run/xssign/share/', '--setenv=XSSIGN_CLIENTSIDE_SHARED_DIR=/bind/mount/xssign/share/', '--resolv-conf=off', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-16.1-4.xs9.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'NETRC': '/credentials/.netrc', 'XS_BUILDER': 'kojibuilder1', 'XSSIGN_SOCK': '/bind/mount/xssign/xssign.sock', 'XSSIGN_SERVERSIDE_SHARED_DIR': '/run/xssign/share/', 'XSSIGN_CLIENTSIDE_SHARED_DIR': '/bind/mount/xssign/share/', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:461:  Updating / installing...
+DEBUG util.py:461:  shim-16.1-4.xs9                       ########################################
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:551:  Using nspawn with args ['--system-call-filter=clone3', '--bind=/tmp/mock-resolv.kg2vduu1:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:556:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a0611d2b6a0a4bc1a4746d7da6b69ebe', '-D', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root', '-a', '-u', 'mockbuild', '--system-call-filter=clone3', '--bind=/tmp/mock-resolv.kg2vduu1:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '--setenv=NETRC=/credentials/.netrc', '--setenv=XS_BUILDER=kojibuilder1', '--setenv=XSSIGN_SOCK=/bind/mount/xssign/xssign.sock', '--setenv=XSSIGN_SERVERSIDE_SHARED_DIR=/run/xssign/share/', '--setenv=XSSIGN_CLIENTSIDE_SHARED_DIR=/bind/mount/xssign/share/', '--resolv-conf=off', '/bin/rpm', '-qpl', '/builddir/build/originals/shim-16.1-4.xs9.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'NETRC': '/credentials/.netrc', 'XS_BUILDER': 'kojibuilder1', 'XSSIGN_SOCK': '/bind/mount/xssign/xssign.sock', 'XSSIGN_SERVERSIDE_SHARED_DIR': '/run/xssign/share/', 'XSSIGN_CLIENTSIDE_SHARED_DIR': '/bind/mount/xssign/share/', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:461:  0001-pe-Fix-PF-in-GRUB-after-memattrs-call.patch
+DEBUG util.py:461:  BOOTX64.CSV
+DEBUG util.py:461:  ignore-mm-missing.patch
+DEBUG util.py:461:  shim-16.1.tar.bz2
+DEBUG util.py:461:  shim.spec
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:551:  Using nspawn with args ['--system-call-filter=clone3', '--bind=/tmp/mock-resolv.kg2vduu1:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:556:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '7b82442033c443c39ca96a673fdb2c1d', '-D', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root', '-a', '--system-call-filter=clone3', '--bind=/tmp/mock-resolv.kg2vduu1:/etc/resolv.conf', '--bind=/dev/mapper/control', '--bind=/dev/fuse', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=en_US.UTF-8', '--setenv=NETRC=/credentials/.netrc', '--setenv=XS_BUILDER=kojibuilder1', '--setenv=XSSIGN_SOCK=/bind/mount/xssign/xssign.sock', '--setenv=XSSIGN_SERVERSIDE_SHARED_DIR=/run/xssign/share/', '--setenv=XSSIGN_CLIENTSIDE_SHARED_DIR=/bind/mount/xssign/share/', '--resolv-conf=off', '/bin/sh', '-c', 'case $(rpmbuild --help) in *--noclean*) exit 0; esac; exit 1'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'NETRC': '/credentials/.netrc', 'XS_BUILDER': 'kojibuilder1', 'XSSIGN_SOCK': '/bind/mount/xssign/xssign.sock', 'XSSIGN_SERVERSIDE_SHARED_DIR': '/run/xssign/share/', 'XSSIGN_CLIENTSIDE_SHARED_DIR': '/bind/mount/xssign/share/', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate,mode=0755', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.z_k_8crr', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys/fs/selinux
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG file_util.py:18:  ensuring that dir exists: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/installation-homedir
+DEBUG package_manager.py:295:  ['/usr/bin/dnf-3', 'builddep', '--installroot', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/', '--setopt=deltarpm=False', '--setopt=allow_vendor_change=yes', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root//builddir/build/SRPMS/shim-16.1-4.xs9.src.rpm']
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/usr/bin/dnf-3', 'builddep', '--installroot', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/', '--setopt=deltarpm=False', '--setopt=allow_vendor_change=yes', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root//builddir/build/SRPMS/shim-16.1-4.xs9.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'en_US.UTF-8', 'NETRC': '/credentials/.netrc', 'XS_BUILDER': 'kojibuilder1', 'XSSIGN_SOCK': '/bind/mount/xssign/xssign.sock', 'XSSIGN_SERVERSIDE_SHARED_DIR': '/run/xssign/share/', 'XSSIGN_CLIENTSIDE_SHARED_DIR': '/bind/mount/xssign/share/', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:459:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:461:  Dependencies resolved.
+DEBUG util.py:461:  ================================================================================
+DEBUG util.py:461:   Package                      Arch        Version              Repository  Size
+DEBUG util.py:461:  ================================================================================
+DEBUG util.py:461:  Installing:
+DEBUG util.py:461:   xssign-macros                noarch      1.3.2-1.xs9          build       17 k
+DEBUG util.py:461:  Installing dependencies:
+DEBUG util.py:461:   crypto-policies-scripts      noarch      20241128-1.xs9       build      123 k
+DEBUG util.py:461:   efivar-libs                  x86_64      39-1.xs9             build      131 k
+DEBUG util.py:461:   nspr                         x86_64      4.36.0-1.xs9         build      154 k
+DEBUG util.py:461:   nss                          x86_64      3.107.0-1.xs9        build      841 k
+DEBUG util.py:461:   nss-softokn                  x86_64      3.107.0-1.xs9        build      465 k
+DEBUG util.py:461:   nss-softokn-freebl           x86_64      3.107.0-1.xs9        build      386 k
+DEBUG util.py:461:   nss-sysinit                  x86_64      3.107.0-1.xs9        build       15 k
+DEBUG util.py:461:   nss-tools                    x86_64      3.107.0-1.xs9        build      551 k
+DEBUG util.py:461:   nss-util                     x86_64      3.107.0-1.xs9        build      100 k
+DEBUG util.py:461:   openssl                      x86_64      3.0.9-6.xs9          build      1.2 M
+DEBUG util.py:461:   pesign                       x86_64      116-11.xs9           build      135 k
+DEBUG util.py:461:   python3-xssign               noarch      1.3.2-1.xs9          build       53 k
+DEBUG util.py:461:   xs-secureboot-dev-certs      x86_64      1.0-2.xs9            build       67 k
+DEBUG util.py:461:  Transaction Summary
+DEBUG util.py:461:  ================================================================================
+DEBUG util.py:461:  Install  14 Packages
+DEBUG util.py:461:  Total download size: 4.2 M
+DEBUG util.py:461:  Installed size: 11 M
+DEBUG util.py:461:  Downloading Packages:
+DEBUG util.py:461:  --------------------------------------------------------------------------------
+DEBUG util.py:461:  Total                                            61 MB/s | 4.2 MB     00:00     
+DEBUG util.py:461:  Running transaction check
+DEBUG util.py:461:  Transaction check succeeded.
+DEBUG util.py:461:  Running transaction test
+DEBUG util.py:461:  Transaction test succeeded.
+DEBUG util.py:461:  Running transaction
+DEBUG util.py:461:  Installed:
+DEBUG util.py:461:    crypto-policies-scripts-20241128-1.xs9.noarch                                 
+DEBUG util.py:461:    efivar-libs-39-1.xs9.x86_64                                                   
+DEBUG util.py:461:    nspr-4.36.0-1.xs9.x86_64                                                      
+DEBUG util.py:461:    nss-3.107.0-1.xs9.x86_64                                                      
+DEBUG util.py:461:    nss-softokn-3.107.0-1.xs9.x86_64                                              
+DEBUG util.py:461:    nss-softokn-freebl-3.107.0-1.xs9.x86_64                                       
+DEBUG util.py:461:    nss-sysinit-3.107.0-1.xs9.x86_64                                              
+DEBUG util.py:461:    nss-tools-3.107.0-1.xs9.x86_64                                                
+DEBUG util.py:461:    nss-util-3.107.0-1.xs9.x86_64                                                 
+DEBUG util.py:461:    openssl-3.0.9-6.xs9.x86_64                                                    
+DEBUG util.py:461:    pesign-116-11.xs9.x86_64                                                      
+DEBUG util.py:461:    python3-xssign-1.3.2-1.xs9.noarch                                             
+DEBUG util.py:461:    xs-secureboot-dev-certs-1.0-2.xs9.x86_64                                      
+DEBUG util.py:461:    xssign-macros-1.3.2-1.xs9.noarch                                              
+DEBUG util.py:461:  Complete!
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:183:  kill orphans in chroot /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: rpm -qa --root '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell True
+DEBUG util.py:461:  libgcc-12.4.0-2.xs9.x86_64 1753796418 219082 a0f6f62a0a84da64e808e157c0027978 installed
+DEBUG util.py:461:  tzdata-2024a-2.xs9.noarch 1737140553 1049862 e7f5b895901943d6e4b7039447b2e8f5 installed
+DEBUG util.py:461:  xenserver-release-presets-8.99.50-11.xs9.x86_64 1754054647 4436 854b8b83c161af7370aac2184c94514c installed
+DEBUG util.py:461:  xenserver-config-9.0.9-1.xs9.noarch 1756459113 0 4f8e043845e2a174ac9c85cdfce88ee2 installed
+DEBUG util.py:461:  python3-setuptools-wheel-65.5.1-3.xs9.noarch 1737065769 880928 4b64d810eea7da0bc0c0cde8c47ff431 installed
+DEBUG util.py:461:  pkgconf-m4-1.8.0-2.xs9.noarch 1737107476 14187 fac0eef2c25fa11a739e008097caaae0 installed
+DEBUG util.py:461:  perl-srpm-macros-1-2.xs9.noarch 1737063467 859 8989d636bebe26e0b1d1fc5f4c4bb307 installed
+DEBUG util.py:461:  pcre2-syntax-10.40-2.xs9.noarch 1737140519 234324 710309f847718fbbd020ce47d0a02bf1 installed
+DEBUG util.py:461:  ncurses-base-6.4-7.xs9.noarch 1737140806 323448 b7180e466a316e491ca37de7da0361c8 installed
+DEBUG util.py:461:  kernel-headers-6.6.98-5.xs9.x86_64 1758786940 6364640 24dc2897e8b7e6b7339a32eedecf0bbe installed
+DEBUG util.py:461:  coreutils-common-9.5-1.xs9.x86_64 1737110950 11694893 3a8fc1acccfb2a7d732e0be4cb6371fd installed
+DEBUG util.py:461:  libuuid-2.38.1-4.xs9.x86_64 1737140614 38469 b3fb7cb8e8afedfa4c082e496d9504f0 installed
+DEBUG util.py:461:  python3-pip-wheel-22.2.2-3.xs9.noarch 1737140512 1533793 4c4b5f4b0a655de7f177633a84770cc8 installed
+DEBUG util.py:461:  libtasn1-4.19.0-2.xs9.x86_64 1737140369 180108 7f1f50b0ac079c05ea3db56b60b6bdc7 installed
+DEBUG util.py:461:  pcre2-10.40-2.xs9.x86_64 1737140519 645474 9fc87a78e246291074805f1c3889d4c6 installed
+DEBUG util.py:461:  python3-libs-3.11.3-5.xs9.x86_64 1737140540 45660705 46649d8a5331cbfb6b22c7bb2977b1de installed
+DEBUG util.py:461:  findutils-4.9.0-4.xs9.x86_64 1737111523 1532151 9c837988cf5a9f3acfb9525c60842c02 installed
+DEBUG util.py:461:  p11-kit-0.24.1-3.xs9.x86_64 1737140402 1518659 2b53a2e69e84f7dcf8e20b66f47b0599 installed
+DEBUG util.py:461:  sed-4.9-1.xs9.x86_64 1737140486 874419 43739e7bfe27531586d94ab3b26a6363 installed
+DEBUG util.py:461:  crypto-policies-20241128-1.xs9.noarch 1737460892 106996 e6f909f740054bdeb6ffaeaf9303ec40 installed
+DEBUG util.py:461:  glibc-minimal-langpack-2.41-1.xs9.x86_64 1741237331 0 54f9a053bcab5ae5563154e9a4d083fc installed
+DEBUG util.py:461:  glibc-common-2.41-1.xs9.x86_64 1741237331 1086759 3a991cb7219ed0f92752df11316b0a40 installed
+DEBUG util.py:461:  grep-3.11-1.xs9.x86_64 1737140165 1034530 fe18ed547d881c80ed7b69bfe225d0b1 installed
+DEBUG util.py:461:  coreutils-9.5-1.xs9.x86_64 1737110950 5625910 768f6b62ea13dd85c660c0ae0a6532da installed
+DEBUG util.py:461:  p11-kit-trust-0.24.1-3.xs9.x86_64 1737140402 388022 ec54f9b6ec86472fa32a11a450ff0abb installed
+DEBUG util.py:461:  bash-5.2.37-1.xs9.x86_64 1737140490 8516621 b3065b6464580099f0f966df30c72899 installed
+DEBUG util.py:461:  setup-2.8.77-1.xs9.noarch 1740972373 698300 aa17d0555965fad35b3d3ae26a589aac installed
+DEBUG util.py:461:  filesystem-3.18-3.xs9.x86_64 1740758989 106 44348d826621fbccc0d628b4616174d1 installed
+DEBUG util.py:461:  basesystem-11-2.xs9.noarch 1737140153 0 5fa73ed3d3d620df95c60abe710a0875 installed
+DEBUG util.py:461:  glibc-2.41-1.xs9.x86_64 1741237331 6379280 2425b4a2e2ec50e0c2517d6578444afe installed
+DEBUG util.py:461:  zlib-1.2.12-3.xs9.x86_64 1737140587 207084 dda2829550737bc9ccf69a41e6765fb4 installed
+DEBUG util.py:461:  xz-libs-5.4.1-2.xs9.x86_64 1737140584 210717 9fed09482d1374cec78c6be62d4946b1 installed
+DEBUG util.py:461:  bzip2-libs-1.0.8-3.xs9.x86_64 1737062070 82780 b5fbf3f5e23c0d90cb35ac738adce3e8 installed
+DEBUG util.py:461:  gmp-6.2.1-3.xs9.x86_64 1737140200 814160 609cc6d43dfa4a37db0f7a0ef1b287dd installed
+DEBUG util.py:461:  libcap-2.48-2.xs9.x86_64 1737140269 189215 252ec28c6c333da5f69779538404965c installed
+DEBUG util.py:461:  libxcrypt-4.4.36-3.xs9.x86_64 1737140412 273050 42b3717e0eb3872eb7b8588aefe42e36 installed
+DEBUG util.py:461:  ncurses-libs-6.4-7.xs9.x86_64 1737140806 996319 60b9eda81d0a54ee990f82d1732aec99 installed
+DEBUG util.py:461:  readline-8.2-2.xs9.x86_64 1737140482 497325 bcf70a0c983dea749a62c37629b9b029 installed
+DEBUG util.py:461:  libattr-2.5.1-2.xs9.x86_64 1737062079 29317 7aa1dc20c1e89282a3b8819887f69c88 installed
+DEBUG util.py:461:  libacl-2.3.2-1.xs9.x86_64 1737110988 41082 35d698d2d3c5dd8128a146bda60d0ddf installed
+DEBUG util.py:461:  python3-3.11.3-5.xs9.x86_64 1737140540 33530 8a106b6bf2ea9c55e85e24408a5c55a4 installed
+DEBUG util.py:461:  sqlite-libs-3.47.2-1.xs9.x86_64 1737460115 1548310 6c557f3ac74d9922f479967f40872d32 installed
+DEBUG util.py:461:  expat-2.5.0-2.xs9.x86_64 1737111595 277976 76db46ae5de1343d4e1d873730e20f22 installed
+DEBUG util.py:461:  gdbm-libs-0:1.23-2.xs9.x86_64 1737062060 132994 17328d72d39635aa3a2a8a2ad50bd7d1 installed
+DEBUG util.py:461:  libffi-3.4.4-2.xs9.x86_64 1737140269 71272 fa884f23dbd1bda69ca93d8a0bbc114d installed
+DEBUG util.py:461:  libgomp-12.4.0-2.xs9.x86_64 1753796418 447018 00ac557567c2edf43e70c49be7a13103 installed
+DEBUG util.py:461:  ca-certificates-2024.2.72-3.xs9.noarch 1737141827 1336302 1e628ee87e9dff2ecbae8a23d062c266 installed
+DEBUG util.py:461:  openssl-libs-3.0.9-6.xs9.x86_64 1737062072 6326720 51c3d9b9ecaed5780683d937295561e6 installed
+DEBUG util.py:461:  xenserver-release-8.99.50-11.xs9.x86_64 1754054647 487360 f4dba858b33703ecd1aa60b07fd0edd9 installed
+DEBUG util.py:461:  libb2-0.98.1-2.xs9.x86_64 1737140329 47294 4d3d8854137619659682e11b105ce54c installed
+DEBUG util.py:461:  mpdecimal-2.5.1-2.xs9.x86_64 1737141519 206207 ce76d7a0734d027842272be6a6a64fe2 installed
+DEBUG util.py:461:  libzstd-1.5.5-2.xs9.x86_64 1737140623 745974 41ea95c67a8299f0fc76e3e6dc582dd6 installed
+DEBUG util.py:461:  elfutils-libelf-0.193-1.xs9.x86_64 1756295977 1225592 d7af498df013e25d9b2d86b6fff6b3ad installed
+DEBUG util.py:461:  libstdc++-12.4.0-2.xs9.x86_64 1753796418 2688541 14bb968d02ab99dfaf6c7a999948de97 installed
+DEBUG util.py:461:  mpfr-4.1.1-3.xs9.x86_64 1737140415 2073797 b370f46b5952e11148fb6c171e1e830a installed
+DEBUG util.py:461:  systemd-libs-257.2-8.xs9.x86_64 1755571128 2314214 7dade2d75d97072eb1a762131a93a7cc installed
+DEBUG util.py:461:  libblkid-2.38.1-4.xs9.x86_64 1737140614 222577 3197a937c75ce4d29598c09a17df61da installed
+DEBUG util.py:461:  popt-1.19-2.xs9.x86_64 1737141567 140210 9cd35ab38f079ad833aa6acfa2a0eb46 installed
+DEBUG util.py:461:  libmount-2.38.1-4.xs9.x86_64 1737140614 315741 cd88c1228fab656f4761063eb26b9922 installed
+DEBUG util.py:461:  libmpc-1.3.1-2.xs9.x86_64 1737067317 169044 62d417b9862157348412bcd57c3554aa installed
+DEBUG util.py:461:  libcap-ng-0.8.3-2.xs9.x86_64 1737140271 74364 651e296c996423e4f6e8ef01733b0773 installed
+DEBUG util.py:461:  audit-libs-3.1.2-2.xs9.x86_64 1737140111 319417 51eb0cf5698379c9ee71fc98a2d3cdf6 installed
+DEBUG util.py:461:  pam-libs-1.7.0-2.xs9.x86_64 1751336274 142647 2c38a8d8443789f6a117855d9097ae35 installed
+DEBUG util.py:461:  shadow-utils-4.17.0-1.xs9.x86_64 1737110812 3600540 2d3a2576db96bf9ff265404ac8d60183 installed
+DEBUG util.py:461:  libfdisk-2.38.1-4.xs9.x86_64 1737140614 377595 90b706c94ab1599f1f32fa168784ec7c installed
+DEBUG util.py:461:  dbus-libs-0:1.14.10-3.xs9.x86_64 1737140115 378291 fd9dcea80940e87b73efd109cd2bb6f5 installed
+DEBUG util.py:461:  xz-5.4.1-2.xs9.x86_64 1737140584 1147830 1cc03949497b3c056fbd80898094e16d installed
+DEBUG util.py:461:  file-libs-5.45-1.xs9.x86_64 1737111588 10407006 646bf1c64dcb30fcb2fd5e106b2a329f installed
+DEBUG util.py:461:  diffutils-3.10-2.xs9.x86_64 1737111545 1635100 4696963c4bb286fccbce6fd810bdd1aa installed
+DEBUG util.py:461:  gzip-1.14-1.xs9.x86_64 1744961012 407550 b1d4b87133ed4a23859af1edde952854 installed
+DEBUG util.py:461:  libsmartcols-2.38.1-4.xs9.x86_64 1737140614 140251 cb12dd11a8b522c94cd0f02753572111 installed
+DEBUG util.py:461:  util-linux-core-2.38.1-4.xs9.x86_64 1737140614 1381653 ed65e39d5c9240bddb89e6cd8fa06e1f installed
+DEBUG util.py:461:  lua-libs-5.4.4-3.xs9.x86_64 1737140273 280171 d40d92f7f92a65c8279ceff82ef4f09a installed
+DEBUG util.py:461:  lz4-libs-1.10.0-1.xs9.x86_64 1737140320 145397 2d9c44e25e7eb034e8d2a9661606e505 installed
+DEBUG util.py:461:  zstd-1.5.5-2.xs9.x86_64 1737140623 1625701 aff991d5c4f10b4605a8f1c7e560e33e installed
+DEBUG util.py:461:  cracklib-2.9.11-3.xs9.x86_64 1737110997 244531 8c41db6da950990fa0b3e107b91e8861 installed
+DEBUG util.py:461:  libpwquality-1.4.5-2.xs9.x86_64 1737140360 427874 592d78bd709c16c84b9731c602d1d237 installed
+DEBUG util.py:461:  file-5.45-1.xs9.x86_64 1737111588 106047 bffd80fc0cc1798bdb14b8e08f54bc3e installed
+DEBUG util.py:461:  dbus-tools-0:1.14.10-3.xs9.x86_64 1737140115 130362 53757bf90333324b054e22341046da89 installed
+DEBUG util.py:461:  libutempter-1.2.1-2.xs9.x86_64 1737140353 59033 80cbca0c0bf0c7a15a9bf8ad4f0d7e88 installed
+DEBUG util.py:461:  cpp-12.4.0-2.xs9.x86_64 1753796418 32556165 e07404765e35af0d90029b7b706be47b installed
+DEBUG util.py:461:  libstdc++-devel-12.4.0-2.xs9.x86_64 1753796418 13868297 65c8f06474f5f5d1d62ee554e6f933df installed
+DEBUG util.py:461:  dwz-0.16-1.xs9.x86_64 1756296000 302788 8d5e70ae5f92a837dbc46c908fdddd0c installed
+DEBUG util.py:461:  libevent-2.1.12-2.xs9.x86_64 1737140343 923242 ab356bceb3cf5885b4e7734b03c4fff9 installed
+DEBUG util.py:461:  openldap-2.6.4-5.xs9.x86_64 1737140407 648587 dc48428af163bb25045d6938e3d1a010 installed
+DEBUG util.py:461:  gdbm-0:1.23-2.xs9.x86_64 1737062060 477143 8ae751e705cd4cc65fb990a52a448278 installed
+DEBUG util.py:461:  pam-1.7.0-2.xs9.x86_64 1751336274 1675794 31d04c1ef72c14819477711c0cf26682 installed
+DEBUG util.py:461:  util-linux-2.38.1-4.xs9.x86_64 1737140614 11603382 e461ce12d132c472e458d0a42d70ee49 installed
+DEBUG util.py:461:  python3-pyparsing-3.0.7-2.xs9.noarch 1737067386 1023745 f9322f6c9b8e7823adcd16342a9211cc installed
+DEBUG util.py:461:  python3-packaging-21.3-2.xs9.noarch 1737064933 308612 b98b5f1283de80629e0b025d1b2d7992 installed
+DEBUG util.py:461:  tar-1.35-1.xs9.x86_64 1737140767 3081803 3bc69f91c4793a179fe4e3002857b9a8 installed
+DEBUG util.py:461:  bzip2-1.0.8-3.xs9.x86_64 1737062070 97965 b3d7745f6b479e55ce1ddda3c65d63ad installed
+DEBUG util.py:461:  unzip-6.0-2.xs9.x86_64 1737140542 404643 8014a65b1a210401708060600caa1f7e installed
+DEBUG util.py:461:  libxml2-2.10.4-2.xs9.x86_64 1737140320 1796944 4fada95d5f12cb787c484e42dbb454fa installed
+DEBUG util.py:461:  libarchive-3.6.1-2.xs9.x86_64 1737140325 919528 16b2b5716025dcd9fed04288aad24d79 installed
+DEBUG util.py:461:  cpio-2.13-2.xs9.x86_64 1737110999 1083818 a154a494a7e9fd6ba1f27bd8cf6bb327 installed
+DEBUG util.py:461:  ed-1.19-2.xs9.x86_64 1737111543 143614 0580945b632130c00f3c38906169ef10 installed
+DEBUG util.py:461:  patch-2.7.6-3.xs9.x86_64 1737140444 249050 5732d241bbde089d82b3339c4340fa6d installed
+DEBUG util.py:461:  jansson-2.14.1-1.xs9.x86_64 1751457901 121641 e3a9b98daf7658e1803aa091929a2e07 installed
+DEBUG util.py:461:  binutils-2.45-1.xs9.x86_64 1756378640 25713509 35cb8de0bd60ff1977feead538c3f5f9 installed
+DEBUG util.py:461:  keyutils-libs-1.6.3-2.xs9.x86_64 1737140309 59891 edc5c10cb8578e88d94a17cd70c1cbf6 installed
+DEBUG util.py:461:  libcom_err-1.47.0-3.xs9.x86_64 1737111584 68857 8476563946111b4d948406a8a00b7831 installed
+DEBUG util.py:461:  libnghttp2-1.64.0-2.xs9.x86_64 1739790919 179460 13bb430078a99b81491411fb26c6d2e1 installed
+DEBUG util.py:461:  libpkgconf-1.8.0-2.xs9.x86_64 1737107476 71873 8ef1af365a162baa25f56ee36f85abd7 installed
+DEBUG util.py:461:  pkgconf-1.8.0-2.xs9.x86_64 1737107476 77339 23295aa2cd9393651d96239944c95015 installed
+DEBUG util.py:461:  pkgconf-pkg-config-1.8.0-2.xs9.x86_64 1737107476 992 f21d7eefecbfe233bba2d3e3ec9c6418 installed
+DEBUG util.py:461:  glibc-devel-2.41-1.xs9.x86_64 1741237331 2366665 a003ff9306404c5e64c5cb7d4f640766 installed
+DEBUG util.py:461:  libxcrypt-devel-4.4.36-3.xs9.x86_64 1737140412 30995 c04dcfa766cf080d4d7435d073837aca installed
+DEBUG util.py:461:  libseccomp-2.5.3-2.xs9.x86_64 1737140384 175476 1d3a62762f24f1a1a92fb70cfd9bfb81 installed
+DEBUG util.py:461:  libsigsegv-2.14-2.xs9.x86_64 1737140355 54521 748ae4e732b48f368a73c4472ab88e4a installed
+DEBUG util.py:461:  gawk-5.1.1-5.xs9.x86_64 1737111496 1686689 032070b1264c1784fc758e0668b8cd07 installed
+DEBUG util.py:461:  libunistring-1.0-2.xs9.x86_64 1737140311 1841203 0249f463922b927f686c2385a56852ce installed
+DEBUG util.py:461:  libidn2-2.3.4-4.xs9.x86_64 1737140300 499121 38d5c7a250e94d7bd25c00137bc4c76f installed
+DEBUG util.py:461:  libverto-0.3.2-2.xs9.x86_64 1737140309 30301 642a23c15c887a99503f9b452514466f installed
+DEBUG util.py:461:  krb5-libs-1.21.3-3.xs9.x86_64 1752569943 2417799 214d8bed825db61b0ba7b80a631bf916 installed
+DEBUG util.py:461:  libcurl-8.11.1-2.xs9.x86_64 1737136175 763870 a7799650eb3525172f0d82d9080c06cf installed
+DEBUG util.py:461:  curl-8.11.1-2.xs9.x86_64 1737136175 462132 5e4c632c345390c9c8b2c3b10f02a309 installed
+DEBUG util.py:461:  rpm-4.18.0-6.xs9.x86_64 1737061887 2970141 25222af6d5ff1feb7f6e60437921e8c8 installed
+DEBUG util.py:461:  rpm-libs-4.18.0-6.xs9.x86_64 1737061887 757524 8c3bc530041a280271e44717254f1aed installed
+DEBUG util.py:461:  make-0:4.4-2.xs9.x86_64 1737107468 1837983 5693e71d7ca439d8cabb6680088352dc installed
+DEBUG util.py:461:  gcc-12.4.0-2.xs9.x86_64 1753796418 92658800 7a1b3388c6f8b87f7742a4a247935c7f installed
+DEBUG util.py:461:  xxhash-libs-0.8.2-2.xs9.x86_64 1737140581 90798 925f6bc392f46d3e68e2ab21885ebb54 installed
+DEBUG util.py:461:  gdb-15.2-2.xs9.x86_64 1737140206 14119103 7612f6173c051924790839be30ccf376 installed
+DEBUG util.py:461:  dbus-common-0:1.14.10-3.xs9.noarch 1737140115 11504 744846cc18568df21ddda3cc4344b109 installed
+DEBUG util.py:461:  dbus-daemon-0:1.14.10-3.xs9.x86_64 1737140115 546029 13bf9b31147e839bbb3628502372e511 installed
+DEBUG util.py:461:  systemd-rpm-macros-257.2-8.xs9.noarch 1755571128 12463 4ebe07b7cf888d2effec42fbfbe3f570 installed
+DEBUG util.py:461:  elfutils-libs-0.193-1.xs9.x86_64 1756295977 700981 cb4af714757a9130745712ff04671897 installed
+DEBUG util.py:461:  systemd-pam-257.2-8.xs9.x86_64 1755571128 1133860 921a63cabf2c019130f80d5a67200cd4 installed
+DEBUG util.py:461:  systemd-257.2-8.xs9.x86_64 1755571128 16826563 ad8cc8de4c4a55a27fc54ac68af14322 installed
+DEBUG util.py:461:  elfutils-default-yama-scope-0.193-1.xs9.noarch 1756295977 1810 65819f54e5e4171f4598150c7b85c303 installed
+DEBUG util.py:461:  elfutils-0.193-1.xs9.x86_64 1756295977 2767509 73678e12fd7f0de6518bcb38189f64a9 installed
+DEBUG util.py:461:  debugedit-5.2-1.xs9.x86_64 1756296225 208726 23736c7ddf5ba2ec2377b1a3a4c10431 installed
+DEBUG util.py:461:  rpm-build-libs-4.18.0-6.xs9.x86_64 1737061887 194558 e1fc05c661a2521e29359ad382484543 installed
+DEBUG util.py:461:  annobin-docs-12.71-1.xs9.noarch 1756456224 100209 f85b35c474e256b9b9c47497016d8294 installed
+DEBUG util.py:461:  annobin-plugin-gcc-12.71-1.xs9.x86_64 1756456224 1006013 bd907f61ac28afaa38677f77802fb27d installed
+DEBUG util.py:461:  xenserver-config-rpm-9.0.9-1.xs9.noarch 1756459113 196927 b4da91fac9c218a68b94646577b60cdb installed
+DEBUG util.py:461:  python-srpm-macros-3.10-3.xs9.noarch 1737064920 51114 7f705dddedbac6040a04a56f9a69ddf0 installed
+DEBUG util.py:461:  python-rpm-macros-3.10-3.xs9.noarch 1737064920 21872 196e075f1ecebd38e820f394ecb4a735 installed
+DEBUG util.py:461:  python3-rpm-macros-3.10-3.xs9.noarch 1737064920 6647 3e2e01fd7e7cf98aaf341a83dc83d267 installed
+DEBUG util.py:461:  pyproject-rpm-macros-1.8.0-2.xs9.noarch 1737067448 94012 e483e4ad332572cec24a7a09e294162e installed
+DEBUG util.py:461:  python3-rpm-generators-14-3.xs9.noarch 1737064884 84257 c25e2e7d10a21cb2a8ed7a8b2e975e5f installed
+DEBUG util.py:461:  go-srpm-macros-3.7.0-3.xs9.noarch 1754061019 63272 35a9ea0616f1929faca4d6baf4ba8952 installed
+DEBUG util.py:461:  rpm-build-4.18.0-6.xs9.x86_64 1737061887 177035 9aa307be246f28bb34bd122ed426d390 installed
+DEBUG util.py:461:  xenserver-config-macros-9.0.9-1.xs9.noarch 1756459113 2753 59b4ea727291988396b55e837ecf623b installed
+DEBUG util.py:461:  gcc-c++-12.4.0-2.xs9.x86_64 1753796418 35651344 fe84c649d9cc3ba54edbb571510f5cf5 installed
+DEBUG util.py:461:  which-2.21-2.xs9.x86_64 1737067510 82108 35f97ef0be3b8422efc11099c439b2d4 installed
+DEBUG util.py:461:  nspr-4.36.0-1.xs9.x86_64 1737107925 318224 f9a6a3559897b24a9206be058001fa68 installed
+DEBUG util.py:461:  nss-util-3.107.0-1.xs9.x86_64 1737107925 235472 ba2aee1917e28b8d5758576ed0cb8042 installed
+DEBUG util.py:461:  nss-softokn-freebl-3.107.0-1.xs9.x86_64 1737107925 860622 7f642943730ab44d7384bb3227cb6590 installed
+DEBUG util.py:461:  nss-softokn-3.107.0-1.xs9.x86_64 1737107925 1898881 2d5bfbe4f3f87346512f349e7e1ce409 installed
+DEBUG util.py:461:  xs-secureboot-dev-certs-1.0-2.xs9.x86_64 1742489706 225435 ff57035bb6ed7820fff6bd159f6e5135 installed
+DEBUG util.py:461:  openssl-3.0.9-6.xs9.x86_64 1737062072 1785441 9e223de16e17e1b8b3c1caf52dfc3416 installed
+DEBUG util.py:461:  efivar-libs-39-1.xs9.x86_64 1737475093 348538 653483e13ffae6f1d4a8c262dc036d96 installed
+DEBUG util.py:461:  crypto-policies-scripts-20241128-1.xs9.noarch 1737460892 416141 dc3ab7e23ac465437813e1796885fab4 installed
+DEBUG util.py:461:  nss-sysinit-3.107.0-1.xs9.x86_64 1737107925 21344 c681cb811af698a4020d2cac35ea4eba installed
+DEBUG util.py:461:  nss-3.107.0-1.xs9.x86_64 1737107925 2007975 768b4360b2e53a267eb961003fe5d2bb installed
+DEBUG util.py:461:  nss-tools-3.107.0-1.xs9.x86_64 1737107925 2450457 ae73f642d45221ad03c60a361de86807 installed
+DEBUG util.py:461:  pesign-116-11.xs9.x86_64 1748340947 361904 01517c528dcef9dab22b1ada954692ab installed
+DEBUG util.py:461:  python3-xssign-1.3.2-1.xs9.noarch 1759929892 138266 b7d1658f91bbecf36c7b058259e67f29 installed
+DEBUG util.py:461:  xssign-macros-1.3.2-1.xs9.noarch 1759929892 14110 0247e53e30938a73424be51e388bae51 installed
+DEBUG util.py:608:  Child return code was: 0
+DEBUG util.py:634:  child environment: None
+DEBUG backend.py:816:  Copying packages to result dir
+DEBUG util.py:183:  kill orphans in chroot /var/lib/mock/xs-foundations-xs9-build-95502-282678/root
+DEBUG util.py:634:  child environment: None
+DEBUG util.py:556:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/bind/mount/xssign/'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:608:  Child return code was: 0

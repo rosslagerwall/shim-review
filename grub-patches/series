@@ -1,0 +1,22 @@
+# Apply on top of 0e367796c0f41cb77562aa30282d85d0d2b3480a
+
+#
+# Patches from grub-devel
+#
+00045-efi-disallow-fallback-to-legacy-Linux-loader-when-shim.patch
+
+# Patches for upstream
+#
+# Xen boot
+0001-efi-Add-EFI-string-comparison-function.patch
+0002-efi-Add-filesystem-definitions.patch
+0003-loader-efi-linux-Make-device-handle-and-path-settabl.patch
+0004-loader-efi-linux-Allocate-device-path-on-the-stack.patch
+0005-loader-efi-linux-Set-device-path-when-loading-via-sh.patch
+0006-sb-Verify-Xen-hypevisor-and-don-t-verify-modules.patch
+0007-Add-xen_boot-module-for-x86_64_efi.patch
+
+#
+# Local patches
+#
+wait-before-drain.patch

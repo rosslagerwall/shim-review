@@ -1,0 +1,66 @@
+From e2fbcd23f2b46990d963b7b87a3a9a3a437a9e99 Mon Sep 17 00:00:00 2001
+From: Ross Lagerwall <ross.lagerwall@citrix.com>
+Date: Fri, 15 Aug 2025 14:53:27 +0100
+Subject: [PATCH] pe: Fix PF in GRUB after memattrs call
+
+The call to update_mem_attrs() takes an aligned pointer within an
+allocated region but passes the entire size of the allocated region. The
+result is that Shim may remove execute permission from some pages
+belonging to GRUB causing a page fault upon returning from the LoadImage
+call.
+
+There are two cases:
+* When loading the image, set the memory attributes for exactly what we
+  intend to load.
+* When freeing the image, be cautious and apply the edk2 workaround for
+  the entire allocated region.
+
+Fixes: 226fee25ffcb ("PE Loader: support and require NX")
+Fixes: 2f64bb9203e4 ("loader-protocol: add workaround for EDK2 2025.02 page fault on FreePages")
+Signed-off-by: Ross Lagerwall <ross.lagerwall@citrix.com>
+---
+ loader-proto.c | 7 ++-----
+ pe.c           | 2 +-
+ 2 files changed, 3 insertions(+), 6 deletions(-)
+
+diff --git a/loader-proto.c b/loader-proto.c
+index 85014efce293..3f6dfd50bbb7 100644
+--- a/loader-proto.c
++++ b/loader-proto.c
+@@ -186,8 +186,6 @@ out:
+ static void
+ free_pages_alloc_image(SHIM_LOADED_IMAGE *image)
+ {
+-	char *buffer;
+-
+ 	if (!image || !image->alloc_address || !image->alloc_pages)
+ 		return;
+ 
+@@ -196,9 +194,8 @@ free_pages_alloc_image(SHIM_LOADED_IMAGE *image)
+ 	 * are set on a loaded image, this will cause a page fault when it
+ 	 * is freed. Ensure W+ X- are set instead before freeing. */
+ 
+-	buffer = (void *)ALIGN_VALUE((unsigned long)image->alloc_address, image->alloc_alignment);
+-	update_mem_attrs((uintptr_t)buffer, image->alloc_pages * PAGE_SIZE, MEM_ATTR_R|MEM_ATTR_W,
+-			 MEM_ATTR_X);
++	update_mem_attrs((uintptr_t)image->alloc_address,
++			 image->alloc_pages * PAGE_SIZE, MEM_ATTR_R|MEM_ATTR_W, MEM_ATTR_X);
+ 
+ 	BS->FreePages(image->alloc_address, image->alloc_pages);
+ 	image->alloc_address = 0;
+diff --git a/pe.c b/pe.c
+index 22ad0fe48448..d5ad49946664 100644
+--- a/pe.c
++++ b/pe.c
+@@ -717,7 +717,7 @@ handle_image (void *data, unsigned int datasize,
+ 	dprint(L"Loading 0x%llx bytes at 0x%llx\n",
+ 	       (unsigned long long)context.ImageSize,
+ 	       (unsigned long long)(uintptr_t)buffer);
+-	update_mem_attrs((uintptr_t)buffer, alloc_size, MEM_ATTR_R|MEM_ATTR_W,
++	update_mem_attrs((uintptr_t)buffer, context.ImageSize, MEM_ATTR_R|MEM_ATTR_W,
+ 			 MEM_ATTR_X);
+ 
+ 	CopyMem(buffer, data, context.SizeOfHeaders);
+-- 
+2.50.1
+

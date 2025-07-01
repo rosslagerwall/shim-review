@@ -1,0 +1,586 @@
+2025-10-09T10:29:04+0000 INFO --- logging initialized ---
+2025-10-09T10:29:04+0000 DDEBUG timer: config: 7 ms
+2025-10-09T10:29:04+0000 WARNING No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+2025-10-09T10:29:04+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2025-10-09T10:29:04+0000 DEBUG DNF version: 4.14.0
+2025-10-09T10:29:04+0000 DDEBUG Command: dnf-3 --installroot /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/ --setopt=deltarpm=False --setopt=allow_vendor_change=yes --allowerasing --disableplugin=local --disableplugin=spacewalk --disableplugin=versionlock install @build --setopt=tsflags=nocontexts 
+2025-10-09T10:29:04+0000 DDEBUG Installroot: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/
+2025-10-09T10:29:04+0000 DDEBUG Releasever: None
+2025-10-09T10:29:04+0000 DEBUG cachedir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/yum
+2025-10-09T10:29:04+0000 DDEBUG Base command: install
+2025-10-09T10:29:04+0000 DDEBUG Extra commands: ['--installroot', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/', '--setopt=deltarpm=False', '--setopt=allow_vendor_change=yes', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'install', '@build', '--setopt=tsflags=nocontexts']
+2025-10-09T10:29:04+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 9; generic; Linux.x86_64)'
+2025-10-09T10:29:04+0000 DEBUG repo: downloading from remote: build
+2025-10-09T10:29:05+0000 DEBUG build: using metadata from Wed 08 Oct 2025 01:57:10 PM UTC.
+2025-10-09T10:29:05+0000 INFO Last metadata expiration check: 0:00:01 ago on Thu 09 Oct 2025 10:29:04 AM UTC.
+2025-10-09T10:29:05+0000 DDEBUG timer: sack setup: 769 ms
+2025-10-09T10:29:05+0000 DEBUG Completion plugin: Generating completion cache...
+2025-10-09T10:29:05+0000 DDEBUG Getting group metadata
+2025-10-09T10:29:05+0000 DDEBUG Adding group file from repository: build
+2025-10-09T10:29:05+0000 DDEBUG timer: loading comps: 1 ms
+2025-10-09T10:29:05+0000 DEBUG Adding packages from group 'build': {<libcomps.Package object 'python3-rpm-generators' at 0x7fc4543ad170>, <libcomps.Package object 'gawk' at 0x7fc4543ad030>, <libcomps.Package object 'gcc-c++' at 0x7fc4543ad070>, <libcomps.Package object 'shadow-utils' at 0x7fc4543ad1f0>, <libcomps.Package object 'diffutils' at 0x7fc45477af90>, <libcomps.Package object 'gzip' at 0x7fc4543ad0d0>, <libcomps.Package object 'util-linux' at 0x7fc4543ad290>, <libcomps.Package object 'systemd' at 0x7fc4543ad230>, <libcomps.Package object 'go-srpm-macros' at 0x7fc4543ad090>, <libcomps.Package object 'make' at 0x7fc4543ad0f0>, <libcomps.Package object 'xenserver-config-macros' at 0x7fc4543ad2d0>, <libcomps.Package object 'bash' at 0x7fc45477ae70>, <libcomps.Package object 'findutils' at 0x7fc45477af50>, <libcomps.Package object 'system-rpm-config' at 0x7fc4543ad210>, <libcomps.Package object 'sed' at 0x7fc4543ad1d0>, <libcomps.Package object 'python-srpm-macros' at 0x7fc4543ad150>, <libcomps.Package object 'rpm-build' at 0x7fc4543ad1b0>, <libcomps.Package object 'grep' at 0x7fc4543ad0b0>, <libcomps.Package object 'python3-rpm-macros' at 0x7fc4543ad190>, <libcomps.Package object 'pyproject-rpm-macros' at 0x7fc4543ad130>, <libcomps.Package object 'which' at 0x7fc4543ad2b0>, <libcomps.Package object 'patch' at 0x7fc4543ad110>, <libcomps.Package object 'tar' at 0x7fc4543ad250>, <libcomps.Package object 'gcc' at 0x7fc4543ad050>, <libcomps.Package object 'unzip' at 0x7fc4543ad270>, <libcomps.Package object 'cpio' at 0x7fc45477aed0>, <libcomps.Package object 'coreutils' at 0x7fc45477a670>, <libcomps.Package object 'xz' at 0x7fc4543ad2f0>, <libcomps.Package object 'bzip2' at 0x7fc45477aeb0>}
+2025-10-09T10:29:05+0000 WARNING No match for group package "system-rpm-config"
+2025-10-09T10:29:05+0000 DEBUG --> Starting dependency resolution
+2025-10-09T10:29:05+0000 DEBUG ---> Package annobin-docs.noarch 12.71-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package annobin-plugin-gcc.x86_64 12.71-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package audit-libs.x86_64 3.1.2-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package basesystem.noarch 11-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package bash.x86_64 5.2.37-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package binutils.x86_64 2.45-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package bzip2.x86_64 1.0.8-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package bzip2-libs.x86_64 1.0.8-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package ca-certificates.noarch 2024.2.72-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package coreutils.x86_64 9.5-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package coreutils-common.x86_64 9.5-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package cpio.x86_64 2.13-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package cpp.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package cracklib.x86_64 2.9.11-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package crypto-policies.noarch 20241128-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package curl.x86_64 8.11.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package dbus-common.noarch 1.14.10-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package dbus-daemon.x86_64 1.14.10-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package dbus-libs.x86_64 1.14.10-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package dbus-tools.x86_64 1.14.10-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package debugedit.x86_64 5.2-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package diffutils.x86_64 3.10-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package dwz.x86_64 0.16-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package ed.x86_64 1.19-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package elfutils.x86_64 0.193-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package elfutils-default-yama-scope.noarch 0.193-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package elfutils-libelf.x86_64 0.193-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package elfutils-libs.x86_64 0.193-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package expat.x86_64 2.5.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package file.x86_64 5.45-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package file-libs.x86_64 5.45-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package filesystem.x86_64 3.18-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package findutils.x86_64 4.9.0-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gawk.x86_64 5.1.1-5.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gcc.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gcc-c++.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gdb.x86_64 15.2-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gdbm.x86_64 1.23-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gdbm-libs.x86_64 1.23-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package glibc.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package glibc-common.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package glibc-devel.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package glibc-minimal-langpack.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gmp.x86_64 6.2.1-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package go-srpm-macros.noarch 3.7.0-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package grep.x86_64 3.11-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package gzip.x86_64 1.14-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package jansson.x86_64 2.14.1-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package kernel-headers.x86_64 6.6.98-5.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package keyutils-libs.x86_64 1.6.3-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package krb5-libs.x86_64 1.21.3-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libacl.x86_64 2.3.2-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libarchive.x86_64 3.6.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libattr.x86_64 2.5.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libb2.x86_64 0.98.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libblkid.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libcap.x86_64 2.48-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libcap-ng.x86_64 0.8.3-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libcom_err.x86_64 1.47.0-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libcurl.x86_64 8.11.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libevent.x86_64 2.1.12-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libfdisk.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libffi.x86_64 3.4.4-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libgcc.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libgomp.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libidn2.x86_64 2.3.4-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libmount.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libmpc.x86_64 1.3.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libnghttp2.x86_64 1.64.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libpkgconf.x86_64 1.8.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libpwquality.x86_64 1.4.5-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libseccomp.x86_64 2.5.3-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libsigsegv.x86_64 2.14-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libsmartcols.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libstdc++.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libstdc++-devel.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libtasn1.x86_64 4.19.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libunistring.x86_64 1.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libutempter.x86_64 1.2.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libuuid.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libverto.x86_64 0.3.2-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libxcrypt.x86_64 4.4.36-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libxcrypt-devel.x86_64 4.4.36-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libxml2.x86_64 2.10.4-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package libzstd.x86_64 1.5.5-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package lua-libs.x86_64 5.4.4-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package lz4-libs.x86_64 1.10.0-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package make.x86_64 4.4-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package mpdecimal.x86_64 2.5.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package mpfr.x86_64 4.1.1-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package ncurses-base.noarch 6.4-7.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package ncurses-libs.x86_64 6.4-7.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package openldap.x86_64 2.6.4-5.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package openssl-libs.x86_64 3.0.9-6.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package p11-kit.x86_64 0.24.1-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package p11-kit-trust.x86_64 0.24.1-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pam.x86_64 1.7.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pam-libs.x86_64 1.7.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package patch.x86_64 2.7.6-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pcre2.x86_64 10.40-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pcre2-syntax.noarch 10.40-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package perl-srpm-macros.noarch 1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pkgconf.x86_64 1.8.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pkgconf-m4.noarch 1.8.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pkgconf-pkg-config.x86_64 1.8.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package popt.x86_64 1.19-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package pyproject-rpm-macros.noarch 1.8.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python-rpm-macros.noarch 3.10-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python-srpm-macros.noarch 3.10-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3.x86_64 3.11.3-5.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3-libs.x86_64 3.11.3-5.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3-packaging.noarch 21.3-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3-pip-wheel.noarch 22.2.2-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3-pyparsing.noarch 3.0.7-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3-rpm-generators.noarch 14-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3-rpm-macros.noarch 3.10-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package python3-setuptools-wheel.noarch 65.5.1-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package readline.x86_64 8.2-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package rpm.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package rpm-build.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package rpm-build-libs.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package rpm-libs.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package sed.x86_64 4.9-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package setup.noarch 2.8.77-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package shadow-utils.x86_64 4.17.0-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package sqlite-libs.x86_64 3.47.2-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package systemd.x86_64 257.2-8.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package systemd-libs.x86_64 257.2-8.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package systemd-pam.x86_64 257.2-8.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package systemd-rpm-macros.noarch 257.2-8.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package tar.x86_64 1.35-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package tzdata.noarch 2024a-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package unzip.x86_64 6.0-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package util-linux.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package util-linux-core.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package which.x86_64 2.21-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xenserver-config.noarch 9.0.9-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xenserver-config-macros.noarch 9.0.9-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xenserver-config-rpm.noarch 9.0.9-1.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xenserver-release.x86_64 8.99.50-11.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xenserver-release-presets.x86_64 8.99.50-11.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xxhash-libs.x86_64 0.8.2-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xz.x86_64 5.4.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package xz-libs.x86_64 5.4.1-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package zlib.x86_64 1.2.12-3.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG ---> Package zstd.x86_64 1.5.5-2.xs9 will be installed
+2025-10-09T10:29:05+0000 DEBUG --> Finished dependency resolution
+2025-10-09T10:29:05+0000 DDEBUG timer: depsolve: 10 ms
+2025-10-09T10:29:05+0000 INFO Dependencies resolved.
+2025-10-09T10:29:05+0000 INFO ================================================================================
+ Package                         Arch       Version             Repo       Size
+================================================================================
+Installing group/module packages:
+ bash                            x86_64     5.2.37-1.xs9        build     2.2 M
+ bzip2                           x86_64     1.0.8-3.xs9         build      56 k
+ coreutils                       x86_64     9.5-1.xs9           build     1.3 M
+ cpio                            x86_64     2.13-2.xs9          build     310 k
+ diffutils                       x86_64     3.10-2.xs9          build     443 k
+ findutils                       x86_64     4.9.0-4.xs9         build     536 k
+ gawk                            x86_64     5.1.1-5.xs9         build     1.1 M
+ gcc                             x86_64     12.4.0-2.xs9        build      39 M
+ gcc-c++                         x86_64     12.4.0-2.xs9        build      15 M
+ go-srpm-macros                  noarch     3.7.0-3.xs9         build      28 k
+ grep                            x86_64     3.11-1.xs9          build     327 k
+ gzip                            x86_64     1.14-1.xs9          build     190 k
+ make                            x86_64     4.4-2.xs9           build     645 k
+ patch                           x86_64     2.7.6-3.xs9         build     139 k
+ pyproject-rpm-macros            noarch     1.8.0-2.xs9         build      38 k
+ python-srpm-macros              noarch     3.10-3.xs9          build      22 k
+ python3-rpm-generators          noarch     14-3.xs9            build      31 k
+ python3-rpm-macros              noarch     3.10-3.xs9          build      10 k
+ rpm-build                       x86_64     4.18.0-6.xs9        build      66 k
+ sed                             x86_64     4.9-1.xs9           build     338 k
+ shadow-utils                    x86_64     4.17.0-1.xs9        build     831 k
+ systemd                         x86_64     257.2-8.xs9         build     5.8 M
+ tar                             x86_64     1.35-1.xs9          build     980 k
+ unzip                           x86_64     6.0-2.xs9           build     205 k
+ util-linux                      x86_64     2.38.1-4.xs9        build     3.1 M
+ which                           x86_64     2.21-2.xs9          build      44 k
+ xenserver-config-macros         noarch     9.0.9-1.xs9         build      10 k
+ xz                              x86_64     5.4.1-2.xs9         build     438 k
+Installing dependencies:
+ annobin-docs                    noarch     12.71-1.xs9         build      81 k
+ annobin-plugin-gcc              x86_64     12.71-1.xs9         build     962 k
+ audit-libs                      x86_64     3.1.2-2.xs9         build     135 k
+ basesystem                      noarch     11-2.xs9            build     6.5 k
+ binutils                        x86_64     2.45-1.xs9          build     7.6 M
+ bzip2-libs                      x86_64     1.0.8-3.xs9         build      44 k
+ ca-certificates                 noarch     2024.2.72-3.xs9     build     510 k
+ coreutils-common                x86_64     9.5-1.xs9           build     2.7 M
+ cpp                             x86_64     12.4.0-2.xs9        build      13 M
+ cracklib                        x86_64     2.9.11-3.xs9        build      89 k
+ crypto-policies                 noarch     20241128-1.xs9      build      53 k
+ curl                            x86_64     8.11.1-2.xs9        build     240 k
+ dbus-common                     noarch     1.14.10-3.xs9       build      14 k
+ dbus-daemon                     x86_64     1.14.10-3.xs9       build     213 k
+ dbus-libs                       x86_64     1.14.10-3.xs9       build     180 k
+ dbus-tools                      x86_64     1.14.10-3.xs9       build      48 k
+ debugedit                       x86_64     5.2-1.xs9           build      86 k
+ dwz                             x86_64     0.16-1.xs9          build     159 k
+ ed                              x86_64     1.19-2.xs9          build      85 k
+ elfutils                        x86_64     0.193-1.xs9         build     622 k
+ elfutils-default-yama-scope     noarch     0.193-1.xs9         build     8.8 k
+ elfutils-libelf                 x86_64     0.193-1.xs9         build     262 k
+ elfutils-libs                   x86_64     0.193-1.xs9         build     308 k
+ expat                           x86_64     2.5.0-2.xs9         build     120 k
+ file                            x86_64     5.45-1.xs9          build      52 k
+ file-libs                       x86_64     5.45-1.xs9          build     949 k
+ filesystem                      x86_64     3.18-3.xs9          build     1.1 M
+ gdb                             x86_64     15.2-2.xs9          build     5.5 M
+ gdbm                            x86_64     1.23-2.xs9          build     168 k
+ gdbm-libs                       x86_64     1.23-2.xs9          build      63 k
+ glibc                           x86_64     2.41-1.xs9          build     2.7 M
+ glibc-common                    x86_64     2.41-1.xs9          build     355 k
+ glibc-devel                     x86_64     2.41-1.xs9          build     554 k
+ glibc-minimal-langpack          x86_64     2.41-1.xs9          build     7.4 k
+ gmp                             x86_64     6.2.1-3.xs9         build     356 k
+ jansson                         x86_64     2.14.1-1.xs9        build      70 k
+ kernel-headers                  x86_64     6.6.98-5.xs9        build     1.7 M
+ keyutils-libs                   x86_64     1.6.3-2.xs9         build      33 k
+ krb5-libs                       x86_64     1.21.3-3.xs9        build     912 k
+ libacl                          x86_64     2.3.2-1.xs9         build      25 k
+ libarchive                      x86_64     3.6.1-2.xs9         build     463 k
+ libattr                         x86_64     2.5.1-2.xs9         build      18 k
+ libb2                           x86_64     0.98.1-2.xs9        build      28 k
+ libblkid                        x86_64     2.38.1-4.xs9        build     114 k
+ libcap                          x86_64     2.48-2.xs9          build      73 k
+ libcap-ng                       x86_64     0.8.3-2.xs9         build      34 k
+ libcom_err                      x86_64     1.47.0-3.xs9        build      28 k
+ libcurl                         x86_64     8.11.1-2.xs9        build     386 k
+ libevent                        x86_64     2.1.12-2.xs9        build     302 k
+ libfdisk                        x86_64     2.38.1-4.xs9        build     184 k
+ libffi                          x86_64     3.4.4-2.xs9         build      40 k
+ libgcc                          x86_64     12.4.0-2.xs9        build      97 k
+ libgomp                         x86_64     12.4.0-2.xs9        build     296 k
+ libidn2                         x86_64     2.3.4-4.xs9         build     186 k
+ libmount                        x86_64     2.38.1-4.xs9        build     153 k
+ libmpc                          x86_64     1.3.1-2.xs9         build      79 k
+ libnghttp2                      x86_64     1.64.0-2.xs9        build      93 k
+ libpkgconf                      x86_64     1.8.0-2.xs9         build      37 k
+ libpwquality                    x86_64     1.4.5-2.xs9         build     120 k
+ libseccomp                      x86_64     2.5.3-2.xs9         build      80 k
+ libsigsegv                      x86_64     2.14-2.xs9          build      28 k
+ libsmartcols                    x86_64     2.38.1-4.xs9        build      70 k
+ libstdc++                       x86_64     12.4.0-2.xs9        build     928 k
+ libstdc++-devel                 x86_64     12.4.0-2.xs9        build     3.0 M
+ libtasn1                        x86_64     4.19.0-2.xs9        build      82 k
+ libunistring                    x86_64     1.0-2.xs9           build     722 k
+ libutempter                     x86_64     1.2.1-2.xs9         build      27 k
+ libuuid                         x86_64     2.38.1-4.xs9        build      26 k
+ libverto                        x86_64     0.3.2-2.xs9         build      21 k
+ libxcrypt                       x86_64     4.4.36-3.xs9        build     133 k
+ libxcrypt-devel                 x86_64     4.4.36-3.xs9        build      27 k
+ libxml2                         x86_64     2.10.4-2.xs9        build     821 k
+ libzstd                         x86_64     1.5.5-2.xs9         build     332 k
+ lua-libs                        x86_64     5.4.4-3.xs9         build     147 k
+ lz4-libs                        x86_64     1.10.0-1.xs9        build      79 k
+ mpdecimal                       x86_64     2.5.1-2.xs9         build     100 k
+ mpfr                            x86_64     4.1.1-3.xs9         build     713 k
+ ncurses-base                    noarch     6.4-7.xs9           build      68 k
+ ncurses-libs                    x86_64     6.4-7.xs9           build     385 k
+ openldap                        x86_64     2.6.4-5.xs9         build     295 k
+ openssl-libs                    x86_64     3.0.9-6.xs9         build     2.9 M
+ p11-kit                         x86_64     0.24.1-3.xs9        build     393 k
+ p11-kit-trust                   x86_64     0.24.1-3.xs9        build     144 k
+ pam                             x86_64     1.7.0-2.xs9         build     413 k
+ pam-libs                        x86_64     1.7.0-2.xs9         build      60 k
+ pcre2                           x86_64     10.40-2.xs9         build     269 k
+ pcre2-syntax                    noarch     10.40-2.xs9         build     146 k
+ perl-srpm-macros                noarch     1-2.xs9             build     7.5 k
+ pkgconf                         x86_64     1.8.0-2.xs9         build      43 k
+ pkgconf-m4                      noarch     1.8.0-2.xs9         build      13 k
+ pkgconf-pkg-config              x86_64     1.8.0-2.xs9         build     8.6 k
+ popt                            x86_64     1.19-2.xs9          build      65 k
+ python-rpm-macros               noarch     3.10-3.xs9          build      16 k
+ python3                         x86_64     3.11.3-5.xs9        build      25 k
+ python3-libs                    x86_64     3.11.3-5.xs9        build      12 M
+ python3-packaging               noarch     21.3-2.xs9          build     100 k
+ python3-pip-wheel               noarch     22.2.2-3.xs9        build     1.4 M
+ python3-pyparsing               noarch     3.0.7-2.xs9         build     296 k
+ python3-setuptools-wheel        noarch     65.5.1-3.xs9        build     721 k
+ readline                        x86_64     8.2-2.xs9           build     238 k
+ rpm                             x86_64     4.18.0-6.xs9        build     638 k
+ rpm-build-libs                  x86_64     4.18.0-6.xs9        build      96 k
+ rpm-libs                        x86_64     4.18.0-6.xs9        build     364 k
+ setup                           noarch     2.8.77-1.xs9        build     155 k
+ sqlite-libs                     x86_64     3.47.2-1.xs9        build     860 k
+ systemd-libs                    x86_64     257.2-8.xs9         build     963 k
+ systemd-pam                     x86_64     257.2-8.xs9         build     451 k
+ systemd-rpm-macros              noarch     257.2-8.xs9         build      14 k
+ tzdata                          noarch     2024a-2.xs9         build     421 k
+ util-linux-core                 x86_64     2.38.1-4.xs9        build     503 k
+ xenserver-config                noarch     9.0.9-1.xs9         build     7.7 k
+ xenserver-config-rpm            noarch     9.0.9-1.xs9         build      75 k
+ xenserver-release               x86_64     8.99.50-11.xs9      build     126 k
+ xenserver-release-presets       x86_64     8.99.50-11.xs9      build      13 k
+ xxhash-libs                     x86_64     0.8.2-2.xs9         build      41 k
+ xz-libs                         x86_64     5.4.1-2.xs9         build     119 k
+ zlib                            x86_64     1.2.12-3.xs9        build     104 k
+ zstd                            x86_64     1.5.5-2.xs9         build     531 k
+Installing Groups:
+ build                                                                         
+
+Transaction Summary
+================================================================================
+Install  146 Packages
+
+2025-10-09T10:29:05+0000 INFO Total download size: 150 M
+2025-10-09T10:29:05+0000 INFO Installed size: 404 M
+2025-10-09T10:29:05+0000 INFO Downloading Packages:
+2025-10-09T10:29:06+0000 INFO --------------------------------------------------------------------------------
+2025-10-09T10:29:06+0000 INFO Total                                           125 MB/s | 150 MB     00:01     
+2025-10-09T10:29:06+0000 INFO Running transaction check
+2025-10-09T10:29:06+0000 INFO Transaction check succeeded.
+2025-10-09T10:29:06+0000 INFO Running transaction test
+2025-10-09T10:29:08+0000 INFO Transaction test succeeded.
+2025-10-09T10:29:08+0000 DDEBUG timer: transaction test: 1609 ms
+2025-10-09T10:29:08+0000 INFO Running transaction
+2025-10-09T10:29:08+0000 DEBUG RPMDB altered outside of DNF.
+2025-10-09T10:29:08+0000 DDEBUG RPM transaction start.
+2025-10-09T10:29:14+0000 DDEBUG RPM transaction over.
+2025-10-09T10:29:14+0000 DDEBUG timer: verify transaction: 74 ms
+2025-10-09T10:29:14+0000 DDEBUG timer: transaction: 5910 ms
+2025-10-09T10:29:14+0000 DEBUG Completion plugin: Generating completion cache...
+2025-10-09T10:29:14+0000 DEBUG Installed: annobin-docs-12.71-1.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: annobin-plugin-gcc-12.71-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: audit-libs-3.1.2-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: basesystem-11-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: bash-5.2.37-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: binutils-2.45-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: bzip2-1.0.8-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: bzip2-libs-1.0.8-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: ca-certificates-2024.2.72-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: coreutils-9.5-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: coreutils-common-9.5-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: cpio-2.13-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: cpp-12.4.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: cracklib-2.9.11-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: crypto-policies-20241128-1.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: curl-8.11.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: dbus-common-1.14.10-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: dbus-daemon-1.14.10-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: dbus-libs-1.14.10-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: dbus-tools-1.14.10-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: debugedit-5.2-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: diffutils-3.10-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: dwz-0.16-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: ed-1.19-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: elfutils-0.193-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: elfutils-default-yama-scope-0.193-1.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: elfutils-libelf-0.193-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: elfutils-libs-0.193-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: expat-2.5.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: file-5.45-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: file-libs-5.45-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: filesystem-3.18-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: findutils-4.9.0-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gawk-5.1.1-5.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gcc-12.4.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gcc-c++-12.4.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gdb-15.2-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gdbm-1.23-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gdbm-libs-1.23-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: glibc-2.41-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: glibc-common-2.41-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: glibc-devel-2.41-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: glibc-minimal-langpack-2.41-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gmp-6.2.1-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: go-srpm-macros-3.7.0-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: grep-3.11-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: gzip-1.14-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: jansson-2.14.1-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: kernel-headers-6.6.98-5.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: keyutils-libs-1.6.3-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: krb5-libs-1.21.3-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libacl-2.3.2-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libarchive-3.6.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libattr-2.5.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libb2-0.98.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libblkid-2.38.1-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libcap-2.48-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libcap-ng-0.8.3-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libcom_err-1.47.0-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libcurl-8.11.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libevent-2.1.12-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libfdisk-2.38.1-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libffi-3.4.4-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libgcc-12.4.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libgomp-12.4.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libidn2-2.3.4-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libmount-2.38.1-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libmpc-1.3.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libnghttp2-1.64.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libpkgconf-1.8.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libpwquality-1.4.5-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libseccomp-2.5.3-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libsigsegv-2.14-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libsmartcols-2.38.1-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libstdc++-12.4.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libstdc++-devel-12.4.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libtasn1-4.19.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libunistring-1.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libutempter-1.2.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libuuid-2.38.1-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libverto-0.3.2-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libxcrypt-4.4.36-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libxcrypt-devel-4.4.36-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libxml2-2.10.4-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: libzstd-1.5.5-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: lua-libs-5.4.4-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: lz4-libs-1.10.0-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: make-4.4-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: mpdecimal-2.5.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: mpfr-4.1.1-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: ncurses-base-6.4-7.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: ncurses-libs-6.4-7.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: openldap-2.6.4-5.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: openssl-libs-3.0.9-6.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: p11-kit-0.24.1-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: p11-kit-trust-0.24.1-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: pam-1.7.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: pam-libs-1.7.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: patch-2.7.6-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: pcre2-10.40-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: pcre2-syntax-10.40-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: perl-srpm-macros-1-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: pkgconf-1.8.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: pkgconf-m4-1.8.0-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: pkgconf-pkg-config-1.8.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: popt-1.19-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: pyproject-rpm-macros-1.8.0-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python-rpm-macros-3.10-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python-srpm-macros-3.10-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-3.11.3-5.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-libs-3.11.3-5.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-packaging-21.3-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-pip-wheel-22.2.2-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-pyparsing-3.0.7-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-rpm-generators-14-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-rpm-macros-3.10-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: python3-setuptools-wheel-65.5.1-3.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: readline-8.2-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: rpm-4.18.0-6.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: rpm-build-4.18.0-6.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: rpm-build-libs-4.18.0-6.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: rpm-libs-4.18.0-6.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: sed-4.9-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: setup-2.8.77-1.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: shadow-utils-4.17.0-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: sqlite-libs-3.47.2-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: systemd-257.2-8.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: systemd-libs-257.2-8.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: systemd-pam-257.2-8.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: systemd-rpm-macros-257.2-8.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: tar-1.35-1.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: tzdata-2024a-2.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: unzip-6.0-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: util-linux-2.38.1-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: util-linux-core-2.38.1-4.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: which-2.21-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: xenserver-config-9.0.9-1.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: xenserver-config-macros-9.0.9-1.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: xenserver-config-rpm-9.0.9-1.xs9.noarch
+2025-10-09T10:29:14+0000 DEBUG Installed: xenserver-release-8.99.50-11.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: xenserver-release-presets-8.99.50-11.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: xxhash-libs-0.8.2-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: xz-5.4.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: xz-libs-5.4.1-2.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: zlib-1.2.12-3.xs9.x86_64
+2025-10-09T10:29:14+0000 DEBUG Installed: zstd-1.5.5-2.xs9.x86_64
+2025-10-09T10:29:14+0000 INFO Complete!
+2025-10-09T10:29:14+0000 DDEBUG Cleaning up.
+2025-10-09T10:29:14+0000 DDEBUG Plugins were unloaded.
+2025-10-09T10:29:19+0000 INFO --- logging initialized ---
+2025-10-09T10:29:19+0000 DDEBUG timer: config: 2 ms
+2025-10-09T10:29:19+0000 WARNING No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+2025-10-09T10:29:19+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2025-10-09T10:29:19+0000 DEBUG DNF version: 4.14.0
+2025-10-09T10:29:19+0000 DDEBUG Command: dnf-3 builddep --installroot /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/ --setopt=deltarpm=False --setopt=allow_vendor_change=yes --allowerasing --disableplugin=local --disableplugin=spacewalk --disableplugin=versionlock /var/lib/mock/xs-foundations-xs9-build-95502-282678/root//builddir/build/SRPMS/shim-16.1-4.xs9.src.rpm --setopt=tsflags=nocontexts 
+2025-10-09T10:29:19+0000 DDEBUG Installroot: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/
+2025-10-09T10:29:19+0000 DDEBUG Releasever: 8.99.50-11.xs9
+2025-10-09T10:29:19+0000 DEBUG cachedir: /var/lib/mock/xs-foundations-xs9-build-95502-282678/root/var/cache/yum
+2025-10-09T10:29:19+0000 DDEBUG Base command: builddep
+2025-10-09T10:29:19+0000 DDEBUG Extra commands: ['builddep', '--installroot', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root/', '--setopt=deltarpm=False', '--setopt=allow_vendor_change=yes', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/xs-foundations-xs9-build-95502-282678/root//builddir/build/SRPMS/shim-16.1-4.xs9.src.rpm', '--setopt=tsflags=nocontexts']
+2025-10-09T10:29:19+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 9; generic; Linux.x86_64)'
+2025-10-09T10:29:19+0000 DEBUG reviving: 'build' can be revived - repomd matches.
+2025-10-09T10:29:19+0000 DEBUG build: using metadata from Wed 08 Oct 2025 01:57:10 PM UTC.
+2025-10-09T10:29:19+0000 DDEBUG timer: sack setup: 48 ms
+2025-10-09T10:29:19+0000 DEBUG --> Starting dependency resolution
+2025-10-09T10:29:19+0000 DEBUG ---> Package crypto-policies-scripts.noarch 20241128-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package efivar-libs.x86_64 39-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package nspr.x86_64 4.36.0-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package nss.x86_64 3.107.0-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package nss-softokn.x86_64 3.107.0-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package nss-softokn-freebl.x86_64 3.107.0-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package nss-sysinit.x86_64 3.107.0-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package nss-tools.x86_64 3.107.0-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package nss-util.x86_64 3.107.0-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package openssl.x86_64 3.0.9-6.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package pesign.x86_64 116-11.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package python3-xssign.noarch 1.3.2-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package xs-secureboot-dev-certs.x86_64 1.0-2.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG ---> Package xssign-macros.noarch 1.3.2-1.xs9 will be installed
+2025-10-09T10:29:19+0000 DEBUG --> Finished dependency resolution
+2025-10-09T10:29:19+0000 DDEBUG timer: depsolve: 6 ms
+2025-10-09T10:29:19+0000 INFO Dependencies resolved.
+2025-10-09T10:29:19+0000 INFO ================================================================================
+ Package                      Arch        Version              Repository  Size
+================================================================================
+Installing:
+ xssign-macros                noarch      1.3.2-1.xs9          build       17 k
+Installing dependencies:
+ crypto-policies-scripts      noarch      20241128-1.xs9       build      123 k
+ efivar-libs                  x86_64      39-1.xs9             build      131 k
+ nspr                         x86_64      4.36.0-1.xs9         build      154 k
+ nss                          x86_64      3.107.0-1.xs9        build      841 k
+ nss-softokn                  x86_64      3.107.0-1.xs9        build      465 k
+ nss-softokn-freebl           x86_64      3.107.0-1.xs9        build      386 k
+ nss-sysinit                  x86_64      3.107.0-1.xs9        build       15 k
+ nss-tools                    x86_64      3.107.0-1.xs9        build      551 k
+ nss-util                     x86_64      3.107.0-1.xs9        build      100 k
+ openssl                      x86_64      3.0.9-6.xs9          build      1.2 M
+ pesign                       x86_64      116-11.xs9           build      135 k
+ python3-xssign               noarch      1.3.2-1.xs9          build       53 k
+ xs-secureboot-dev-certs      x86_64      1.0-2.xs9            build       67 k
+
+Transaction Summary
+================================================================================
+Install  14 Packages
+
+2025-10-09T10:29:19+0000 INFO Total download size: 4.2 M
+2025-10-09T10:29:19+0000 INFO Installed size: 11 M
+2025-10-09T10:29:19+0000 INFO Downloading Packages:
+2025-10-09T10:29:19+0000 INFO --------------------------------------------------------------------------------
+2025-10-09T10:29:19+0000 INFO Total                                            61 MB/s | 4.2 MB     00:00     
+2025-10-09T10:29:19+0000 INFO Running transaction check
+2025-10-09T10:29:19+0000 INFO Transaction check succeeded.
+2025-10-09T10:29:19+0000 INFO Running transaction test
+2025-10-09T10:29:19+0000 INFO Transaction test succeeded.
+2025-10-09T10:29:19+0000 DDEBUG timer: transaction test: 62 ms
+2025-10-09T10:29:19+0000 INFO Running transaction
+2025-10-09T10:29:19+0000 DDEBUG RPM transaction start.
+2025-10-09T10:29:20+0000 DDEBUG RPM transaction over.
+2025-10-09T10:29:20+0000 DDEBUG timer: verify transaction: 19 ms
+2025-10-09T10:29:20+0000 DDEBUG timer: transaction: 551 ms
+2025-10-09T10:29:20+0000 DEBUG Completion plugin: Generating completion cache...
+2025-10-09T10:29:20+0000 DEBUG Installed: crypto-policies-scripts-20241128-1.xs9.noarch
+2025-10-09T10:29:20+0000 DEBUG Installed: efivar-libs-39-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: nspr-4.36.0-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: nss-3.107.0-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: nss-softokn-3.107.0-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: nss-softokn-freebl-3.107.0-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: nss-sysinit-3.107.0-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: nss-tools-3.107.0-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: nss-util-3.107.0-1.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: openssl-3.0.9-6.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: pesign-116-11.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: python3-xssign-1.3.2-1.xs9.noarch
+2025-10-09T10:29:20+0000 DEBUG Installed: xs-secureboot-dev-certs-1.0-2.xs9.x86_64
+2025-10-09T10:29:20+0000 DEBUG Installed: xssign-macros-1.3.2-1.xs9.noarch
+2025-10-09T10:29:20+0000 INFO Complete!
+2025-10-09T10:29:20+0000 DDEBUG Cleaning up.
+2025-10-09T10:29:20+0000 DDEBUG Plugins were unloaded.

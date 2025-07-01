@@ -1,0 +1,63 @@
+shim: Optionally tolerate MokManager being missing
+
+XenServer does not generally have a need for MokManager therefore it is
+expected to be missing. However, this prevents XenServer from booting at all if
+there is a pending MoK request from another OS (either installed on a different
+disk or a previous installation).
+
+Provide an option to allow continuing to boot if MokManager is missing.
+
+Signed-off-by: Ross Lagerwall <ross.lagerwall@citrix.com>
+diff --git a/BUILDING b/BUILDING
+index 5005868a33a3..f1da0f074ede 100644
+--- a/BUILDING
++++ b/BUILDING
+@@ -75,6 +75,10 @@ Variables you could set to customize the build:
+ - ENABLE_CODESIGN_EKU
+   This changes the certificate validation logic to require Extended Key
+   Usage 1.3.6.1.5.5.7.3.3 ("Code Signing").
++- IGNORE_MM_MISSING
++  By default, Shim will stop boot if there is a MoK request but
++  MokManager is missing. This allows ignoring the error and continuing to
++  boot.
+ 
+ Vendor SBAT data:
+ It will sometimes be requested by reviewers that a build includes extra
+diff --git a/Make.defaults b/Make.defaults
+index c5fa32becf43..a067d9cad427 100644
+--- a/Make.defaults
++++ b/Make.defaults
+@@ -153,6 +153,10 @@ ifneq ($(origin DISABLE_REMOVABLE_LOAD_OPTIONS), undefined)
+ 	DEFINES  += -DDISABLE_REMOVABLE_LOAD_OPTIONS
+ endif
+ 
++ifneq ($(origin IGNORE_MM_MISSING), undefined)
++	DEFINES  += -DIGNORE_MM_MISSING
++endif
++
+ LIB_GCC		= $(shell $(CC) $(ARCH_CFLAGS) -print-libgcc-file-name)
+ EFI_LIBS	= -lefi -lgnuefi --start-group Cryptlib/libcryptlib.a Cryptlib/OpenSSL/libopenssl.a --end-group $(LIB_GCC)
+ FORMAT		?= --target efi-app-$(ARCH)
+diff --git a/mok.c b/mok.c
+index bf71542bab96..812b8fc1c9bc 100644
+--- a/mok.c
++++ b/mok.c
+@@ -102,6 +102,10 @@ static EFI_STATUS check_mok_request(EFI_HANDLE image_handle)
+ 		efi_status = start_image(image_handle, MOK_MANAGER);
+ 
+ 		if (EFI_ERROR(efi_status)) {
++#ifdef IGNORE_MM_MISSING
++			perror(L"Failed to start MokManager: %r\n", efi_status);
++			return efi_status == EFI_NOT_FOUND ? EFI_SUCCESS : efi_status;
++#else
+ 			/*
+ 			 * We don't do this in the unit tests because we
+ 			 * don't have simulation for console_countdown()
+@@ -130,6 +134,7 @@ static EFI_STATUS check_mok_request(EFI_HANDLE image_handle)
+ #endif
+ 			perror(L"Failed to start MokManager: %r\n", efi_status);
+ 			return efi_status;
++#endif
+ 		}
+ 	}
+ 

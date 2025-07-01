@@ -1,0 +1,530 @@
+2025-10-09 10:28:32,853 [INFO] {976231} koji.build.buildroot:509 Running mock as kojibuilder
+INFO: mock.py version 6.3 starting (python version = 3.9.23, NVR = mock-6.3-1.el9), args: /usr/libexec/mock/mock -r koji/xs-foundations-xs9-build-95501-282678 --init
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Start: clean chroot
+Finish: clean chroot
+Mock Version: 6.3
+INFO: Mock Version: 6.3
+Start: chroot init
+INFO: calling preinit hooks
+INFO: enabled HW Info plugin
+INFO: Package manager dnf4 detected and used (fallback)
+Start: installing minimal buildroot with dnf
+Finish: installing minimal buildroot with dnf
+Finish: chroot init
+INFO: Installed packages:
+INFO: annobin-docs-12.71-1.xs9.noarch
+annobin-plugin-gcc-12.71-1.xs9.x86_64
+audit-libs-3.1.2-2.xs9.x86_64
+basesystem-11-2.xs9.noarch
+bash-5.2.37-1.xs9.x86_64
+binutils-2.45-1.xs9.x86_64
+bzip2-1.0.8-3.xs9.x86_64
+bzip2-libs-1.0.8-3.xs9.x86_64
+ca-certificates-2024.2.72-3.xs9.noarch
+coreutils-9.5-1.xs9.x86_64
+coreutils-common-9.5-1.xs9.x86_64
+cpio-2.13-2.xs9.x86_64
+cpp-12.4.0-2.xs9.x86_64
+cracklib-2.9.11-3.xs9.x86_64
+crypto-policies-20241128-1.xs9.noarch
+curl-8.11.1-2.xs9.x86_64
+dash-0.5.11.5-2.xs9.x86_64
+dbus-common-1.14.10-3.xs9.noarch
+dbus-daemon-1.14.10-3.xs9.x86_64
+dbus-libs-1.14.10-3.xs9.x86_64
+dbus-tools-1.14.10-3.xs9.x86_64
+debugedit-5.2-1.xs9.x86_64
+diffutils-3.10-2.xs9.x86_64
+dwz-0.16-1.xs9.x86_64
+ed-1.19-2.xs9.x86_64
+elfutils-0.193-1.xs9.x86_64
+elfutils-default-yama-scope-0.193-1.xs9.noarch
+elfutils-libelf-0.193-1.xs9.x86_64
+elfutils-libs-0.193-1.xs9.x86_64
+expat-2.5.0-2.xs9.x86_64
+fakeroot-1.32.1-3.xs9.x86_64
+fakeroot-libs-1.32.1-3.xs9.x86_64
+file-5.45-1.xs9.x86_64
+file-libs-5.45-1.xs9.x86_64
+filesystem-3.18-3.xs9.x86_64
+findutils-4.9.0-4.xs9.x86_64
+gawk-5.1.1-5.xs9.x86_64
+gcc-12.4.0-2.xs9.x86_64
+gcc-c++-12.4.0-2.xs9.x86_64
+gdb-15.2-2.xs9.x86_64
+gdbm-1.23-2.xs9.x86_64
+gdbm-libs-1.23-2.xs9.x86_64
+git-2.41.0-4.xs9.x86_64
+git-core-2.41.0-4.xs9.x86_64
+git-core-doc-2.41.0-4.xs9.noarch
+glibc-2.41-1.xs9.x86_64
+glibc-common-2.41-1.xs9.x86_64
+glibc-devel-2.41-1.xs9.x86_64
+glibc-langpack-en-2.41-1.xs9.x86_64
+glibc-minimal-langpack-2.41-1.xs9.x86_64
+gmp-6.2.1-3.xs9.x86_64
+gnupg2-2.4.0-6.xs9.x86_64
+gnutls-3.8.8-2.xs9.x86_64
+go-srpm-macros-3.7.0-3.xs9.noarch
+grep-3.11-1.xs9.x86_64
+groff-base-1.23.0-1.xs9.x86_64
+gzip-1.14-1.xs9.x86_64
+jansson-2.14.1-1.xs9.x86_64
+kernel-headers-6.6.98-5.xs9.x86_64
+keyutils-libs-1.6.3-2.xs9.x86_64
+krb5-libs-1.21.3-3.xs9.x86_64
+less-633-2.xs9.x86_64
+libacl-2.3.2-1.xs9.x86_64
+libarchive-3.6.1-2.xs9.x86_64
+libassuan-2.5.5-2.xs9.x86_64
+libattr-2.5.1-2.xs9.x86_64
+libb2-0.98.1-2.xs9.x86_64
+libblkid-2.38.1-4.xs9.x86_64
+libcap-2.48-2.xs9.x86_64
+libcap-ng-0.8.3-2.xs9.x86_64
+libcom_err-1.47.0-3.xs9.x86_64
+libcurl-8.11.1-2.xs9.x86_64
+libedit-3.1-2.xs9.x86_64
+libevent-2.1.12-2.xs9.x86_64
+libfdisk-2.38.1-4.xs9.x86_64
+libffi-3.4.4-2.xs9.x86_64
+libgcc-12.4.0-2.xs9.x86_64
+libgcrypt-1.11.0-1.xs9.x86_64
+libgomp-12.4.0-2.xs9.x86_64
+libgpg-error-1.51-3.xs9.x86_64
+libidn2-2.3.4-4.xs9.x86_64
+libksba-1.6.3-2.xs9.x86_64
+libmount-2.38.1-4.xs9.x86_64
+libmpc-1.3.1-2.xs9.x86_64
+libnghttp2-1.64.0-2.xs9.x86_64
+libpkgconf-1.8.0-2.xs9.x86_64
+libpwquality-1.4.5-2.xs9.x86_64
+libseccomp-2.5.3-2.xs9.x86_64
+libsigsegv-2.14-2.xs9.x86_64
+libsmartcols-2.38.1-4.xs9.x86_64
+libstdc++-12.4.0-2.xs9.x86_64
+libstdc++-devel-12.4.0-2.xs9.x86_64
+libtasn1-4.19.0-2.xs9.x86_64
+libunistring-1.0-2.xs9.x86_64
+libutempter-1.2.1-2.xs9.x86_64
+libuuid-2.38.1-4.xs9.x86_64
+libverto-0.3.2-2.xs9.x86_64
+libxcrypt-4.4.36-3.xs9.x86_64
+libxcrypt-devel-4.4.36-3.xs9.x86_64
+libxml2-2.10.4-2.xs9.x86_64
+libzstd-1.5.5-2.xs9.x86_64
+lua-libs-5.4.4-3.xs9.x86_64
+lz4-libs-1.10.0-1.xs9.x86_64
+make-4.4-2.xs9.x86_64
+mpdecimal-2.5.1-2.xs9.x86_64
+mpfr-4.1.1-3.xs9.x86_64
+ncurses-6.4-7.xs9.x86_64
+ncurses-base-6.4-7.xs9.noarch
+ncurses-libs-6.4-7.xs9.x86_64
+nettle-3.10-1.xs9.x86_64
+npth-1.6-2.xs9.x86_64
+openldap-2.6.4-5.xs9.x86_64
+openssh-9.9p1-1.xs9.x86_64
+openssh-clients-9.9p1-1.xs9.x86_64
+openssl-libs-3.0.9-6.xs9.x86_64
+p11-kit-0.24.1-3.xs9.x86_64
+p11-kit-trust-0.24.1-3.xs9.x86_64
+pam-1.7.0-2.xs9.x86_64
+pam-libs-1.7.0-2.xs9.x86_64
+patch-2.7.6-3.xs9.x86_64
+pcre2-10.40-2.xs9.x86_64
+pcre2-syntax-10.40-2.xs9.noarch
+perl-5.36.1-4.xs9.x86_64
+perl-Archive-Tar-5.36.1-4.xs9.noarch
+perl-Attribute-Handlers-5.36.1-4.xs9.noarch
+perl-AutoLoader-5.36.1-4.xs9.noarch
+perl-AutoSplit-5.36.1-4.xs9.noarch
+perl-B-5.36.1-4.xs9.x86_64
+perl-Benchmark-5.36.1-4.xs9.noarch
+perl-CPAN-5.36.1-4.xs9.noarch
+perl-CPAN-Meta-5.36.1-4.xs9.noarch
+perl-CPAN-Meta-Requirements-5.36.1-4.xs9.noarch
+perl-CPAN-Meta-YAML-5.36.1-4.xs9.noarch
+perl-Carp-5.36.1-4.xs9.noarch
+perl-Class-Struct-5.36.1-4.xs9.noarch
+perl-Compress-Raw-Bzip2-5.36.1-4.xs9.x86_64
+perl-Compress-Raw-Zlib-5.36.1-4.xs9.x86_64
+perl-Config-Extensions-5.36.1-4.xs9.noarch
+perl-Config-INI-0.027-2.xs9.noarch
+perl-Config-Perl-V-5.36.1-4.xs9.noarch
+perl-Crypt-JWT-0.035-3.xs9.noarch
+perl-CryptX-0.078-6.xs9.x86_64
+perl-DBM_Filter-5.36.1-4.xs9.noarch
+perl-Data-Dump-1.25-2.xs9.noarch
+perl-Data-Dumper-5.36.1-4.xs9.x86_64
+perl-Data-OptList-0.112-2.xs9.noarch
+perl-Devel-PPPort-5.36.1-4.xs9.x86_64
+perl-Devel-Peek-5.36.1-4.xs9.x86_64
+perl-Devel-SelfStubber-5.36.1-4.xs9.noarch
+perl-Digest-5.36.1-4.xs9.noarch
+perl-Digest-HMAC-1.04-2.xs9.noarch
+perl-Digest-MD5-5.36.1-4.xs9.x86_64
+perl-Digest-SHA-5.36.1-4.xs9.x86_64
+perl-DirHandle-5.36.1-4.xs9.noarch
+perl-Dumpvalue-5.36.1-4.xs9.noarch
+perl-DynaLoader-5.36.1-4.xs9.x86_64
+perl-Encode-5.36.1-4.xs9.x86_64
+perl-Encode-Locale-1.05-2.xs9.noarch
+perl-Encode-devel-5.36.1-4.xs9.noarch
+perl-English-5.36.1-4.xs9.noarch
+perl-Env-5.36.1-4.xs9.noarch
+perl-Errno-5.36.1-4.xs9.x86_64
+perl-Error-0.17029-2.xs9.noarch
+perl-Exporter-5.36.1-4.xs9.noarch
+perl-ExtUtils-CBuilder-5.36.1-4.xs9.noarch
+perl-ExtUtils-Command-7.66-2.xs9.noarch
+perl-ExtUtils-Constant-5.36.1-4.xs9.noarch
+perl-ExtUtils-Embed-5.36.1-4.xs9.noarch
+perl-ExtUtils-Install-5.36.1-4.xs9.noarch
+perl-ExtUtils-MM-Utils-7.66-2.xs9.noarch
+perl-ExtUtils-MakeMaker-7.66-2.xs9.noarch
+perl-ExtUtils-Manifest-5.36.1-4.xs9.noarch
+perl-ExtUtils-Miniperl-5.36.1-4.xs9.noarch
+perl-ExtUtils-ParseXS-5.36.1-4.xs9.noarch
+perl-Fcntl-5.36.1-4.xs9.x86_64
+perl-File-Basename-5.36.1-4.xs9.noarch
+perl-File-Compare-5.36.1-4.xs9.noarch
+perl-File-Copy-5.36.1-4.xs9.noarch
+perl-File-Copy-Recursive-0.45-2.xs9.noarch
+perl-File-DosGlob-5.36.1-4.xs9.x86_64
+perl-File-Fetch-5.36.1-4.xs9.noarch
+perl-File-Find-5.36.1-4.xs9.noarch
+perl-File-Listing-6.15-2.xs9.noarch
+perl-File-Path-5.36.1-4.xs9.noarch
+perl-File-Slurp-Tiny-0.004-2.xs9.noarch
+perl-File-Temp-5.36.1-4.xs9.noarch
+perl-File-stat-5.36.1-4.xs9.noarch
+perl-FileCache-5.36.1-4.xs9.noarch
+perl-FileHandle-5.36.1-4.xs9.noarch
+perl-Filter-5.36.1-4.xs9.x86_64
+perl-Filter-Simple-5.36.1-4.xs9.noarch
+perl-FindBin-5.36.1-4.xs9.noarch
+perl-GDBM_File-5.36.1-4.xs9.x86_64
+perl-Getopt-Long-5.36.1-4.xs9.noarch
+perl-Getopt-Std-5.36.1-4.xs9.noarch
+perl-Git-2.41.0-4.xs9.noarch
+perl-HTML-Parser-3.81-2.xs9.x86_64
+perl-HTML-Tagset-3.20-2.xs9.noarch
+perl-HTTP-Cookies-6.10-2.xs9.noarch
+perl-HTTP-Date-6.05-2.xs9.noarch
+perl-HTTP-Message-6.37-2.xs9.noarch
+perl-HTTP-Negotiate-6.01-2.xs9.noarch
+perl-HTTP-Tiny-5.36.1-4.xs9.noarch
+perl-Hash-Util-5.36.1-4.xs9.x86_64
+perl-Hash-Util-FieldHash-5.36.1-4.xs9.x86_64
+perl-I18N-Collate-5.36.1-4.xs9.noarch
+perl-I18N-LangTags-5.36.1-4.xs9.noarch
+perl-I18N-Langinfo-5.36.1-4.xs9.x86_64
+perl-IO-5.36.1-4.xs9.x86_64
+perl-IO-Compress-5.36.1-4.xs9.noarch
+perl-IO-HTML-1.004-2.xs9.noarch
+perl-IO-Socket-IP-5.36.1-4.xs9.noarch
+perl-IO-Socket-SSL-2.075-3.xs9.noarch
+perl-IO-Zlib-5.36.1-4.xs9.noarch
+perl-IPC-Cmd-5.36.1-4.xs9.noarch
+perl-IPC-Open3-5.36.1-4.xs9.noarch
+perl-IPC-SysV-5.36.1-4.xs9.x86_64
+perl-JSON-4.09-2.xs9.noarch
+perl-JSON-PP-5.36.1-4.xs9.noarch
+perl-LWP-MediaTypes-6.04-2.xs9.noarch
+perl-LWP-Protocol-https-6.10-2.xs9.noarch
+perl-Locale-Maketext-5.36.1-4.xs9.noarch
+perl-Locale-Maketext-Simple-5.36.1-4.xs9.noarch
+perl-MIME-Base64-5.36.1-4.xs9.x86_64
+perl-Math-BigInt-5.36.1-4.xs9.noarch
+perl-Math-BigInt-FastCalc-5.36.1-4.xs9.x86_64
+perl-Math-BigRat-5.36.1-4.xs9.noarch
+perl-Math-Complex-5.36.1-4.xs9.noarch
+perl-Memoize-5.36.1-4.xs9.noarch
+perl-Mixin-Linewise-0.110-2.xs9.noarch
+perl-Module-Build-0.42.31-2.xs9.noarch
+perl-Module-CoreList-5.36.1-4.xs9.noarch
+perl-Module-CoreList-tools-5.36.1-4.xs9.noarch
+perl-Module-Load-5.36.1-4.xs9.noarch
+perl-Module-Load-Conditional-5.36.1-4.xs9.noarch
+perl-Module-Loaded-5.36.1-4.xs9.noarch
+perl-Module-Metadata-5.36.1-4.xs9.noarch
+perl-Mozilla-CA-20211001-2.xs9.noarch
+perl-NDBM_File-5.36.1-4.xs9.x86_64
+perl-NEXT-5.36.1-4.xs9.noarch
+perl-NTLM-1.09-2.xs9.noarch
+perl-Net-5.36.1-4.xs9.noarch
+perl-Net-HTTP-6.22-2.xs9.noarch
+perl-Net-Ping-5.36.1-4.xs9.noarch
+perl-Net-SSLeay-1.92-2.xs9.x86_64
+perl-ODBM_File-5.36.1-4.xs9.x86_64
+perl-Opcode-5.36.1-4.xs9.x86_64
+perl-POSIX-5.36.1-4.xs9.x86_64
+perl-Package-Generator-1.106-2.xs9.noarch
+perl-Params-Check-5.36.1-4.xs9.noarch
+perl-Params-Util-1.102-2.xs9.x86_64
+perl-PathTools-5.36.1-4.xs9.x86_64
+perl-Perl-OSType-5.36.1-4.xs9.noarch
+perl-Perl-Version-1.013-2.xs9.noarch
+perl-PerlIO-utf8_strict-0.009-2.xs9.x86_64
+perl-PerlIO-via-QuotedPrint-5.36.1-4.xs9.noarch
+perl-Pod-Checker-5.36.1-4.xs9.noarch
+perl-Pod-Escapes-5.36.1-4.xs9.noarch
+perl-Pod-Functions-5.36.1-4.xs9.noarch
+perl-Pod-Html-5.36.1-4.xs9.noarch
+perl-Pod-Perldoc-5.36.1-4.xs9.noarch
+perl-Pod-Simple-5.36.1-4.xs9.noarch
+perl-Pod-Usage-5.36.1-4.xs9.noarch
+perl-Safe-5.36.1-4.xs9.noarch
+perl-Scalar-List-Utils-5.36.1-4.xs9.x86_64
+perl-Search-Dict-5.36.1-4.xs9.noarch
+perl-SelectSaver-5.36.1-4.xs9.noarch
+perl-SelfLoader-5.36.1-4.xs9.noarch
+perl-Socket-5.36.1-4.xs9.x86_64
+perl-Storable-5.36.1-4.xs9.x86_64
+perl-Sub-Exporter-0.988-2.xs9.noarch
+perl-Sub-Install-0.928-2.xs9.noarch
+perl-Symbol-5.36.1-4.xs9.noarch
+perl-Sys-Hostname-5.36.1-4.xs9.x86_64
+perl-Sys-Syslog-5.36.1-4.xs9.x86_64
+perl-Term-ANSIColor-5.36.1-4.xs9.noarch
+perl-Term-Cap-5.36.1-4.xs9.noarch
+perl-Term-Complete-5.36.1-4.xs9.noarch
+perl-Term-ReadLine-5.36.1-4.xs9.noarch
+perl-Test-5.36.1-4.xs9.noarch
+perl-Test-Harness-5.36.1-4.xs9.noarch
+perl-Test-Simple-5.36.1-4.xs9.noarch
+perl-Text-Abbrev-5.36.1-4.xs9.noarch
+perl-Text-Balanced-5.36.1-4.xs9.noarch
+perl-Text-ParseWords-5.36.1-4.xs9.noarch
+perl-Text-Tabs+Wrap-5.36.1-4.xs9.noarch
+perl-Thread-5.36.1-4.xs9.noarch
+perl-Thread-Queue-5.36.1-4.xs9.noarch
+perl-Thread-Semaphore-5.36.1-4.xs9.noarch
+perl-Tie-5.36.1-4.xs9.noarch
+perl-Tie-File-5.36.1-4.xs9.noarch
+perl-Tie-Memoize-5.36.1-4.xs9.noarch
+perl-Tie-RefHash-5.36.1-4.xs9.noarch
+perl-Time-5.36.1-4.xs9.noarch
+perl-Time-HiRes-5.36.1-4.xs9.x86_64
+perl-Time-Local-5.36.1-4.xs9.noarch
+perl-Time-Piece-5.36.1-4.xs9.x86_64
+perl-TimeDate-2.33-2.xs9.noarch
+perl-Try-Tiny-0.31-2.xs9.noarch
+perl-URI-5.17-2.xs9.noarch
+perl-Unicode-Collate-5.36.1-4.xs9.x86_64
+perl-Unicode-Normalize-5.36.1-4.xs9.x86_64
+perl-Unicode-UCD-5.36.1-4.xs9.noarch
+perl-User-pwent-5.36.1-4.xs9.noarch
+perl-WWW-RobotRules-6.02-2.xs9.noarch
+perl-autodie-5.36.1-4.xs9.noarch
+perl-autouse-5.36.1-4.xs9.noarch
+perl-base-5.36.1-4.xs9.noarch
+perl-bignum-5.36.1-4.xs9.noarch
+perl-blib-5.36.1-4.xs9.noarch
+perl-constant-5.36.1-4.xs9.noarch
+perl-debugger-5.36.1-4.xs9.noarch
+perl-deprecate-5.36.1-4.xs9.noarch
+perl-devel-5.36.1-4.xs9.x86_64
+perl-diagnostics-5.36.1-4.xs9.noarch
+perl-doc-5.36.1-4.xs9.noarch
+perl-encoding-5.36.1-4.xs9.x86_64
+perl-encoding-warnings-5.36.1-4.xs9.noarch
+perl-experimental-5.36.1-4.xs9.noarch
+perl-fields-5.36.1-4.xs9.noarch
+perl-filetest-5.36.1-4.xs9.noarch
+perl-if-5.36.1-4.xs9.noarch
+perl-inc-latest-0.500-2.xs9.noarch
+perl-interpreter-5.36.1-4.xs9.x86_64
+perl-less-5.36.1-4.xs9.noarch
+perl-lib-5.36.1-4.xs9.x86_64
+perl-libnet-5.36.1-4.xs9.noarch
+perl-libnetcfg-5.36.1-4.xs9.noarch
+perl-libs-5.36.1-4.xs9.x86_64
+perl-libwww-perl-6.68-2.xs9.noarch
+perl-locale-5.36.1-4.xs9.noarch
+perl-macros-5.36.1-4.xs9.noarch
+perl-meta-notation-5.36.1-4.xs9.noarch
+perl-mro-5.36.1-4.xs9.x86_64
+perl-open-5.36.1-4.xs9.noarch
+perl-overload-5.36.1-4.xs9.noarch
+perl-overloading-5.36.1-4.xs9.noarch
+perl-parent-5.36.1-4.xs9.noarch
+perl-perlfaq-5.36.1-4.xs9.noarch
+perl-ph-5.36.1-4.xs9.x86_64
+perl-podlators-5.36.1-4.xs9.noarch
+perl-sigtrap-5.36.1-4.xs9.noarch
+perl-sort-5.36.1-4.xs9.noarch
+perl-srpm-macros-1-2.xs9.noarch
+perl-subs-5.36.1-4.xs9.noarch
+perl-threads-5.36.1-4.xs9.x86_64
+perl-threads-shared-5.36.1-4.xs9.x86_64
+perl-utils-5.36.1-4.xs9.noarch
+perl-vars-5.36.1-4.xs9.noarch
+perl-version-5.36.1-4.xs9.noarch
+perl-vmsish-5.36.1-4.xs9.noarch
+pkgconf-1.8.0-2.xs9.x86_64
+pkgconf-m4-1.8.0-2.xs9.noarch
+pkgconf-pkg-config-1.8.0-2.xs9.x86_64
+popt-1.19-2.xs9.x86_64
+pyproject-rpm-macros-1.8.0-2.xs9.noarch
+python-rpm-macros-3.10-3.xs9.noarch
+python-srpm-macros-3.10-3.xs9.noarch
+python3-3.11.3-5.xs9.x86_64
+python3-argcomplete-2.0.0-2.xs9.noarch
+python3-charset-normalizer-2.1.0-5.xs9.noarch
+python3-construct-2.10.68-2.xs9.noarch
+python3-file-magic-5.45-1.xs9.noarch
+python3-idna-3.3-5.xs9.noarch
+python3-libs-3.11.3-5.xs9.x86_64
+python3-pip-wheel-22.2.2-3.xs9.noarch
+python3-progressbar2-3.53.2-2.xs9.noarch
+python3-pybeam-0.7-2.xs9.noarch
+python3-pyparsing-3.0.7-2.xs9.noarch
+python3-pysocks-1.7.1-2.xs9.noarch
+python3-pyxdg-0.27-2.xs9.noarch
+python3-requests-2.28.1-5.xs9.noarch
+python3-rpm-4.18.0-6.xs9.x86_64
+python3-rpm-macros-3.10-3.xs9.noarch
+python3-setuptools-wheel-65.5.1-3.xs9.noarch
+python3-six-1.16.0-2.xs9.noarch
+python3-tomli-w-1.0.0-2.xs9.noarch
+python3-urllib3+socks-1.26.20-4.xs9.noarch
+python3-urllib3-1.26.20-4.xs9.noarch
+python3-utils-3.1.0-2.xs9.noarch
+python3-zstandard-0.19.0-2.xs9.x86_64
+readline-8.2-2.xs9.x86_64
+rpm-4.18.0-6.xs9.x86_64
+rpm-build-4.18.0-6.xs9.x86_64
+rpm-build-libs-4.18.0-6.xs9.x86_64
+rpm-libs-4.18.0-6.xs9.x86_64
+rpm-sign-libs-4.18.0-6.xs9.x86_64
+rpmdevtools-9.6-2.xs9.noarch
+rpmlint-2.4.0-2.xs9.noarch
+rpmlint-fedora-license-data-1.22-2.xs9.noarch
+sed-4.9-1.xs9.x86_64
+setup-2.8.77-1.xs9.noarch
+shadow-utils-4.17.0-1.xs9.x86_64
+sqlite-libs-3.47.2-1.xs9.x86_64
+systemd-257.2-8.xs9.x86_64
+systemd-libs-257.2-8.xs9.x86_64
+systemd-pam-257.2-8.xs9.x86_64
+systemd-rpm-macros-257.2-8.xs9.noarch
+systemtap-sdt-devel-4.8-3.xs9.x86_64
+tar-1.35-1.xs9.x86_64
+tzdata-2024a-2.xs9.noarch
+unzip-6.0-2.xs9.x86_64
+util-linux-2.38.1-4.xs9.x86_64
+util-linux-core-2.38.1-4.xs9.x86_64
+xenpkg-1.8.8-1.xs9.noarch
+xenserver-config-9.0.9-1.xs9.noarch
+xenserver-config-macros-9.0.9-1.xs9.noarch
+xenserver-config-rpm-9.0.9-1.xs9.noarch
+xenserver-release-8.99.50-11.xs9.x86_64
+xenserver-release-presets-8.99.50-11.xs9.x86_64
+xxhash-libs-0.8.2-2.xs9.x86_64
+xz-5.4.1-2.xs9.x86_64
+xz-libs-5.4.1-2.xs9.x86_64
+zlib-1.2.12-3.xs9.x86_64
+zstd-1.5.5-2.xs9.x86_64
+Finish: run
+2025-10-09 10:28:48,123 [INFO] {976437} koji.build.buildroot:509 Running mock as kojibuilder
+INFO: mock.py version 6.3 starting (python version = 3.9.23, NVR = mock-6.3-1.el9), args: /usr/libexec/mock/mock -r koji/xs-foundations-xs9-build-95501-282678 --chroot 'uname -r'
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 6.3
+INFO: Mock Version: 6.3
+Start: chroot init
+INFO: calling preinit hooks
+INFO: enabled HW Info plugin
+INFO: Package manager dnf4 detected and used (fallback)
+Finish: chroot init
+INFO: Running in chroot: ['uname -r']
+Start: chroot ['uname -r']
+5.14.0-620.el9.x86_64
+Finish: chroot ['uname -r']
+Finish: run
+2025-10-09 10:28:56,619 [INFO] {976522} koji.build.buildroot:509 Running mock as kojibuilder
+INFO: mock.py version 6.3 starting (python version = 3.9.23, NVR = mock-6.3-1.el9), args: /usr/libexec/mock/mock -r koji/xs-foundations-xs9-build-95501-282678 --no-clean --unpriv --cwd /chroot_tmpdir/scmroot/shim.spec//SRPM --chroot xenpkg --cimode makesources
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 6.3
+INFO: Mock Version: 6.3
+Start: chroot init
+INFO: calling preinit hooks
+INFO: enabled HW Info plugin
+INFO: Package manager dnf4 detected and used (fallback)
+Finish: chroot init
+INFO: Running in chroot: ['xenpkg', '--cimode', 'makesources']
+Start: chroot ['xenpkg', '--cimode', 'makesources']
+Adding patches from /chroot_tmpdir/scmroot/shim.spec/patches/series
+Fetching Source0: https://repo.citrite.net/artifactory/xs-local-contrib/shim/shim-16.1.tar.bz2...
+CHECKSUM: Checking shim-16.1.tar.bz2...Data OK...Size OK...SHA256 OK
+Writing /chroot_tmpdir/scmroot/shim.spec/SRPM/shim.spec...
+Detected rpmlintrc: Running rpmlint v2.4.0 on generated SPEC...
+
+============================ rpmlint session starts ============================
+rpmlint: 2.4.0
+configuration:
+    /usr/lib/python3.11/site-packages/rpmlint/configdefaults.toml
+    /etc/xdg/rpmlint/fedora-legacy-licenses.toml
+    /etc/xdg/rpmlint/fedora-spdx-licenses.toml
+    /etc/xdg/rpmlint/fedora.toml
+    /etc/xdg/rpmlint/scoring.toml
+    /etc/xdg/rpmlint/users-groups.toml
+    /etc/xdg/rpmlint/warn-on-functions.toml
+rpmlintrc: [PosixPath('/chroot_tmpdir/scmroot/shim.spec/rpmlintrc')]
+checks: 31, packages: 1
+
+shim.spec:95: W: macro-in-%changelog %check
+Macros are expanded in %changelog too, which can in unfortunate cases lead to
+the package not building at all, or other subtle unexpected conditions that
+affect the build.  Even when that doesn't happen, the expansion results in
+possibly 'rewriting history' on subsequent package revisions and generally odd
+entries eg. in source rpms, which is rarely wanted. Avoid use of macros in
+%changelog altogether, or use two '%'s to escape them, like '%%foo'.
+
+ 0 packages and 1 specfiles checked; 0 errors, 1 warnings, 0 badness; has taken 0.0 s 
+
+Generated source in /chroot_tmpdir/scmroot/shim.spec/SRPM/
+Finish: chroot ['xenpkg', '--cimode', 'makesources']
+Finish: run
+2025-10-09 10:28:58,972 [INFO] {976612} koji.build.buildroot:509 Running mock as kojibuilder
+INFO: mock.py version 6.3 starting (python version = 3.9.23, NVR = mock-6.3-1.el9), args: /usr/libexec/mock/mock -r koji/xs-foundations-xs9-build-95501-282678 --no-clean --buildsrpm --spec /var/lib/mock/xs-foundations-xs9-build-95501-282678/root/chroot_tmpdir/scmroot/shim.spec//SRPM/shim.spec --sources /var/lib/mock/xs-foundations-xs9-build-95501-282678/root/chroot_tmpdir/scmroot/shim.spec//SRPM --target noarch
+Start: init plugins
+INFO: selinux enabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+INFO: Start(/var/lib/mock/xs-foundations-xs9-build-95501-282678/root/chroot_tmpdir/scmroot/shim.spec//SRPM/shim.spec)  Config(xs-foundations-xs9-build-95501-282678)
+Mock Version: 6.3
+INFO: Mock Version: 6.3
+Start: chroot init
+INFO: calling preinit hooks
+INFO: enabled HW Info plugin
+INFO: Package manager dnf4 detected and used (fallback)
+INFO: Buildroot is handled by package management from host and used with --installroot:
+  rpm-4.16.1.3-39.el9.x86_64
+  python3-dnf-4.14.0-31.el9.noarch
+  python3-dnf-plugins-core-4.3.0-23.el9.noarch
+  yum-4.14.0-31.el9.noarch
+  yum-utils-4.3.0-23.el9.noarch
+Finish: chroot init
+Start: buildsrpm
+Start: rpmbuild -bs
+Finish: rpmbuild -bs
+Finish: buildsrpm
+INFO: Done(/var/lib/mock/xs-foundations-xs9-build-95501-282678/root/chroot_tmpdir/scmroot/shim.spec//SRPM/shim.spec) Config(koji/xs-foundations-xs9-build-95501-282678) 0 minutes 0 seconds
+INFO: Results and/or logs in: /var/lib/mock/xs-foundations-xs9-build-95501-282678/result
+Finish: run

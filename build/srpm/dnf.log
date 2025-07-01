@@ -1,0 +1,1303 @@
+2025-10-09T10:28:33+0000 INFO --- logging initialized ---
+2025-10-09T10:28:33+0000 DDEBUG timer: config: 6 ms
+2025-10-09T10:28:33+0000 WARNING No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+2025-10-09T10:28:33+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2025-10-09T10:28:33+0000 DEBUG DNF version: 4.14.0
+2025-10-09T10:28:33+0000 DDEBUG Command: dnf-3 --installroot /var/lib/mock/xs-foundations-xs9-build-95501-282678/root/ --setopt=deltarpm=False --setopt=allow_vendor_change=yes --allowerasing --disableplugin=local --disableplugin=spacewalk --disableplugin=versionlock install @srpm-build --setopt=tsflags=nocontexts 
+2025-10-09T10:28:33+0000 DDEBUG Installroot: /var/lib/mock/xs-foundations-xs9-build-95501-282678/root/
+2025-10-09T10:28:33+0000 DDEBUG Releasever: None
+2025-10-09T10:28:33+0000 DEBUG cachedir: /var/lib/mock/xs-foundations-xs9-build-95501-282678/root/var/cache/yum
+2025-10-09T10:28:33+0000 DDEBUG Base command: install
+2025-10-09T10:28:33+0000 DDEBUG Extra commands: ['--installroot', '/var/lib/mock/xs-foundations-xs9-build-95501-282678/root/', '--setopt=deltarpm=False', '--setopt=allow_vendor_change=yes', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'install', '@srpm-build', '--setopt=tsflags=nocontexts']
+2025-10-09T10:28:33+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 9; generic; Linux.x86_64)'
+2025-10-09T10:28:33+0000 DEBUG repo: downloading from remote: build
+2025-10-09T10:28:34+0000 DEBUG build: using metadata from Wed 08 Oct 2025 01:57:10 PM UTC.
+2025-10-09T10:28:34+0000 INFO Last metadata expiration check: 0:00:01 ago on Thu 09 Oct 2025 10:28:33 AM UTC.
+2025-10-09T10:28:34+0000 DDEBUG timer: sack setup: 769 ms
+2025-10-09T10:28:34+0000 DEBUG Completion plugin: Generating completion cache...
+2025-10-09T10:28:34+0000 DDEBUG Getting group metadata
+2025-10-09T10:28:34+0000 DDEBUG Adding group file from repository: build
+2025-10-09T10:28:34+0000 DDEBUG timer: loading comps: 1 ms
+2025-10-09T10:28:34+0000 DEBUG Adding packages from group 'srpm-build': {<libcomps.Package object 'gawk' at 0x7fc6c1e09030>, <libcomps.Package object 'gcc-c++' at 0x7fc6c1e09070>, <libcomps.Package object 'shadow-utils' at 0x7fc6c1e09210>, <libcomps.Package object 'diffutils' at 0x7fc6c21d6f90>, <libcomps.Package object 'gzip' at 0x7fc6c1e090f0>, <libcomps.Package object 'util-linux' at 0x7fc6c1e09290>, <libcomps.Package object 'python3' at 0x7fc6c1e09190>, <libcomps.Package object 'go-srpm-macros' at 0x7fc6c1e090b0>, <libcomps.Package object 'glibc-langpack-en' at 0x7fc6c1e09090>, <libcomps.Package object 'make' at 0x7fc6c1e09110>, <libcomps.Package object 'xenpkg' at 0x7fc6c1e092b0>, <libcomps.Package object 'xenserver-config-macros' at 0x7fc6c1e092d0>, <libcomps.Package object 'bash' at 0x7fc6c21d6e70>, <libcomps.Package object 'findutils' at 0x7fc6c21d6f50>, <libcomps.Package object 'system-rpm-config' at 0x7fc6c1e09230>, <libcomps.Package object 'sed' at 0x7fc6c1e091f0>, <libcomps.Package object 'python-srpm-macros' at 0x7fc6c1e09170>, <libcomps.Package object 'rpm-build' at 0x7fc6c1e091d0>, <libcomps.Package object 'grep' at 0x7fc6c1e090d0>, <libcomps.Package object 'python3-rpm-macros' at 0x7fc6c1e091b0>, <libcomps.Package object 'pyproject-rpm-macros' at 0x7fc6c1e09150>, <libcomps.Package object 'tar' at 0x7fc6c1e09250>, <libcomps.Package object 'patch' at 0x7fc6c1e09130>, <libcomps.Package object 'gcc' at 0x7fc6c1e09050>, <libcomps.Package object 'unzip' at 0x7fc6c1e09270>, <libcomps.Package object 'cpio' at 0x7fc6c21d6ed0>, <libcomps.Package object 'coreutils' at 0x7fc6c21d6670>, <libcomps.Package object 'xz' at 0x7fc6c1e092f0>, <libcomps.Package object 'bzip2' at 0x7fc6c21d6eb0>}
+2025-10-09T10:28:34+0000 WARNING No match for group package "system-rpm-config"
+2025-10-09T10:28:34+0000 DEBUG --> Starting dependency resolution
+2025-10-09T10:28:34+0000 DEBUG ---> Package annobin-docs.noarch 12.71-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package annobin-plugin-gcc.x86_64 12.71-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package audit-libs.x86_64 3.1.2-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package basesystem.noarch 11-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package bash.x86_64 5.2.37-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package binutils.x86_64 2.45-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package bzip2.x86_64 1.0.8-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package bzip2-libs.x86_64 1.0.8-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package ca-certificates.noarch 2024.2.72-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package coreutils.x86_64 9.5-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package coreutils-common.x86_64 9.5-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package cpio.x86_64 2.13-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package cpp.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package cracklib.x86_64 2.9.11-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package crypto-policies.noarch 20241128-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package curl.x86_64 8.11.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package dash.x86_64 0.5.11.5-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package dbus-common.noarch 1.14.10-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package dbus-daemon.x86_64 1.14.10-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package dbus-libs.x86_64 1.14.10-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package dbus-tools.x86_64 1.14.10-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package debugedit.x86_64 5.2-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package diffutils.x86_64 3.10-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package dwz.x86_64 0.16-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package ed.x86_64 1.19-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package elfutils.x86_64 0.193-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package elfutils-default-yama-scope.noarch 0.193-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package elfutils-libelf.x86_64 0.193-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package elfutils-libs.x86_64 0.193-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package expat.x86_64 2.5.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package fakeroot.x86_64 1.32.1-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package fakeroot-libs.x86_64 1.32.1-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package file.x86_64 5.45-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package file-libs.x86_64 5.45-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package filesystem.x86_64 3.18-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package findutils.x86_64 4.9.0-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gawk.x86_64 5.1.1-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gcc.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gcc-c++.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gdb.x86_64 15.2-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gdbm.x86_64 1.23-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gdbm-libs.x86_64 1.23-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package git.x86_64 2.41.0-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package git-core.x86_64 2.41.0-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package git-core-doc.noarch 2.41.0-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package glibc.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package glibc-common.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package glibc-devel.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package glibc-langpack-en.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package glibc-minimal-langpack.x86_64 2.41-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gmp.x86_64 6.2.1-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gnupg2.x86_64 2.4.0-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gnutls.x86_64 3.8.8-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package go-srpm-macros.noarch 3.7.0-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package grep.x86_64 3.11-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package groff-base.x86_64 1.23.0-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package gzip.x86_64 1.14-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package jansson.x86_64 2.14.1-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package kernel-headers.x86_64 6.6.98-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package keyutils-libs.x86_64 1.6.3-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package krb5-libs.x86_64 1.21.3-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package less.x86_64 633-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libacl.x86_64 2.3.2-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libarchive.x86_64 3.6.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libassuan.x86_64 2.5.5-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libattr.x86_64 2.5.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libb2.x86_64 0.98.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libblkid.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libcap.x86_64 2.48-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libcap-ng.x86_64 0.8.3-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libcom_err.x86_64 1.47.0-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libcurl.x86_64 8.11.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libedit.x86_64 3.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libevent.x86_64 2.1.12-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libfdisk.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libffi.x86_64 3.4.4-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libgcc.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libgcrypt.x86_64 1.11.0-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libgomp.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libgpg-error.x86_64 1.51-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libidn2.x86_64 2.3.4-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libksba.x86_64 1.6.3-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libmount.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libmpc.x86_64 1.3.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libnghttp2.x86_64 1.64.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libpkgconf.x86_64 1.8.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libpwquality.x86_64 1.4.5-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libseccomp.x86_64 2.5.3-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libsigsegv.x86_64 2.14-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libsmartcols.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libstdc++.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libstdc++-devel.x86_64 12.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libtasn1.x86_64 4.19.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libunistring.x86_64 1.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libutempter.x86_64 1.2.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libuuid.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libverto.x86_64 0.3.2-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libxcrypt.x86_64 4.4.36-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libxcrypt-devel.x86_64 4.4.36-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libxml2.x86_64 2.10.4-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package libzstd.x86_64 1.5.5-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package lua-libs.x86_64 5.4.4-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package lz4-libs.x86_64 1.10.0-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package make.x86_64 4.4-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package mpdecimal.x86_64 2.5.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package mpfr.x86_64 4.1.1-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package ncurses.x86_64 6.4-7.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package ncurses-base.noarch 6.4-7.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package ncurses-libs.x86_64 6.4-7.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package nettle.x86_64 3.10-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package npth.x86_64 1.6-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package openldap.x86_64 2.6.4-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package openssh.x86_64 9.9p1-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package openssh-clients.x86_64 9.9p1-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package openssl-libs.x86_64 3.0.9-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package p11-kit.x86_64 0.24.1-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package p11-kit-trust.x86_64 0.24.1-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pam.x86_64 1.7.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pam-libs.x86_64 1.7.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package patch.x86_64 2.7.6-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pcre2.x86_64 10.40-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pcre2-syntax.noarch 10.40-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Archive-Tar.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Attribute-Handlers.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-AutoLoader.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-AutoSplit.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-B.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Benchmark.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-CPAN.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-CPAN-Meta.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-CPAN-Meta-Requirements.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-CPAN-Meta-YAML.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Carp.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Class-Struct.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Compress-Raw-Bzip2.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Compress-Raw-Zlib.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Config-Extensions.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Config-INI.noarch 0.027-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Config-Perl-V.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Crypt-JWT.noarch 0.035-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-CryptX.x86_64 0.078-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-DBM_Filter.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Data-Dump.noarch 1.25-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Data-Dumper.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Data-OptList.noarch 0.112-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Devel-PPPort.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Devel-Peek.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Devel-SelfStubber.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Digest.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Digest-HMAC.noarch 1.04-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Digest-MD5.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Digest-SHA.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-DirHandle.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Dumpvalue.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-DynaLoader.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Encode.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Encode-Locale.noarch 1.05-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Encode-devel.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-English.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Env.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Errno.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Error.noarch 0.17029-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Exporter.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-CBuilder.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-Command.noarch 7.66-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-Constant.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-Embed.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-Install.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-MM-Utils.noarch 7.66-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-MakeMaker.noarch 7.66-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-Manifest.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-Miniperl.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ExtUtils-ParseXS.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Fcntl.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Basename.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Compare.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Copy.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Copy-Recursive.noarch 0.45-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-DosGlob.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Fetch.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Find.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Listing.noarch 6.15-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Path.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Slurp-Tiny.noarch 0.004-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-Temp.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-File-stat.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-FileCache.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-FileHandle.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Filter.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Filter-Simple.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-FindBin.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-GDBM_File.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Getopt-Long.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Getopt-Std.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Git.noarch 2.41.0-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-HTML-Parser.x86_64 3.81-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-HTML-Tagset.noarch 3.20-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-HTTP-Cookies.noarch 6.10-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-HTTP-Date.noarch 6.05-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-HTTP-Message.noarch 6.37-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-HTTP-Negotiate.noarch 6.01-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-HTTP-Tiny.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Hash-Util.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Hash-Util-FieldHash.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-I18N-Collate.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-I18N-LangTags.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-I18N-Langinfo.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IO.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IO-Compress.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IO-HTML.noarch 1.004-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IO-Socket-IP.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IO-Socket-SSL.noarch 2.075-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IO-Zlib.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IPC-Cmd.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IPC-Open3.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-IPC-SysV.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-JSON.noarch 4.09-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-JSON-PP.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-LWP-MediaTypes.noarch 6.04-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-LWP-Protocol-https.noarch 6.10-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Locale-Maketext.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Locale-Maketext-Simple.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-MIME-Base64.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Math-BigInt.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Math-BigInt-FastCalc.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Math-BigRat.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Math-Complex.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Memoize.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Mixin-Linewise.noarch 0.110-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Module-Build.noarch 0.42.31-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Module-CoreList.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Module-CoreList-tools.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Module-Load.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Module-Load-Conditional.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Module-Loaded.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Module-Metadata.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Mozilla-CA.noarch 20211001-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-NDBM_File.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-NEXT.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-NTLM.noarch 1.09-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Net.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Net-HTTP.noarch 6.22-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Net-Ping.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Net-SSLeay.x86_64 1.92-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ODBM_File.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Opcode.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-POSIX.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Package-Generator.noarch 1.106-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Params-Check.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Params-Util.x86_64 1.102-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-PathTools.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Perl-OSType.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Perl-Version.noarch 1.013-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-PerlIO-utf8_strict.x86_64 0.009-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-PerlIO-via-QuotedPrint.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Pod-Checker.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Pod-Escapes.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Pod-Functions.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Pod-Html.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Pod-Perldoc.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Pod-Simple.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Pod-Usage.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Safe.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Scalar-List-Utils.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Search-Dict.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-SelectSaver.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-SelfLoader.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Socket.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Storable.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Sub-Exporter.noarch 0.988-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Sub-Install.noarch 0.928-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Symbol.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Sys-Hostname.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Sys-Syslog.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Term-ANSIColor.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Term-Cap.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Term-Complete.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Term-ReadLine.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Test.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Test-Harness.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Test-Simple.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Text-Abbrev.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Text-Balanced.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Text-ParseWords.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Text-Tabs+Wrap.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Thread.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Thread-Queue.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Thread-Semaphore.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Tie.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Tie-File.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Tie-Memoize.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Tie-RefHash.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Time.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Time-HiRes.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Time-Local.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Time-Piece.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-TimeDate.noarch 2.33-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Try-Tiny.noarch 0.31-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-URI.noarch 5.17-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Unicode-Collate.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Unicode-Normalize.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-Unicode-UCD.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-User-pwent.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-WWW-RobotRules.noarch 6.02-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-autodie.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-autouse.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-base.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-bignum.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-blib.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-constant.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-debugger.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-deprecate.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-devel.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-diagnostics.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-doc.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-encoding.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-encoding-warnings.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-experimental.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-fields.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-filetest.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-if.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-inc-latest.noarch 0.500-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-interpreter.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-less.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-lib.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-libnet.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-libnetcfg.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-libs.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-libwww-perl.noarch 6.68-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-locale.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-macros.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-meta-notation.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-mro.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-open.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-overload.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-overloading.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-parent.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-perlfaq.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-ph.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-podlators.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-sigtrap.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-sort.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-srpm-macros.noarch 1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-subs.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-threads.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-threads-shared.x86_64 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-utils.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-vars.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-version.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package perl-vmsish.noarch 5.36.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pkgconf.x86_64 1.8.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pkgconf-m4.noarch 1.8.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pkgconf-pkg-config.x86_64 1.8.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package popt.x86_64 1.19-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package pyproject-rpm-macros.noarch 1.8.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python-rpm-macros.noarch 3.10-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python-srpm-macros.noarch 3.10-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3.x86_64 3.11.3-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-argcomplete.noarch 2.0.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-charset-normalizer.noarch 2.1.0-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-construct.noarch 2.10.68-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-file-magic.noarch 5.45-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-idna.noarch 3.3-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-libs.x86_64 3.11.3-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-pip-wheel.noarch 22.2.2-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-progressbar2.noarch 3.53.2-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-pybeam.noarch 0.7-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-pyparsing.noarch 3.0.7-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-pysocks.noarch 1.7.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-pyxdg.noarch 0.27-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-requests.noarch 2.28.1-5.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-rpm.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-rpm-macros.noarch 3.10-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-setuptools-wheel.noarch 65.5.1-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-six.noarch 1.16.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-tomli-w.noarch 1.0.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-urllib3+socks.noarch 1.26.20-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-urllib3.noarch 1.26.20-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-utils.noarch 3.1.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package python3-zstandard.x86_64 0.19.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package readline.x86_64 8.2-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpm.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpm-build.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpm-build-libs.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpm-libs.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpm-sign-libs.x86_64 4.18.0-6.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpmdevtools.noarch 9.6-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpmlint.noarch 2.4.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package rpmlint-fedora-license-data.noarch 1.22-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package sed.x86_64 4.9-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package setup.noarch 2.8.77-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package shadow-utils.x86_64 4.17.0-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package sqlite-libs.x86_64 3.47.2-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package systemd.x86_64 257.2-8.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package systemd-libs.x86_64 257.2-8.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package systemd-pam.x86_64 257.2-8.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package systemd-rpm-macros.noarch 257.2-8.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package systemtap-sdt-devel.x86_64 4.8-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package tar.x86_64 1.35-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package tzdata.noarch 2024a-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package unzip.x86_64 6.0-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package util-linux.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package util-linux-core.x86_64 2.38.1-4.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xenpkg.noarch 1.8.8-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xenserver-config.noarch 9.0.9-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xenserver-config-macros.noarch 9.0.9-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xenserver-config-rpm.noarch 9.0.9-1.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xenserver-release.x86_64 8.99.50-11.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xenserver-release-presets.x86_64 8.99.50-11.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xxhash-libs.x86_64 0.8.2-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xz.x86_64 5.4.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package xz-libs.x86_64 5.4.1-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package zlib.x86_64 1.2.12-3.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG ---> Package zstd.x86_64 1.5.5-2.xs9 will be installed
+2025-10-09T10:28:34+0000 DEBUG --> Finished dependency resolution
+2025-10-09T10:28:34+0000 DDEBUG timer: depsolve: 38 ms
+2025-10-09T10:28:34+0000 INFO Dependencies resolved.
+2025-10-09T10:28:34+0000 INFO ================================================================================
+ Package                         Arch      Version               Repo      Size
+================================================================================
+Installing group/module packages:
+ bash                            x86_64    5.2.37-1.xs9          build    2.2 M
+ bzip2                           x86_64    1.0.8-3.xs9           build     56 k
+ coreutils                       x86_64    9.5-1.xs9             build    1.3 M
+ cpio                            x86_64    2.13-2.xs9            build    310 k
+ diffutils                       x86_64    3.10-2.xs9            build    443 k
+ findutils                       x86_64    4.9.0-4.xs9           build    536 k
+ gawk                            x86_64    5.1.1-5.xs9           build    1.1 M
+ gcc                             x86_64    12.4.0-2.xs9          build     39 M
+ gcc-c++                         x86_64    12.4.0-2.xs9          build     15 M
+ glibc-langpack-en               x86_64    2.41-1.xs9            build    1.6 M
+ go-srpm-macros                  noarch    3.7.0-3.xs9           build     28 k
+ grep                            x86_64    3.11-1.xs9            build    327 k
+ gzip                            x86_64    1.14-1.xs9            build    190 k
+ make                            x86_64    4.4-2.xs9             build    645 k
+ patch                           x86_64    2.7.6-3.xs9           build    139 k
+ pyproject-rpm-macros            noarch    1.8.0-2.xs9           build     38 k
+ python-srpm-macros              noarch    3.10-3.xs9            build     22 k
+ python3                         x86_64    3.11.3-5.xs9          build     25 k
+ python3-rpm-macros              noarch    3.10-3.xs9            build     10 k
+ rpm-build                       x86_64    4.18.0-6.xs9          build     66 k
+ sed                             x86_64    4.9-1.xs9             build    338 k
+ shadow-utils                    x86_64    4.17.0-1.xs9          build    831 k
+ tar                             x86_64    1.35-1.xs9            build    980 k
+ unzip                           x86_64    6.0-2.xs9             build    205 k
+ util-linux                      x86_64    2.38.1-4.xs9          build    3.1 M
+ xenpkg                          noarch    1.8.8-1.xs9           build     82 k
+ xenserver-config-macros         noarch    9.0.9-1.xs9           build     10 k
+ xz                              x86_64    5.4.1-2.xs9           build    438 k
+Installing dependencies:
+ annobin-docs                    noarch    12.71-1.xs9           build     81 k
+ annobin-plugin-gcc              x86_64    12.71-1.xs9           build    962 k
+ audit-libs                      x86_64    3.1.2-2.xs9           build    135 k
+ basesystem                      noarch    11-2.xs9              build    6.5 k
+ binutils                        x86_64    2.45-1.xs9            build    7.6 M
+ bzip2-libs                      x86_64    1.0.8-3.xs9           build     44 k
+ ca-certificates                 noarch    2024.2.72-3.xs9       build    510 k
+ coreutils-common                x86_64    9.5-1.xs9             build    2.7 M
+ cpp                             x86_64    12.4.0-2.xs9          build     13 M
+ cracklib                        x86_64    2.9.11-3.xs9          build     89 k
+ crypto-policies                 noarch    20241128-1.xs9        build     53 k
+ curl                            x86_64    8.11.1-2.xs9          build    240 k
+ dash                            x86_64    0.5.11.5-2.xs9        build    106 k
+ dbus-common                     noarch    1.14.10-3.xs9         build     14 k
+ dbus-daemon                     x86_64    1.14.10-3.xs9         build    213 k
+ dbus-libs                       x86_64    1.14.10-3.xs9         build    180 k
+ dbus-tools                      x86_64    1.14.10-3.xs9         build     48 k
+ debugedit                       x86_64    5.2-1.xs9             build     86 k
+ dwz                             x86_64    0.16-1.xs9            build    159 k
+ ed                              x86_64    1.19-2.xs9            build     85 k
+ elfutils                        x86_64    0.193-1.xs9           build    622 k
+ elfutils-default-yama-scope     noarch    0.193-1.xs9           build    8.8 k
+ elfutils-libelf                 x86_64    0.193-1.xs9           build    262 k
+ elfutils-libs                   x86_64    0.193-1.xs9           build    308 k
+ expat                           x86_64    2.5.0-2.xs9           build    120 k
+ fakeroot                        x86_64    1.32.1-3.xs9          build     85 k
+ fakeroot-libs                   x86_64    1.32.1-3.xs9          build     29 k
+ file                            x86_64    5.45-1.xs9            build     52 k
+ file-libs                       x86_64    5.45-1.xs9            build    949 k
+ filesystem                      x86_64    3.18-3.xs9            build    1.1 M
+ gdb                             x86_64    15.2-2.xs9            build    5.5 M
+ gdbm                            x86_64    1.23-2.xs9            build    168 k
+ gdbm-libs                       x86_64    1.23-2.xs9            build     63 k
+ git                             x86_64    2.41.0-4.xs9          build     36 k
+ git-core                        x86_64    2.41.0-4.xs9          build    6.2 M
+ git-core-doc                    noarch    2.41.0-4.xs9          build    1.3 M
+ glibc                           x86_64    2.41-1.xs9            build    2.7 M
+ glibc-common                    x86_64    2.41-1.xs9            build    355 k
+ glibc-devel                     x86_64    2.41-1.xs9            build    554 k
+ glibc-minimal-langpack          x86_64    2.41-1.xs9            build    7.4 k
+ gmp                             x86_64    6.2.1-3.xs9           build    356 k
+ gnupg2                          x86_64    2.4.0-6.xs9           build    3.0 M
+ gnutls                          x86_64    3.8.8-2.xs9           build    1.3 M
+ groff-base                      x86_64    1.23.0-1.xs9          build    1.3 M
+ jansson                         x86_64    2.14.1-1.xs9          build     70 k
+ kernel-headers                  x86_64    6.6.98-5.xs9          build    1.7 M
+ keyutils-libs                   x86_64    1.6.3-2.xs9           build     33 k
+ krb5-libs                       x86_64    1.21.3-3.xs9          build    912 k
+ less                            x86_64    633-2.xs9             build    192 k
+ libacl                          x86_64    2.3.2-1.xs9           build     25 k
+ libarchive                      x86_64    3.6.1-2.xs9           build    463 k
+ libassuan                       x86_64    2.5.5-2.xs9           build     76 k
+ libattr                         x86_64    2.5.1-2.xs9           build     18 k
+ libb2                           x86_64    0.98.1-2.xs9          build     28 k
+ libblkid                        x86_64    2.38.1-4.xs9          build    114 k
+ libcap                          x86_64    2.48-2.xs9            build     73 k
+ libcap-ng                       x86_64    0.8.3-2.xs9           build     34 k
+ libcom_err                      x86_64    1.47.0-3.xs9          build     28 k
+ libcurl                         x86_64    8.11.1-2.xs9          build    386 k
+ libedit                         x86_64    3.1-2.xs9             build    119 k
+ libevent                        x86_64    2.1.12-2.xs9          build    302 k
+ libfdisk                        x86_64    2.38.1-4.xs9          build    184 k
+ libffi                          x86_64    3.4.4-2.xs9           build     40 k
+ libgcc                          x86_64    12.4.0-2.xs9          build     97 k
+ libgcrypt                       x86_64    1.11.0-1.xs9          build    683 k
+ libgomp                         x86_64    12.4.0-2.xs9          build    296 k
+ libgpg-error                    x86_64    1.51-3.xs9            build    273 k
+ libidn2                         x86_64    2.3.4-4.xs9           build    186 k
+ libksba                         x86_64    1.6.3-2.xs9           build    177 k
+ libmount                        x86_64    2.38.1-4.xs9          build    153 k
+ libmpc                          x86_64    1.3.1-2.xs9           build     79 k
+ libnghttp2                      x86_64    1.64.0-2.xs9          build     93 k
+ libpkgconf                      x86_64    1.8.0-2.xs9           build     37 k
+ libpwquality                    x86_64    1.4.5-2.xs9           build    120 k
+ libseccomp                      x86_64    2.5.3-2.xs9           build     80 k
+ libsigsegv                      x86_64    2.14-2.xs9            build     28 k
+ libsmartcols                    x86_64    2.38.1-4.xs9          build     70 k
+ libstdc++                       x86_64    12.4.0-2.xs9          build    928 k
+ libstdc++-devel                 x86_64    12.4.0-2.xs9          build    3.0 M
+ libtasn1                        x86_64    4.19.0-2.xs9          build     82 k
+ libunistring                    x86_64    1.0-2.xs9             build    722 k
+ libutempter                     x86_64    1.2.1-2.xs9           build     27 k
+ libuuid                         x86_64    2.38.1-4.xs9          build     26 k
+ libverto                        x86_64    0.3.2-2.xs9           build     21 k
+ libxcrypt                       x86_64    4.4.36-3.xs9          build    133 k
+ libxcrypt-devel                 x86_64    4.4.36-3.xs9          build     27 k
+ libxml2                         x86_64    2.10.4-2.xs9          build    821 k
+ libzstd                         x86_64    1.5.5-2.xs9           build    332 k
+ lua-libs                        x86_64    5.4.4-3.xs9           build    147 k
+ lz4-libs                        x86_64    1.10.0-1.xs9          build     79 k
+ mpdecimal                       x86_64    2.5.1-2.xs9           build    100 k
+ mpfr                            x86_64    4.1.1-3.xs9           build    713 k
+ ncurses                         x86_64    6.4-7.xs9             build    429 k
+ ncurses-base                    noarch    6.4-7.xs9             build     68 k
+ ncurses-libs                    x86_64    6.4-7.xs9             build    385 k
+ nettle                          x86_64    3.10-1.xs9            build    478 k
+ npth                            x86_64    1.6-2.xs9             build     27 k
+ openldap                        x86_64    2.6.4-5.xs9           build    295 k
+ openssh                         x86_64    9.9p1-1.xs9           build    379 k
+ openssh-clients                 x86_64    9.9p1-1.xs9           build    824 k
+ openssl-libs                    x86_64    3.0.9-6.xs9           build    2.9 M
+ p11-kit                         x86_64    0.24.1-3.xs9          build    393 k
+ p11-kit-trust                   x86_64    0.24.1-3.xs9          build    144 k
+ pam                             x86_64    1.7.0-2.xs9           build    413 k
+ pam-libs                        x86_64    1.7.0-2.xs9           build     60 k
+ pcre2                           x86_64    10.40-2.xs9           build    269 k
+ pcre2-syntax                    noarch    10.40-2.xs9           build    146 k
+ perl                            x86_64    5.36.1-4.xs9          build     11 k
+ perl-Archive-Tar                noarch    5.36.1-4.xs9          build     72 k
+ perl-Attribute-Handlers         noarch    5.36.1-4.xs9          build     28 k
+ perl-AutoLoader                 noarch    5.36.1-4.xs9          build     21 k
+ perl-AutoSplit                  noarch    5.36.1-4.xs9          build     21 k
+ perl-B                          x86_64    5.36.1-4.xs9          build    204 k
+ perl-Benchmark                  noarch    5.36.1-4.xs9          build     27 k
+ perl-CPAN                       noarch    5.36.1-4.xs9          build    318 k
+ perl-CPAN-Meta                  noarch    5.36.1-4.xs9          build    146 k
+ perl-CPAN-Meta-Requirements     noarch    5.36.1-4.xs9          build     22 k
+ perl-CPAN-Meta-YAML             noarch    5.36.1-4.xs9          build     19 k
+ perl-Carp                       noarch    5.36.1-4.xs9          build     29 k
+ perl-Class-Struct               noarch    5.36.1-4.xs9          build     22 k
+ perl-Compress-Raw-Bzip2         x86_64    5.36.1-4.xs9          build     31 k
+ perl-Compress-Raw-Zlib          x86_64    5.36.1-4.xs9          build     58 k
+ perl-Config-Extensions          noarch    5.36.1-4.xs9          build     11 k
+ perl-Config-INI                 noarch    0.027-2.xs9           build     39 k
+ perl-Config-Perl-V              noarch    5.36.1-4.xs9          build     19 k
+ perl-Crypt-JWT                  noarch    0.035-3.xs9           build     43 k
+ perl-CryptX                     x86_64    0.078-6.xs9           build    811 k
+ perl-DBM_Filter                 noarch    5.36.1-4.xs9          build     32 k
+ perl-Data-Dump                  noarch    1.25-2.xs9            build     35 k
+ perl-Data-Dumper                x86_64    5.36.1-4.xs9          build     55 k
+ perl-Data-OptList               noarch    0.112-2.xs9           build     28 k
+ perl-Devel-PPPort               x86_64    5.36.1-4.xs9          build    178 k
+ perl-Devel-Peek                 x86_64    5.36.1-4.xs9          build     33 k
+ perl-Devel-SelfStubber          noarch    5.36.1-4.xs9          build     13 k
+ perl-Digest                     noarch    5.36.1-4.xs9          build     25 k
+ perl-Digest-HMAC                noarch    1.04-2.xs9            build     23 k
+ perl-Digest-MD5                 x86_64    5.36.1-4.xs9          build     30 k
+ perl-Digest-SHA                 x86_64    5.36.1-4.xs9          build     58 k
+ perl-DirHandle                  noarch    5.36.1-4.xs9          build     11 k
+ perl-Dumpvalue                  noarch    5.36.1-4.xs9          build     18 k
+ perl-DynaLoader                 x86_64    5.36.1-4.xs9          build     26 k
+ perl-Encode                     x86_64    5.36.1-4.xs9          build    1.3 M
+ perl-Encode-Locale              noarch    1.05-2.xs9            build     19 k
+ perl-Encode-devel               noarch    5.36.1-4.xs9          build     46 k
+ perl-English                    noarch    5.36.1-4.xs9          build     12 k
+ perl-Env                        noarch    5.36.1-4.xs9          build     13 k
+ perl-Errno                      x86_64    5.36.1-4.xs9          build     14 k
+ perl-Error                      noarch    0.17029-2.xs9         build     44 k
+ perl-Exporter                   noarch    5.36.1-4.xs9          build     30 k
+ perl-ExtUtils-CBuilder          noarch    5.36.1-4.xs9          build     36 k
+ perl-ExtUtils-Command           noarch    7.66-2.xs9            build     13 k
+ perl-ExtUtils-Constant          noarch    5.36.1-4.xs9          build     49 k
+ perl-ExtUtils-Embed             noarch    5.36.1-4.xs9          build     17 k
+ perl-ExtUtils-Install           noarch    5.36.1-4.xs9          build     44 k
+ perl-ExtUtils-MM-Utils          noarch    7.66-2.xs9            build     11 k
+ perl-ExtUtils-MakeMaker         noarch    7.66-2.xs9            build    323 k
+ perl-ExtUtils-Manifest          noarch    5.36.1-4.xs9          build     22 k
+ perl-ExtUtils-Miniperl          noarch    5.36.1-4.xs9          build     14 k
+ perl-ExtUtils-ParseXS           noarch    5.36.1-4.xs9          build    197 k
+ perl-Fcntl                      x86_64    5.36.1-4.xs9          build     20 k
+ perl-File-Basename              noarch    5.36.1-4.xs9          build     16 k
+ perl-File-Compare               noarch    5.36.1-4.xs9          build     12 k
+ perl-File-Copy                  noarch    5.36.1-4.xs9          build     19 k
+ perl-File-Copy-Recursive        noarch    0.45-2.xs9            build     27 k
+ perl-File-DosGlob               x86_64    5.36.1-4.xs9          build     19 k
+ perl-File-Fetch                 noarch    5.36.1-4.xs9          build     29 k
+ perl-File-Find                  noarch    5.36.1-4.xs9          build     26 k
+ perl-File-Listing               noarch    6.15-2.xs9            build     26 k
+ perl-File-Path                  noarch    5.36.1-4.xs9          build     33 k
+ perl-File-Slurp-Tiny            noarch    0.004-2.xs9           build     20 k
+ perl-File-Temp                  noarch    5.36.1-4.xs9          build     53 k
+ perl-File-stat                  noarch    5.36.1-4.xs9          build     16 k
+ perl-FileCache                  noarch    5.36.1-4.xs9          build     14 k
+ perl-FileHandle                 noarch    5.36.1-4.xs9          build     15 k
+ perl-Filter                     x86_64    5.36.1-4.xs9          build     47 k
+ perl-Filter-Simple              noarch    5.36.1-4.xs9          build     25 k
+ perl-FindBin                    noarch    5.36.1-4.xs9          build     13 k
+ perl-GDBM_File                  x86_64    5.36.1-4.xs9          build     46 k
+ perl-Getopt-Long                noarch    5.36.1-4.xs9          build     53 k
+ perl-Getopt-Std                 noarch    5.36.1-4.xs9          build     15 k
+ perl-Git                        noarch    2.41.0-4.xs9          build     27 k
+ perl-HTML-Parser                x86_64    3.81-2.xs9            build    134 k
+ perl-HTML-Tagset                noarch    3.20-2.xs9            build     18 k
+ perl-HTTP-Cookies               noarch    6.10-2.xs9            build     40 k
+ perl-HTTP-Date                  noarch    6.05-2.xs9            build     25 k
+ perl-HTTP-Message               noarch    6.37-2.xs9            build    106 k
+ perl-HTTP-Negotiate             noarch    6.01-2.xs9            build     20 k
+ perl-HTTP-Tiny                  noarch    5.36.1-4.xs9          build     43 k
+ perl-Hash-Util                  x86_64    5.36.1-4.xs9          build     35 k
+ perl-Hash-Util-FieldHash        x86_64    5.36.1-4.xs9          build     40 k
+ perl-I18N-Collate               noarch    5.36.1-4.xs9          build     13 k
+ perl-I18N-LangTags              noarch    5.36.1-4.xs9          build     57 k
+ perl-I18N-Langinfo              x86_64    5.36.1-4.xs9          build     22 k
+ perl-IO                         x86_64    5.36.1-4.xs9          build     92 k
+ perl-IO-Compress                noarch    5.36.1-4.xs9          build    280 k
+ perl-IO-HTML                    noarch    1.004-2.xs9           build     29 k
+ perl-IO-Socket-IP               noarch    5.36.1-4.xs9          build     31 k
+ perl-IO-Socket-SSL              noarch    2.075-3.xs9           build    245 k
+ perl-IO-Zlib                    noarch    5.36.1-4.xs9          build     18 k
+ perl-IPC-Cmd                    noarch    5.36.1-4.xs9          build     38 k
+ perl-IPC-Open3                  noarch    5.36.1-4.xs9          build     22 k
+ perl-IPC-SysV                   x86_64    5.36.1-4.xs9          build     39 k
+ perl-JSON                       noarch    4.09-2.xs9            build    107 k
+ perl-JSON-PP                    noarch    5.36.1-4.xs9          build     67 k
+ perl-LWP-MediaTypes             noarch    6.04-2.xs9            build     36 k
+ perl-LWP-Protocol-https         noarch    6.10-2.xs9            build     22 k
+ perl-Locale-Maketext            noarch    5.36.1-4.xs9          build    100 k
+ perl-Locale-Maketext-Simple     noarch    5.36.1-4.xs9          build     17 k
+ perl-MIME-Base64                x86_64    5.36.1-4.xs9          build     28 k
+ perl-Math-BigInt                noarch    5.36.1-4.xs9          build    190 k
+ perl-Math-BigInt-FastCalc       x86_64    5.36.1-4.xs9          build     23 k
+ perl-Math-BigRat                noarch    5.36.1-4.xs9          build     37 k
+ perl-Math-Complex               noarch    5.36.1-4.xs9          build     49 k
+ perl-Memoize                    noarch    5.36.1-4.xs9          build     59 k
+ perl-Mixin-Linewise             noarch    0.110-2.xs9           build     28 k
+ perl-Module-Build               noarch    0.42.31-2.xs9         build    284 k
+ perl-Module-CoreList            noarch    5.36.1-4.xs9          build    106 k
+ perl-Module-CoreList-tools      noarch    5.36.1-4.xs9          build     17 k
+ perl-Module-Load                noarch    5.36.1-4.xs9          build     16 k
+ perl-Module-Load-Conditional    noarch    5.36.1-4.xs9          build     20 k
+ perl-Module-Loaded              noarch    5.36.1-4.xs9          build     12 k
+ perl-Module-Metadata            noarch    5.36.1-4.xs9          build     26 k
+ perl-Mozilla-CA                 noarch    20211001-2.xs9        build     12 k
+ perl-NDBM_File                  x86_64    5.36.1-4.xs9          build     22 k
+ perl-NEXT                       noarch    5.36.1-4.xs9          build     21 k
+ perl-NTLM                       noarch    1.09-2.xs9            build     23 k
+ perl-Net                        noarch    5.36.1-4.xs9          build     25 k
+ perl-Net-HTTP                   noarch    6.22-2.xs9            build     43 k
+ perl-Net-Ping                   noarch    5.36.1-4.xs9          build     44 k
+ perl-Net-SSLeay                 x86_64    1.92-2.xs9            build    387 k
+ perl-ODBM_File                  x86_64    5.36.1-4.xs9          build     22 k
+ perl-Opcode                     x86_64    5.36.1-4.xs9          build     39 k
+ perl-POSIX                      x86_64    5.36.1-4.xs9          build    108 k
+ perl-Package-Generator          noarch    1.106-2.xs9           build     23 k
+ perl-Params-Check               noarch    5.36.1-4.xs9          build     21 k
+ perl-Params-Util                x86_64    1.102-2.xs9           build     35 k
+ perl-PathTools                  x86_64    5.36.1-4.xs9          build     84 k
+ perl-Perl-OSType                noarch    5.36.1-4.xs9          build     14 k
+ perl-Perl-Version               noarch    1.013-2.xs9           build     36 k
+ perl-PerlIO-utf8_strict         x86_64    0.009-2.xs9           build     27 k
+ perl-PerlIO-via-QuotedPrint     noarch    5.36.1-4.xs9          build     13 k
+ perl-Pod-Checker                noarch    5.36.1-4.xs9          build     32 k
+ perl-Pod-Escapes                noarch    5.36.1-4.xs9          build     19 k
+ perl-Pod-Functions              noarch    5.36.1-4.xs9          build     13 k
+ perl-Pod-Html                   noarch    5.36.1-4.xs9          build     32 k
+ perl-Pod-Perldoc                noarch    5.36.1-4.xs9          build     86 k
+ perl-Pod-Simple                 noarch    5.36.1-4.xs9          build    238 k
+ perl-Pod-Usage                  noarch    5.36.1-4.xs9          build     33 k
+ perl-Safe                       noarch    5.36.1-4.xs9          build     25 k
+ perl-Scalar-List-Utils          x86_64    5.36.1-4.xs9          build     74 k
+ perl-Search-Dict                noarch    5.36.1-4.xs9          build     12 k
+ perl-SelectSaver                noarch    5.36.1-4.xs9          build     10 k
+ perl-SelfLoader                 noarch    5.36.1-4.xs9          build     21 k
+ perl-Socket                     x86_64    5.36.1-4.xs9          build     47 k
+ perl-Storable                   x86_64    5.36.1-4.xs9          build     92 k
+ perl-Sub-Exporter               noarch    0.988-2.xs9           build     80 k
+ perl-Sub-Install                noarch    0.928-2.xs9           build     23 k
+ perl-Symbol                     noarch    5.36.1-4.xs9          build     13 k
+ perl-Sys-Hostname               x86_64    5.36.1-4.xs9          build     16 k
+ perl-Sys-Syslog                 x86_64    5.36.1-4.xs9          build     43 k
+ perl-Term-ANSIColor             noarch    5.36.1-4.xs9          build     41 k
+ perl-Term-Cap                   noarch    5.36.1-4.xs9          build     20 k
+ perl-Term-Complete              noarch    5.36.1-4.xs9          build     12 k
+ perl-Term-ReadLine              noarch    5.36.1-4.xs9          build     18 k
+ perl-Test                       noarch    5.36.1-4.xs9          build     29 k
+ perl-Test-Harness               noarch    5.36.1-4.xs9          build    283 k
+ perl-Test-Simple                noarch    5.36.1-4.xs9          build    452 k
+ perl-Text-Abbrev                noarch    5.36.1-4.xs9          build     11 k
+ perl-Text-Balanced              noarch    5.36.1-4.xs9          build     47 k
+ perl-Text-ParseWords            noarch    5.36.1-4.xs9          build     15 k
+ perl-Text-Tabs+Wrap             noarch    5.36.1-4.xs9          build     21 k
+ perl-Thread                     noarch    5.36.1-4.xs9          build     17 k
+ perl-Thread-Queue               noarch    5.36.1-4.xs9          build     19 k
+ perl-Thread-Semaphore           noarch    5.36.1-4.xs9          build     15 k
+ perl-Tie                        noarch    5.36.1-4.xs9          build     32 k
+ perl-Tie-File                   noarch    5.36.1-4.xs9          build     46 k
+ perl-Tie-Memoize                noarch    5.36.1-4.xs9          build     13 k
+ perl-Tie-RefHash                noarch    5.36.1-4.xs9          build     15 k
+ perl-Time                       noarch    5.36.1-4.xs9          build     18 k
+ perl-Time-HiRes                 x86_64    5.36.1-4.xs9          build     41 k
+ perl-Time-Local                 noarch    5.36.1-4.xs9          build     21 k
+ perl-Time-Piece                 x86_64    5.36.1-4.xs9          build     44 k
+ perl-TimeDate                   noarch    2.33-2.xs9            build     54 k
+ perl-Try-Tiny                   noarch    0.31-2.xs9            build     40 k
+ perl-URI                        noarch    5.17-2.xs9            build    121 k
+ perl-Unicode-Collate            x86_64    5.36.1-4.xs9          build    864 k
+ perl-Unicode-Normalize          x86_64    5.36.1-4.xs9          build     74 k
+ perl-Unicode-UCD                noarch    5.36.1-4.xs9          build     87 k
+ perl-User-pwent                 noarch    5.36.1-4.xs9          build     20 k
+ perl-WWW-RobotRules             noarch    6.02-2.xs9            build     20 k
+ perl-autodie                    noarch    5.36.1-4.xs9          build     86 k
+ perl-autouse                    noarch    5.36.1-4.xs9          build     13 k
+ perl-base                       noarch    5.36.1-4.xs9          build     15 k
+ perl-bignum                     noarch    5.36.1-4.xs9          build     49 k
+ perl-blib                       noarch    5.36.1-4.xs9          build     11 k
+ perl-constant                   noarch    5.36.1-4.xs9          build     21 k
+ perl-debugger                   noarch    5.36.1-4.xs9          build    153 k
+ perl-deprecate                  noarch    5.36.1-4.xs9          build     13 k
+ perl-devel                      x86_64    5.36.1-4.xs9          build    979 k
+ perl-diagnostics                noarch    5.36.1-4.xs9          build    225 k
+ perl-doc                        noarch    5.36.1-4.xs9          build    5.3 M
+ perl-encoding                   x86_64    5.36.1-4.xs9          build     27 k
+ perl-encoding-warnings          noarch    5.36.1-4.xs9          build     16 k
+ perl-experimental               noarch    5.36.1-4.xs9          build     15 k
+ perl-fields                     noarch    5.36.1-4.xs9          build     15 k
+ perl-filetest                   noarch    5.36.1-4.xs9          build     14 k
+ perl-if                         noarch    5.36.1-4.xs9          build     13 k
+ perl-inc-latest                 noarch    0.500-2.xs9           build     25 k
+ perl-interpreter                x86_64    5.36.1-4.xs9          build     76 k
+ perl-less                       noarch    5.36.1-4.xs9          build     12 k
+ perl-lib                        x86_64    5.36.1-4.xs9          build     14 k
+ perl-libnet                     noarch    5.36.1-4.xs9          build    127 k
+ perl-libnetcfg                  noarch    5.36.1-4.xs9          build     16 k
+ perl-libs                       x86_64    5.36.1-4.xs9          build    2.6 M
+ perl-libwww-perl                noarch    6.68-2.xs9            build    225 k
+ perl-locale                     noarch    5.36.1-4.xs9          build     13 k
+ perl-macros                     noarch    5.36.1-4.xs9          build     10 k
+ perl-meta-notation              noarch    5.36.1-4.xs9          build    8.5 k
+ perl-mro                        x86_64    5.36.1-4.xs9          build     29 k
+ perl-open                       noarch    5.36.1-4.xs9          build     16 k
+ perl-overload                   noarch    5.36.1-4.xs9          build     48 k
+ perl-overloading                noarch    5.36.1-4.xs9          build     12 k
+ perl-parent                     noarch    5.36.1-4.xs9          build     12 k
+ perl-perlfaq                    noarch    5.36.1-4.xs9          build    398 k
+ perl-ph                         x86_64    5.36.1-4.xs9          build     51 k
+ perl-podlators                  noarch    5.36.1-4.xs9          build    106 k
+ perl-sigtrap                    noarch    5.36.1-4.xs9          build     15 k
+ perl-sort                       noarch    5.36.1-4.xs9          build     12 k
+ perl-srpm-macros                noarch    1-2.xs9               build    7.5 k
+ perl-subs                       noarch    5.36.1-4.xs9          build     10 k
+ perl-threads                    x86_64    5.36.1-4.xs9          build     56 k
+ perl-threads-shared             x86_64    5.36.1-4.xs9          build     43 k
+ perl-utils                      noarch    5.36.1-4.xs9          build     59 k
+ perl-vars                       noarch    5.36.1-4.xs9          build     12 k
+ perl-version                    noarch    5.36.1-4.xs9          build     40 k
+ perl-vmsish                     noarch    5.36.1-4.xs9          build     13 k
+ pkgconf                         x86_64    1.8.0-2.xs9           build     43 k
+ pkgconf-m4                      noarch    1.8.0-2.xs9           build     13 k
+ pkgconf-pkg-config              x86_64    1.8.0-2.xs9           build    8.6 k
+ popt                            x86_64    1.19-2.xs9            build     65 k
+ python-rpm-macros               noarch    3.10-3.xs9            build     16 k
+ python3-argcomplete             noarch    2.0.0-2.xs9           build     79 k
+ python3-charset-normalizer      noarch    2.1.0-5.xs9           build    104 k
+ python3-construct               noarch    2.10.68-2.xs9         build    171 k
+ python3-file-magic              noarch    5.45-1.xs9            build     20 k
+ python3-idna                    noarch    3.3-5.xs9             build    142 k
+ python3-libs                    x86_64    3.11.3-5.xs9          build     12 M
+ python3-pip-wheel               noarch    22.2.2-3.xs9          build    1.4 M
+ python3-progressbar2            noarch    3.53.2-2.xs9          build     76 k
+ python3-pybeam                  noarch    0.7-2.xs9             build     28 k
+ python3-pyparsing               noarch    3.0.7-2.xs9           build    296 k
+ python3-pysocks                 noarch    1.7.1-2.xs9           build     44 k
+ python3-pyxdg                   noarch    0.27-2.xs9            build    143 k
+ python3-requests                noarch    2.28.1-5.xs9          build    163 k
+ python3-rpm                     x86_64    4.18.0-6.xs9          build     97 k
+ python3-setuptools-wheel        noarch    65.5.1-3.xs9          build    721 k
+ python3-six                     noarch    1.16.0-2.xs9          build     47 k
+ python3-tomli-w                 noarch    1.0.0-2.xs9           build     21 k
+ python3-urllib3                 noarch    1.26.20-4.xs9         build    278 k
+ python3-urllib3+socks           noarch    1.26.20-4.xs9         build    8.2 k
+ python3-utils                   noarch    3.1.0-2.xs9           build     47 k
+ python3-zstandard               x86_64    0.19.0-2.xs9          build    528 k
+ readline                        x86_64    8.2-2.xs9             build    238 k
+ rpm                             x86_64    4.18.0-6.xs9          build    638 k
+ rpm-build-libs                  x86_64    4.18.0-6.xs9          build     96 k
+ rpm-libs                        x86_64    4.18.0-6.xs9          build    364 k
+ rpm-sign-libs                   x86_64    4.18.0-6.xs9          build     17 k
+ rpmdevtools                     noarch    9.6-2.xs9             build     88 k
+ rpmlint                         noarch    2.4.0-2.xs9           build    374 k
+ rpmlint-fedora-license-data     noarch    1.22-2.xs9            build     16 k
+ setup                           noarch    2.8.77-1.xs9          build    155 k
+ sqlite-libs                     x86_64    3.47.2-1.xs9          build    860 k
+ systemd                         x86_64    257.2-8.xs9           build    5.8 M
+ systemd-libs                    x86_64    257.2-8.xs9           build    963 k
+ systemd-pam                     x86_64    257.2-8.xs9           build    451 k
+ systemd-rpm-macros              noarch    257.2-8.xs9           build     14 k
+ systemtap-sdt-devel             x86_64    4.8-3.xs9             build     80 k
+ tzdata                          noarch    2024a-2.xs9           build    421 k
+ util-linux-core                 x86_64    2.38.1-4.xs9          build    503 k
+ xenserver-config                noarch    9.0.9-1.xs9           build    7.7 k
+ xenserver-config-rpm            noarch    9.0.9-1.xs9           build     75 k
+ xenserver-release               x86_64    8.99.50-11.xs9        build    126 k
+ xenserver-release-presets       x86_64    8.99.50-11.xs9        build     13 k
+ xxhash-libs                     x86_64    0.8.2-2.xs9           build     41 k
+ xz-libs                         x86_64    5.4.1-2.xs9           build    119 k
+ zlib                            x86_64    1.2.12-3.xs9          build    104 k
+ zstd                            x86_64    1.5.5-2.xs9           build    531 k
+Installing Groups:
+ srpm-build                                                                    
+
+Transaction Summary
+================================================================================
+Install  415 Packages
+
+2025-10-09T10:28:34+0000 INFO Total download size: 194 M
+2025-10-09T10:28:34+0000 INFO Installed size: 527 M
+2025-10-09T10:28:34+0000 INFO Downloading Packages:
+2025-10-09T10:28:36+0000 INFO --------------------------------------------------------------------------------
+2025-10-09T10:28:36+0000 INFO Total                                           110 MB/s | 194 MB     00:01     
+2025-10-09T10:28:36+0000 INFO Running transaction check
+2025-10-09T10:28:36+0000 INFO Transaction check succeeded.
+2025-10-09T10:28:36+0000 INFO Running transaction test
+2025-10-09T10:28:38+0000 INFO Transaction test succeeded.
+2025-10-09T10:28:38+0000 DDEBUG timer: transaction test: 2136 ms
+2025-10-09T10:28:38+0000 INFO Running transaction
+2025-10-09T10:28:38+0000 DEBUG RPMDB altered outside of DNF.
+2025-10-09T10:28:39+0000 DDEBUG RPM transaction start.
+2025-10-09T10:28:47+0000 DDEBUG RPM transaction over.
+2025-10-09T10:28:47+0000 DDEBUG timer: verify transaction: 187 ms
+2025-10-09T10:28:47+0000 DDEBUG timer: transaction: 8480 ms
+2025-10-09T10:28:47+0000 DEBUG Completion plugin: Generating completion cache...
+2025-10-09T10:28:47+0000 DEBUG Installed: annobin-docs-12.71-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: annobin-plugin-gcc-12.71-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: audit-libs-3.1.2-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: basesystem-11-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: bash-5.2.37-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: binutils-2.45-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: bzip2-1.0.8-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: bzip2-libs-1.0.8-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: ca-certificates-2024.2.72-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: coreutils-9.5-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: coreutils-common-9.5-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: cpio-2.13-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: cpp-12.4.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: cracklib-2.9.11-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: crypto-policies-20241128-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: curl-8.11.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: dash-0.5.11.5-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: dbus-common-1.14.10-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: dbus-daemon-1.14.10-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: dbus-libs-1.14.10-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: dbus-tools-1.14.10-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: debugedit-5.2-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: diffutils-3.10-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: dwz-0.16-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: ed-1.19-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: elfutils-0.193-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: elfutils-default-yama-scope-0.193-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: elfutils-libelf-0.193-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: elfutils-libs-0.193-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: expat-2.5.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: fakeroot-1.32.1-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: fakeroot-libs-1.32.1-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: file-5.45-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: file-libs-5.45-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: filesystem-3.18-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: findutils-4.9.0-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gawk-5.1.1-5.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gcc-12.4.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gcc-c++-12.4.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gdb-15.2-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gdbm-1.23-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gdbm-libs-1.23-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: git-2.41.0-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: git-core-2.41.0-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: git-core-doc-2.41.0-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: glibc-2.41-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: glibc-common-2.41-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: glibc-devel-2.41-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: glibc-langpack-en-2.41-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: glibc-minimal-langpack-2.41-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gmp-6.2.1-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gnupg2-2.4.0-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gnutls-3.8.8-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: go-srpm-macros-3.7.0-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: grep-3.11-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: groff-base-1.23.0-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: gzip-1.14-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: jansson-2.14.1-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: kernel-headers-6.6.98-5.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: keyutils-libs-1.6.3-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: krb5-libs-1.21.3-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: less-633-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libacl-2.3.2-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libarchive-3.6.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libassuan-2.5.5-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libattr-2.5.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libb2-0.98.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libblkid-2.38.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libcap-2.48-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libcap-ng-0.8.3-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libcom_err-1.47.0-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libcurl-8.11.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libedit-3.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libevent-2.1.12-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libfdisk-2.38.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libffi-3.4.4-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libgcc-12.4.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libgcrypt-1.11.0-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libgomp-12.4.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libgpg-error-1.51-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libidn2-2.3.4-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libksba-1.6.3-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libmount-2.38.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libmpc-1.3.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libnghttp2-1.64.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libpkgconf-1.8.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libpwquality-1.4.5-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libseccomp-2.5.3-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libsigsegv-2.14-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libsmartcols-2.38.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libstdc++-12.4.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libstdc++-devel-12.4.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libtasn1-4.19.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libunistring-1.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libutempter-1.2.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libuuid-2.38.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libverto-0.3.2-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libxcrypt-4.4.36-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libxcrypt-devel-4.4.36-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libxml2-2.10.4-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: libzstd-1.5.5-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: lua-libs-5.4.4-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: lz4-libs-1.10.0-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: make-4.4-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: mpdecimal-2.5.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: mpfr-4.1.1-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: ncurses-6.4-7.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: ncurses-base-6.4-7.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: ncurses-libs-6.4-7.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: nettle-3.10-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: npth-1.6-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: openldap-2.6.4-5.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: openssh-9.9p1-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: openssh-clients-9.9p1-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: openssl-libs-3.0.9-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: p11-kit-0.24.1-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: p11-kit-trust-0.24.1-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: pam-1.7.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: pam-libs-1.7.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: patch-2.7.6-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: pcre2-10.40-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: pcre2-syntax-10.40-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Archive-Tar-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Attribute-Handlers-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-AutoLoader-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-AutoSplit-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-B-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Benchmark-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-CPAN-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-CPAN-Meta-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-CPAN-Meta-Requirements-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-CPAN-Meta-YAML-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Carp-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Class-Struct-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Compress-Raw-Bzip2-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Compress-Raw-Zlib-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Config-Extensions-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Config-INI-0.027-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Config-Perl-V-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Crypt-JWT-0.035-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-CryptX-0.078-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-DBM_Filter-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Data-Dump-1.25-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Data-Dumper-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Data-OptList-0.112-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Devel-PPPort-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Devel-Peek-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Devel-SelfStubber-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Digest-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Digest-HMAC-1.04-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Digest-MD5-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Digest-SHA-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-DirHandle-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Dumpvalue-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-DynaLoader-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Encode-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Encode-Locale-1.05-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Encode-devel-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-English-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Env-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Errno-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Error-0.17029-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Exporter-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-CBuilder-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-Command-7.66-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-Constant-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-Embed-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-Install-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-MM-Utils-7.66-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-MakeMaker-7.66-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-Manifest-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-Miniperl-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ExtUtils-ParseXS-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Fcntl-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Basename-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Compare-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Copy-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Copy-Recursive-0.45-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-DosGlob-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Fetch-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Find-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Listing-6.15-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Path-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Slurp-Tiny-0.004-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-Temp-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-File-stat-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-FileCache-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-FileHandle-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Filter-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Filter-Simple-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-FindBin-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-GDBM_File-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Getopt-Long-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Getopt-Std-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Git-2.41.0-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-HTML-Parser-3.81-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-HTML-Tagset-3.20-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-HTTP-Cookies-6.10-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-HTTP-Date-6.05-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-HTTP-Message-6.37-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-HTTP-Negotiate-6.01-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-HTTP-Tiny-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Hash-Util-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Hash-Util-FieldHash-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-I18N-Collate-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-I18N-LangTags-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-I18N-Langinfo-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IO-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IO-Compress-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IO-HTML-1.004-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IO-Socket-IP-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IO-Socket-SSL-2.075-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IO-Zlib-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IPC-Cmd-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IPC-Open3-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-IPC-SysV-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-JSON-4.09-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-JSON-PP-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-LWP-MediaTypes-6.04-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-LWP-Protocol-https-6.10-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Locale-Maketext-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Locale-Maketext-Simple-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-MIME-Base64-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Math-BigInt-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Math-BigInt-FastCalc-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Math-BigRat-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Math-Complex-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Memoize-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Mixin-Linewise-0.110-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Module-Build-0.42.31-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Module-CoreList-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Module-CoreList-tools-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Module-Load-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Module-Load-Conditional-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Module-Loaded-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Module-Metadata-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Mozilla-CA-20211001-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-NDBM_File-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-NEXT-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-NTLM-1.09-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Net-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Net-HTTP-6.22-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Net-Ping-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Net-SSLeay-1.92-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ODBM_File-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Opcode-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-POSIX-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Package-Generator-1.106-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Params-Check-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Params-Util-1.102-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-PathTools-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Perl-OSType-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Perl-Version-1.013-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-PerlIO-utf8_strict-0.009-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-PerlIO-via-QuotedPrint-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Pod-Checker-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Pod-Escapes-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Pod-Functions-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Pod-Html-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Pod-Perldoc-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Pod-Simple-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Pod-Usage-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Safe-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Scalar-List-Utils-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Search-Dict-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-SelectSaver-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-SelfLoader-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Socket-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Storable-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Sub-Exporter-0.988-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Sub-Install-0.928-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Symbol-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Sys-Hostname-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Sys-Syslog-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Term-ANSIColor-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Term-Cap-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Term-Complete-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Term-ReadLine-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Test-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Test-Harness-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Test-Simple-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Text-Abbrev-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Text-Balanced-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Text-ParseWords-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Text-Tabs+Wrap-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Thread-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Thread-Queue-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Thread-Semaphore-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Tie-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Tie-File-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Tie-Memoize-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Tie-RefHash-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Time-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Time-HiRes-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Time-Local-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Time-Piece-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-TimeDate-2.33-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Try-Tiny-0.31-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-URI-5.17-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Unicode-Collate-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Unicode-Normalize-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-Unicode-UCD-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-User-pwent-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-WWW-RobotRules-6.02-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-autodie-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-autouse-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-base-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-bignum-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-blib-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-constant-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-debugger-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-deprecate-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-devel-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-diagnostics-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-doc-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-encoding-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-encoding-warnings-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-experimental-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-fields-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-filetest-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-if-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-inc-latest-0.500-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-interpreter-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-less-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-lib-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-libnet-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-libnetcfg-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-libs-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-libwww-perl-6.68-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-locale-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-macros-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-meta-notation-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-mro-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-open-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-overload-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-overloading-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-parent-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-perlfaq-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-ph-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-podlators-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-sigtrap-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-sort-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-srpm-macros-1-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-subs-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-threads-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-threads-shared-5.36.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-utils-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-vars-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-version-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: perl-vmsish-5.36.1-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: pkgconf-1.8.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: pkgconf-m4-1.8.0-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: pkgconf-pkg-config-1.8.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: popt-1.19-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: pyproject-rpm-macros-1.8.0-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python-rpm-macros-3.10-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python-srpm-macros-3.10-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-3.11.3-5.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-argcomplete-2.0.0-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-charset-normalizer-2.1.0-5.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-construct-2.10.68-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-file-magic-5.45-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-idna-3.3-5.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-libs-3.11.3-5.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-pip-wheel-22.2.2-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-progressbar2-3.53.2-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-pybeam-0.7-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-pyparsing-3.0.7-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-pysocks-1.7.1-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-pyxdg-0.27-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-requests-2.28.1-5.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-rpm-4.18.0-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-rpm-macros-3.10-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-setuptools-wheel-65.5.1-3.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-six-1.16.0-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-tomli-w-1.0.0-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-urllib3-1.26.20-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-urllib3+socks-1.26.20-4.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-utils-3.1.0-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: python3-zstandard-0.19.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: readline-8.2-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: rpm-4.18.0-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: rpm-build-4.18.0-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: rpm-build-libs-4.18.0-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: rpm-libs-4.18.0-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: rpm-sign-libs-4.18.0-6.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: rpmdevtools-9.6-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: rpmlint-2.4.0-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: rpmlint-fedora-license-data-1.22-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: sed-4.9-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: setup-2.8.77-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: shadow-utils-4.17.0-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: sqlite-libs-3.47.2-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: systemd-257.2-8.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: systemd-libs-257.2-8.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: systemd-pam-257.2-8.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: systemd-rpm-macros-257.2-8.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: systemtap-sdt-devel-4.8-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: tar-1.35-1.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: tzdata-2024a-2.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: unzip-6.0-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: util-linux-2.38.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: util-linux-core-2.38.1-4.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: xenpkg-1.8.8-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: xenserver-config-9.0.9-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: xenserver-config-macros-9.0.9-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: xenserver-config-rpm-9.0.9-1.xs9.noarch
+2025-10-09T10:28:47+0000 DEBUG Installed: xenserver-release-8.99.50-11.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: xenserver-release-presets-8.99.50-11.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: xxhash-libs-0.8.2-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: xz-5.4.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: xz-libs-5.4.1-2.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: zlib-1.2.12-3.xs9.x86_64
+2025-10-09T10:28:47+0000 DEBUG Installed: zstd-1.5.5-2.xs9.x86_64
+2025-10-09T10:28:47+0000 INFO Complete!
+2025-10-09T10:28:47+0000 DDEBUG Cleaning up.
+2025-10-09T10:28:47+0000 DDEBUG Plugins were unloaded.

@@ -1,0 +1,26 @@
+2025-10-09 10:28:33,311 - Mock Version: 6.3
+2025-10-09 10:28:33,315 - Start: chroot init
+2025-10-09 10:28:33,503 - Start: installing minimal buildroot with dnf
+2025-10-09 10:28:47,417 - Finish: installing minimal buildroot with dnf
+2025-10-09 10:28:47,540 - Finish: chroot init
+2025-10-09 10:28:47,588 - Finish: run
+2025-10-09 10:28:48,579 - Mock Version: 6.3
+2025-10-09 10:28:48,582 - Start: chroot init
+2025-10-09 10:28:48,895 - Finish: chroot init
+2025-10-09 10:28:48,896 - Start: chroot ['uname -r']
+2025-10-09 10:28:48,960 - Finish: chroot ['uname -r']
+2025-10-09 10:28:48,960 - Finish: run
+2025-10-09 10:28:57,070 - Mock Version: 6.3
+2025-10-09 10:28:57,074 - Start: chroot init
+2025-10-09 10:28:57,389 - Finish: chroot init
+2025-10-09 10:28:57,390 - Start: chroot ['xenpkg', '--cimode', 'makesources']
+2025-10-09 10:28:58,368 - Finish: chroot ['xenpkg', '--cimode', 'makesources']
+2025-10-09 10:28:58,369 - Finish: run
+2025-10-09 10:28:59,430 - Mock Version: 6.3
+2025-10-09 10:28:59,434 - Start: chroot init
+2025-10-09 10:28:59,886 - Finish: chroot init
+2025-10-09 10:28:59,889 - Start: buildsrpm
+2025-10-09 10:28:59,893 - Start: rpmbuild -bs
+2025-10-09 10:29:00,134 - Finish: rpmbuild -bs
+2025-10-09 10:29:00,137 - Finish: buildsrpm
+2025-10-09 10:29:00,139 - Finish: run
